@@ -1,0 +1,12 @@
+.sass-cache
+.tmp
+app/.htaccess
+
+dist
+node_modules
+bower_components
+
+app/media
+app/img
+
+secrets.json
