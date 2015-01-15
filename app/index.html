@@ -6,12 +6,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/leaflet/dist/leaflet.css" />
         <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
-        <link rel="stylesheet" href="../bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css" />
+        <link rel="stylesheet" href="../bower_components/leaflet/dist/leaflet.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -30,85 +28,103 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12" id="map"></div>
-                <div class="banner">
-                    <div class="row">
-                        <div class="col-xs-1"></div>
-                        <div class="col-xs-8">
-                            <h1>Conservation Lands in the Central Platte</h1>
-                            <div class="legend">
-                                <i class="fa fa-hand-o-up fa-2x"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-3">
-                            <p>Hover over each tract of land to see ownership information. Note any changes and please reply to Steven Speicher.</p>
-                        </div>
+        <div class="container-fluid main-app">
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- <a class="navbar-brand" href="#">Brand</a> -->
                     </div>
-                   <!--  <select name="" id="">
-                        <option value="">One</option>
-                        <option value="">Two</option>
-                        <option value="">Three</option>
-                        <option value="">Four</option>
-                        <option value="">Five</option>
-                        <option value="">Six</option>
-                    </select> -->
-                </div>
-                <div class="main-section">
-                    <div class="main-section-wrapper">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <p>Lorem ipporrosum dolor sit amet, consectetur adipisicing elit. Impedit aut accusamus provident nemo incidunt in, necessitatibus animi conseporroquatur ad porro saepe natus quod libero ea quia non expedita magnam hic.</p>
-                                <p>Lorem iporropsum dporroolor sit amet, consectetur adipporroisicing elit. Impedit aut accusamus provident nemo incidunt in, necessitatibus animi consequatur adporro porro saepe natus quod libero ea quia non expedita magnam hic.</p>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aut accusamus provident nemo incidunt in, necessitatibus animi consequatur ad porro  natus quod libero ea quia non expedita magnam hic.</p>
-                                <p>Lorem ipsum dolor sit amet,  adipisicing elit. Impedit aut accusamus provident nemo incidunt in,  animi  ad porro saepe natus quod libero ea quia non expedita magnam hic.</p>
-                                <p>Lorem ipsum  sit amet, consectetur adipisicing elit. Impedit aut accusamus provident nemo incidunt in, necessitatibus animi consequatur ad porro saepe natus quod libero ea quia non expedita magnam hic.</p>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>Lorem ipsum dolor sit , consectetur adipisicing elit. Impedit aut accusamus provident nemo incidunt in, necessitatibus animi consequatur ad  saepe natus quod libero ea quia non expedita magnam hic.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aut accusamus  nemo incidunt in, necessitatibus animi consequatur ad porro saepe natus quod libero ea quia non expedita magnam hic.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur provident nemo incidunt in, necessitatibus animi consequatur ad porro saepe natus quod libero ea quia non  magnam hic.</p>
-                            </div>
-                        </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="navbar-left"><a class="fa fa-home fa-lg"></a></li>
+
+                            <li class="navbar-left"><a href="#" class="title">THE TITLE HERE!!!</a></li>
+
+                            <li class="navbar-right"><a class="fa fa-twitter fa-lg"></a></li>
+                            <li class="navbar-right"><a class="fa fa-facebook fa-lg"></a></li>
+                            <li class="navbar-right"><a class="fa fa-instagram fa-lg"></a></li>
+                            <li class="navbar-right"><a class="fa fa-group fa-lg"></a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                    <div class="main-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Title One</a></li>
+                            <li><a href="#">Title One</a></li>
+                            <li><a href="#">Title One</a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
+
+            <div id="map"></div>
+
+            <div class="main">
+                <div class="main-toggle closed"><i class="fa fa-chevron-circle-up fa-2x"></i></div>
+                <div class="main-wrapper">
+                    <header class="clearfix">
+                        <h1>Some Title Here</h1>
+                        <h2>A slightly longer subhead can go here and be long, like this</h2>
+                    </header>
+
+                    <div class="content-meta light-font">
+                        <p>Published on some date or something</p>
+                    </div>
+
+                    <div class="main-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate hart. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla solutaum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                        <p>Lorem ipsum dolor sit a! Dolor aliquam corrupti dicta cupiditate id.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                        <p>Lorem ipsipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                        <p>Lorem ipsum dolor sit , consectetur  elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                   
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. , iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! , non. Corrupti ea suscipit, repudiandae nulla soluta.  harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
         <script src="../bower_components/leaflet/dist/leaflet.js"></script>
         <script src="../bower_components/leaflet/dist/leaflet-src.js"></script>
-        <script src="../bower_components/shp/dist/shp.js"></script>
-        <script src="../bower_components/Leaflet.label/dist/leaflet.label.js"></script>
-        <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
-        <script src="../bower_components/leaflet-slider/dist/leaflet.SliderControl.min.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/ctrl-main.js"></script>
         <!-- endbuild -->
-</body>
+    </body>
 </html>

@@ -75,56 +75,16 @@ function makeMap() {
 	    return s.toLowerCase();
 	});
 
-    // var url = 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
 
 	var basemap = L.tileLayer(url, {
 	    subdomains: ['','a.','b.','c.','d.'],
 	    minZoom: 6,
 	    maxZoom: 14,
 	    type: 'png',
-        // attribution: '© OpenStreetMap contributors, © CartoDB'
 	    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
 	});
 
 	basemap.addTo(map);
-
-    // var imageUrl = '../images/flyway.png',
-    // imageBounds = [[36,-106.1], [45.8,-90.1]];
-
-    // L.imageOverlay(imageUrl, imageBounds).addTo(map);
-
-	shp('data/rivers-central-basin/rivers_cenbasin').then(function(geojson){
-        L.geoJson(geojson, {
-        	style: {
-        		color: 'steelblue',
-        		weight: 1,
-        		opacity: 1,
-        		fillOpacity: 1,
-        		fillColor: 'steelblue'
-        	},
-        	onEachFeature: function (feature, layer) {
-        		layer.bindPopup(feature.properties.NAME);
-        	}
-
-        }).addTo(map);
-    });
-
-    shp('data/rivers-central-basin/streams_cenbasin').then(function(geojson){
-        L.geoJson(geojson, {
-        	style: {
-        		color: 'steelblue',
-        		weight: 1,
-        		opacity: .4,
-        		fillOpacity: 1,
-        		fillColor: 'steelblue'
-        	},
-        	onEachFeature: function (feature, layer) {
-        		layer.bindPopup(feature.properties.NAME);
-        	}
-
-        }).addTo(map);
-    });
-
 
     for (var i=0; i<ccpLength; i++) {
         $('.legend').append('<span id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '">' + ccpOwners[i].name + '</span>');
@@ -160,7 +120,7 @@ function mapData() {
 
     function bindLabel (feature, layer) {
        // layer.bindPopup('Name: <b>' + feature.properties.NAME + '</b><br/>Owner: <b>' + feature.properties.OWNERSHIP + '</b><br/>Purchased: <b>' + feature.properties.PRRIPTract);
-       layer.bindLabel('Name: <b>' + feature.properties.NAME + '</b><br/>Owner: <b>' + feature.properties.OWNERSHIP + '</b><br/>Purchased: <b>' + feature.properties.PRRIPTract, { noHide: true, className: 'layer-label' });
+       // layer.bindLabel('Name: <b>' + feature.properties.NAME + '</b><br/>Owner: <b>' + feature.properties.OWNERSHIP + '</b><br/>Purchased: <b>' + feature.properties.PRRIPTract, { noHide: true, className: 'layer-label' });
     }
 
     $.getJSON('../data/big-bend-conservation.json', function(data) {
@@ -192,11 +152,6 @@ function mapData() {
 
         }).addTo(map);
 
-
-        var sliderControl = L.control.sliderControl({position: 'topleft', layer: ccpGeoJSON});
-
-        // map.addControl(sliderControl);
-        // sliderControl.startSlider();
     });
 
 }

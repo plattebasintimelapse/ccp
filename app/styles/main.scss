@@ -1,87 +1,14 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+// @import 'partials/reset';
 
 // bower:scss
-@import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import 'media-queries';
 
-body {
-  margin-top: 0;
-  font-family: 'Proxima Nova', sans-serif;
-}
+@import 'partials/config';
 
-#map {
-	width: 100%;
-	// height: 900px;
-}
+@import 'helpers/media-queries';
 
-h1 {
-	margin-top: 0;
-}
-
-.banner {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 150px;
-	border-bottom: 1px solid black;
-
-	padding: 15px;
-
-	// border-radius: 10px;
-	background-color: rgba(255,255,255,.9);
-}
-
-.legend {
-	span {
-		display: inline-block;
-		margin-right:6px;
-		margin-bottom: 6px;
-		padding: 4px 12px;
-
-		color: white;
-
-		cursor: pointer;
-
-		border-radius: 10px;
-		-moz-border-radius: 10px;
-		-webkit-border-radius: 10px;
-		&.off {
-			background-color: white !important;
-			border:1px solid gray !important;
-			color: gray !important;
-		}
-	}
-}
-
-.layer-label {
-	width: 200px;
-	background-color: white;
-	color: black;
-	border: 1px solid lightgray;
-	border-radius: 6px;
-	padding: 6px 12px;
-
-	box-shadow: 4px 4px 20px #393939;
-}
-
-
-
-
-.main-section {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 25%;
-	background-color: black;
-
-	color: white;
-
-	opacity: .9;
-	z-index:1000;
-
-	.main-section-wrapper {
-		padding: 10px;
-	}
-}
+@import 'partials/grids';
+@import 'partials/typography';
+@import 'partials/shame';

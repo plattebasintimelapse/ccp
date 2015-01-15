@@ -1,6 +1,10 @@
 {
-  "name": "lincoln-water-chart",
+  "name": "ccp",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stvnspchr/ccp.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -31,5 +35,10 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "author": "Steven Speicher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stvnspchr/ccp/issues"
   }
 }

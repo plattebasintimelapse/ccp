@@ -1,17 +1,13 @@
 {
-  "name": "lincoln-water-chart",
+  "name": "ccp",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
     "modernizr": "~2.6.2",
+    "bootstrap-sass-official": "~3.3.1",
     "jquery": "~1.11.0",
-    "leaflet": "~0.7.3",
-    "leaflet.shapefile": "*",
-    "shp": "~3.1.0",
-    "Leaflet.label": "~0.2.1",
     "font-awesome": "~4.2.0",
-    "leaflet-slider": "~1.0.2",
-    "jquery-ui": "~1.11.2"
+    "jquery-ui": "~1.11.2",
+    "leaflet": "~0.7.3"
   },
   "devDependencies": {}
 }
