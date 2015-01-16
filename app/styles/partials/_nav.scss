@@ -1,0 +1,86 @@
+.nav-button {
+    cursor: pointer;
+    display:inline-block;
+    text-transform: uppercase;
+    padding: 0 6px;
+
+    &:hover {
+    	color: $blue;
+    }
+}
+
+#menu {
+    display: block;
+    @include breakpoint(baby-bear) { display: none; }
+    li {
+        display: inline-block;
+    }
+}
+#menu-mobile {
+    display: none;
+    @include breakpoint(baby-bear) { display: block; }
+
+    li {
+        display: block;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+}
+
+#credits-modal {
+
+    .modal-dialog {
+        margin-top: 10%;
+        @include breakpoint(baby-bear) { margin-top: 30%; }
+        @include breakpoint(mama-bear) { margin-top: 15%; }
+    }
+
+    .modal-title {
+        text-transform: uppercase;
+    }
+
+	.modal-header {
+		background-color: black;
+		color: white;
+		font-weight: bold;
+		.close {color:white;opacity:1;}
+	}
+
+	.credits {
+		margin-bottom: 10px;
+		font-size:.9em;
+		text-transform: uppercase;
+        &.team { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid lightgray; }
+	}
+    .speical-thanks {
+        margin-bottom: 10px;
+    }
+	.credit {
+		font-size: .7em;
+		line-height: .6em;
+        margin-bottom: 0;
+
+        &.small { font-size: .6em; }
+        .name {
+            font-size:1.4em;
+            line-height: 1.3em;
+        }
+	}
+    .thanks {
+        line-height: 1.1em;
+        font-size: .7em;
+    }
+    a {
+        color: black;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+footer a:hover {
+	color: $blue;
+}
+

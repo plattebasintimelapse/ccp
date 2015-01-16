@@ -2,33 +2,64 @@ body {
   	font-family: 'Proxima Nova', sans-serif;
 }
 
+h1 { font-weight: 900; }
+
+a, a.visited {
+	color: $base-font-color;
+	&:hover {
+		color: $blue;
+		text-decoration: none;
+	}
+}
+
+p { font-size: 18px; }
+
+nav { color: $base-font-color; }
+
+nav #title h4 {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
 .light-font { color: $base-font-color; }
 
 .dark-font { color: black; }
 
-// p { line-height: 16px; }
+.main-menu {
+	h1,h2 { text-align: center; margin: 0; }
+	h1 { font-size: 2.2em; font-style:italic; }
+	h2 { font-size: 1.4em; }
+	li a { color: $base-font-color; background-color: $black; &:hover { background-color: $blue; } }
+}
 
 .main {
 	h1 {
-		// font-style: italic;
-		font-weight: 900;
-		font-size: 48px;
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 3.8em;
 		margin-right: 20px;
 	}
 	h2 {
-		font-size: 32px;
+		font-size: 1.8em;
 	}
 	h1,h2 {
 		display:inline;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
-	font-size: 22px;
 	font-weigth: regular;
 
 }
 
-.content-meta {
-	font-size: 16px;
+.main-toggle {
+	color: $black;
+	text-align:center;
+	font-size: 1.4em;
+	&:hover { color: $blue; p { color: $blue;} }
+	p { font-size: 1em;}
+}
+
+.content-meta p {
+	font-size: 1em;
 	font-style: italic;
 }
 

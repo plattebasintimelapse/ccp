@@ -1,0 +1,10 @@
+
+@mixin box-shadow($top, $left, $blur) {
+    -webkit-box-shadow: $top $left $blur 8px gray;
+    -moz-box-shadow: $top $left $blur 8px gray;
+    box-shadow: $top $left $blur 8px gray;
+}
+
+@mixin text-shadow($top, $left, $blur) {
+    text-shadow: $top $left $blur gray;
+}

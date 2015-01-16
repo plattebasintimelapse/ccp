@@ -1,6 +1,44 @@
 'use strict';
+
+var $main_menu = $('.main-menu');
+
+$(document).ready(function() {
+    initPage();
+});
+
+function initPage() {
+    // Center Main Menu
+    centerPosition($main_menu);
+}
+
+function centerPosition(o) {
+    o.css("margin-left", -(o.width() / 2) );
+}
+
+
 var map;
 var ccpGeoJSON;
+var vigs = [
+    {
+        "title": "A Title Goes Here",
+        "lat": "41",
+        "long":"-99",
+        "direction":"up",
+        "html_src":"title",
+        "meta":"Some meta information",
+        "section":"1",
+        "order":"1"
+    },{
+        "title": "A Title Goes Here Two",
+        "lat": "41.1",
+        "long":"-99.5",
+        "direction":"up",
+        "html_src":"title2",
+        "meta":"Some meta information",
+        "section":"1",
+        "order":"2"
+    }
+]
 
 var ccpOwners = [
     {
@@ -53,14 +91,6 @@ var ccpOwners = [
 
 var ccpLength = ccpOwners.length;
 
-var filter = function(feature) {
-    for (var i=0; i<ccpLength; i++){
-        if (ccpOwners[i].ownership == feature.properties.OWNERSHIP) {
-            return ccpOwners[i].filter;
-        }
-    }
-};
-
 
 function makeMap() {
 
@@ -86,34 +116,18 @@ function makeMap() {
 
 	basemap.addTo(map);
 
-    for (var i=0; i<ccpLength; i++) {
-        $('.legend').append('<span id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '">' + ccpOwners[i].name + '</span>');
-    }
-
-    // setTimeout( function() {
-    //     map.setZoom(12);
-    // }, 2000);
-
     mapData();
+    mapVigs();
 
 }
 
-function filterMap( $clicked ) {
-    $clicked.toggleClass('off');
+function mapVigs() {
+    for (var i=0; i < vigs.length; i++) {
+        var mlat = parseFloat(vigs[i].lat);
+        var mlong = parseFloat(vigs[i].long);
 
-    for (var i=0; i<ccpLength; i++){
-        if (ccpOwners[i].name == $clicked.attr('id')) {
-            if (ccpOwners[i].filter) {
-                ccpOwners[i].filter = false;
-            } else {
-                ccpOwners[i].filter = true;
-            }
-        }
+        var marker = L.marker( [mlat ,mlong] ).addTo(map);
     }
-
-    map.removeLayer(ccpGeoJSON);
-    mapData();
-
 }
 
 function mapData() {
@@ -147,8 +161,7 @@ function mapData() {
 
                 return styles;
             },
-            onEachFeature: bindLabel,
-            filter: filter
+            onEachFeature: bindLabel
 
         }).addTo(map);
 
