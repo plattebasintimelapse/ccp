@@ -6,7 +6,12 @@ dist
 node_modules
 bower_components
 
+app/history
+app/problem
+app/hope
+
 app/media
 app/img
+app/images
 
 secrets.json

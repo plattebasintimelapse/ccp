@@ -6,110 +6,25 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
-        <link rel="stylesheet" href="../bower_components/leaflet/dist/leaflet.css" />
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
 
         <script type="text/javascript" src="//use.typekit.net/dlv3qjg.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     </head>
-    <body>
+    <body class="intro">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+
+
         <div class="container-fluid main-app">
-
-            <nav class="navbar-fixed-top" id="main-nav" role="navigation"  data-200-start="margin-top:-80px;" data-800-start="margin-top:0px;">
-
-                    <div class="nav-button pull-left" id="home"><h4><i class="fa fa-home fa-lg"></i></h4></div>
-
-                    <div class="nav-button pull-left" id="title"><h4>The Title Can Go Here</h4></div>
-
-                    <div class="nav-button pull-right" id="home-btn"><h4><a href="http://www.plattebasintimelapse.com">PBT</a></h4></div>
-
-                    <div class="nav-button pull-right" id="credit-btn" data-toggle="modal" data-target="#credits-modal"><h4><i class="fa fa-group fa-lg"></i></h4></div>
-
-                    <div class="nav-button pull-right" id="twitter-share">
-                        <a target="_blank" href="https://twitter.com/share" data-count="none" data-url="http://projects.plattebasintimelapse.com/follow-the-water"><h4><i class="fa fa-twitter fa-lg"></i></h4></a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </div>
-
-                    <div class="nav-button pull-right" id="facebook"><h4><i class="fa fa-facebook fa-lg"></i></h4></div>
-
-                    <div class="nav-button pull-right" id="instagram"><h4><i class="fa fa-instagram fa-lg"></i></h4></div>
-
-                    <div class="main-menu" role="navigation">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#"><h1>History:</h1><h2>1800s</h2></a></li>
-                            <li><a href="#"><h1>Problem:</h1><h2>1930s - 1970s</h2></a></li>
-                            <li><a href="#"><h1>Hope:</h1><h2>1970s - today</h2></a></li>
-                        </ul>
-                    </div>
-            </nav>
-
-            <div id="map"></div>
-
-            <div class="main">
-                <div class="main-toggle closed">
-                    <i class="fa fa-chevron-circle-up fa-2x"></i>
-                    <p class="">open</p>
-                </div>
-                <div class="main-wrapper">
-                    <header class="clearfix">
-                        <h1>Some Title Here</h1>
-                        <h2>A slightly longer subhead can go here and be long, like this</h2>
-                    </header>
-
-                    <div class="content-meta light-font">
-                        <p>Published on March 16th 2015</p>
-                    </div>
-
-                    <div class="main-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate hart. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla solutaum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit a! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit , consectetur  elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. , iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! , non. Corrupti ea suscipit, repudiandae nulla soluta.  harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, iste, nulla! Molestiae, non. Corrupti ea suscipit, repudiandae nulla soluta. Voluptate harum magnam provident dicta! Dolor aliquam corrupti dicta cupiditate id.</p>
-                    </div>
-                </div>
-            </div>
+            <h1>Hello!</h1>
+            <a href="history">Enter</a>
         </div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
-        <script src="../bower_components/leaflet/dist/leaflet.js"></script>
-        <script src="../bower_components/leaflet/dist/leaflet-src.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -117,8 +32,8 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <script src="scripts/ctrl-main.js"></script>
+
+
         <!-- endbuild -->
     </body>
 </html>

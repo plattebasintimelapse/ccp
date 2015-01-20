@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 function initPage() {
     // Center Main Menu
-    centerPosition($main_menu);
+    // centerPosition($main_menu);
 }
 
 function centerPosition(o) {
@@ -18,27 +18,30 @@ function centerPosition(o) {
 
 var map;
 var ccpGeoJSON;
-var vigs = [
-    {
-        "title": "A Title Goes Here",
-        "lat": "41",
-        "long":"-99",
-        "direction":"up",
-        "html_src":"title",
-        "meta":"Some meta information",
-        "section":"1",
-        "order":"1"
-    },{
-        "title": "A Title Goes Here Two",
-        "lat": "41.1",
-        "long":"-99.5",
-        "direction":"up",
-        "html_src":"title2",
-        "meta":"Some meta information",
-        "section":"1",
-        "order":"2"
-    }
-]
+// var vigs = [];
+// var vigs = [
+//     {
+//         "title": "A Title Goes Here",
+//         "lat": "41",
+//         "long":"-99",
+//         "direction":"up",
+//         "html_src":"test1",
+//         "meta":"Some meta information",
+//         "section":"1",
+//         "order":"1"
+//     },{
+//         "title": "A Title Goes Here Two",
+//         "lat": "41.1",
+//         "long":"-99.5",
+//         "direction":"up",
+//         "html_src":"test2",
+//         "meta":"Some meta information",
+//         "section":"1",
+//         "order":"2"
+//     }
+// ]
+
+
 
 var ccpOwners = [
     {
@@ -116,17 +119,37 @@ function makeMap() {
 
 	basemap.addTo(map);
 
+    getVigs();
     mapData();
-    mapVigs();
-
 }
 
-function mapVigs() {
+function getVigs() {
+    var vigs = [];
+    $.getJSON( "../../content/vigs.json", function( data ) {
+        console.log(data);
+        vigs = data;
+    }).done(function() {
+        mapVigs(vigs);
+    });
+}
+
+function mapVigs(vigs) {
     for (var i=0; i < vigs.length; i++) {
+
         var mlat = parseFloat(vigs[i].lat);
         var mlong = parseFloat(vigs[i].long);
 
-        var marker = L.marker( [mlat ,mlong] ).addTo(map);
+        var vig = new Vignette( [mlat ,mlong], {
+            title: vigs[i].title,
+            order: vigs[i].order,
+            direction: vigs[i].direction,
+            html_src: vigs[i].html_src,
+
+        } ).addTo(map).on('click', function() {
+            vig.click();
+        });
+
+        vig.info();
     }
 }
 

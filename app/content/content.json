@@ -1,0 +1,58 @@
+{
+	"main": {
+		"title": "Conserving the Platte",
+		"nav": {
+			"one": {
+				"h1": "History",
+				"h2": "1800s"
+			},
+			"two": {
+				"h1": "Problem",
+				"h2": "1930s - 1970s"
+			},
+			"three": {
+				"h1": "Hope",
+				"h2": "1970s - today"
+			}
+		}
+	},
+
+	"history": {
+		"hed": "The History Title",
+		"subhed": "The Subhead Goes Here",
+		"meta": "Published on March 7th 2015",
+		"content": {
+			"grafs": [
+				{ "graf":
+					"This is some space for some stuff."
+				}
+			]
+		}
+	},
+
+	"problem": {
+		"hed": "The Problem Title",
+		"subhed": "The Subhead Goes Here",
+		"meta": "Published on March 7th 2015",
+		"content": {
+			"grafs": [
+				{ "graf":
+					"Put yer stuff here."
+				}
+			]
+		}
+	},
+
+	"hope": {
+		"hed": "The Hope Title",
+		"subhed": "The Subhead Goes Here",
+		"meta": "Published on March 7th 2015",
+		"content": {
+			"grafs": [
+				{ "graf":
+					"Duh."
+				}
+			]
+		}
+	}
+}

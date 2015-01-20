@@ -16,6 +16,7 @@ module.exports = function (grunt) {
         config: config,
         aws: grunt.file.readJSON("secrets.json"),
         app: grunt.file.readJSON('app_config.json'),
+        // content: grunt.file.readJSON('<%= config.app %>/content/content.json'),
 
         watch: {
             bower: {
@@ -42,6 +43,10 @@ module.exports = function (grunt) {
             styles: {
                 files: ['<%= config.app %>/styles/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
+            },
+            bake: {
+                files: ['<%= config.app %>/templates/**', '<%= config.app %>/content/content.json'],
+                tasks: ['bake:build']
             },
             livereload: {
                 options: {
@@ -109,6 +114,19 @@ module.exports = function (grunt) {
             server: '.tmp'
         },
 
+        bake: {
+            build: {
+                options: {
+                    content: '<%= config.app %>/content/content.json'
+                },
+                files: {
+                    '<%= config.app %>/history/index.html': '<%= config.app %>/templates/one.html',
+                    '<%= config.app %>/problem/index.html': '<%= config.app %>/templates/two.html',
+                    '<%= config.app %>/hope/index.html': '<%= config.app %>/templates/three.html',
+                }
+            }
+        },
+
         mocha: {
             all: {
                 options: {
@@ -160,7 +178,7 @@ module.exports = function (grunt) {
 
         bowerInstall: {
             app: {
-                src: ['<%= config.app %>/{,*/}index.html']
+                src: ['<%= config.app %>/templates/partials/footer.html']
             },
             sass: {
                 src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}']
@@ -246,12 +264,16 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
-                        '*.{ico,png,txt}',
+                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
+                        '!templates/{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'data/{,*/}*.*'
+                        'media/{,*/}*.*',
+                        'img/{,*/}*.*',
+                        'data/{,*/}*.*',
+                        'content/{,*/}*.*' // CHANGE THIS LATER!!!
                     ]
                 }, {
                     expand: true,
@@ -260,7 +282,7 @@ module.exports = function (grunt) {
                     cwd: '.',
                     dest: '<%= config.dist %>/fonts',
                     src: ['bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*.*',
-                        'bower_components/fontawesome/fonts/{,*/}*.*'
+                        'bower_components/font-awesome/fonts/{,*/}*.*'
                     ]
                 }]
             },
@@ -329,6 +351,8 @@ module.exports = function (grunt) {
         }
     });
 
+
+
     grunt.registerTask('ysha', function (target) {
         grunt.log.writeln( '*****************');
         grunt.log.writeln( '*****************');
@@ -373,6 +397,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'bake',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
