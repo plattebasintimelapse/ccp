@@ -65,3 +65,61 @@ header {
     -moz-column-gap: 20px; /* Firefox */
     column-gap: 20px;
 }
+
+/***********************
+**** INLINE MEDIA  *****
+***********************/
+
+.inline-media {
+	float:right;
+	margin-right: -150px;
+	@include breakpoint(mama-bear) {
+		margin-right: 0;
+	}
+	@include breakpoint(baby-bear) {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+.inline-media-ex-large {
+	@extend .inline-media;
+	width: 85%;
+	@include breakpoint(mama-bear) {
+		width: 100%;
+	}
+}
+
+.inline-media-large {
+	@extend .inline-media;
+	width: 75%;
+	@include breakpoint(mama-bear) {
+		width: 100%;
+	}
+}
+
+.inline-media-medium {
+	@extend .inline-media;
+	width: 60%;
+}
+.inline-media-small {
+	@extend .inline-media;
+	width: 50%;
+}
+
+.inline-media-wrapper {
+	padding-top: 25px;
+	margin: 10px 20px;
+
+	@include breakpoint(mama-bear) {
+		margin: 5px 0;
+		padding: 0;
+	}
+}
+
+.image-caption {
+	display: block;
+	line-height: 1.2em;
+	width: 100%;
+	padding: 5px 0px;
+}

@@ -1,6 +1,9 @@
 {
 	"main": {
 		"title": "Conserving the Platte",
+		"subhed": "A community of organizations work to conserve the Platte.",
+		"credits": "By Platte Basin Timelapse",
+		
 		"nav": {
 			"one": {
 				"h1": "History",

@@ -1,0 +1,41 @@
+.container {
+	max-width: $vig-container-width;
+}
+
+.container-fluid {
+	width:100%;
+}
+
+.container-large {
+	max-width: $vig-container-width * 1.5;
+}
+
+section {
+	width:100%;
+	padding: 40px 0;
+	@include breakpoint(baby-bear) {
+		padding: 10px 0;
+	}
+	background-color:white;
+	margin: 0 auto;
+}
+
+section:first-child {
+	padding: 0;
+}
+
+section.no-padding {
+	padding: 0;
+}
+
+section.copy { width:100%; max-width: $vig-container-width; }
+
+section.image-featured {
+	width: 100%;
+	.container-fluid { padding: 0; }
+}
+
+img.full-width {
+	width: 100%;
+	height: auto;
+}

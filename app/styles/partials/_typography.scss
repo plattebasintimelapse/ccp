@@ -12,7 +12,9 @@ a, a.visited {
 	}
 }
 
-p { font-size: 18px; }
+p { font-size: 22px; }
+
+.copy p { max-width: $vig-container-width; }
 
 nav { color: $base-font-color; }
 
@@ -46,7 +48,7 @@ nav #title h4 {
 		display:inline;
 		margin-bottom: 20px;
 	}
-	font-weigth: regular;
+	font-weight: regular;
 
 }
 
@@ -61,5 +63,19 @@ nav #title h4 {
 .content-meta p {
 	font-size: 1em;
 	font-style: italic;
+}
+
+.image-caption {
+	font-size: 1.2em;
+	&.image-caption-right { text-align: right; }
+	&.image-caption-left { text-align: left; }
+}
+
+.image-large .image-caption {
+	padding: 5px 0px;
+}
+
+.image-featured .image-caption {
+	padding: 5px 20px;
 }
 

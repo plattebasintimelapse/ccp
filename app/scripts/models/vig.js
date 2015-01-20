@@ -30,7 +30,7 @@ var Vignette = L.Marker.extend({
             modal.html(data);
             modal.modal('show');
         }).success(function() {
-            /* boom. loaded. */
+            // location.href = location.href + "#/" + html_src;
         });
 
 		// $('.vig-modal').modal('show')

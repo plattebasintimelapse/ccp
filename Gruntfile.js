@@ -120,6 +120,7 @@ module.exports = function (grunt) {
                     content: '<%= config.app %>/content/content.json'
                 },
                 files: {
+                    '<%= config.app %>/index.html': '<%= config.app %>/templates/intro.html',
                     '<%= config.app %>/history/index.html': '<%= config.app %>/templates/one.html',
                     '<%= config.app %>/problem/index.html': '<%= config.app %>/templates/two.html',
                     '<%= config.app %>/hope/index.html': '<%= config.app %>/templates/three.html',
