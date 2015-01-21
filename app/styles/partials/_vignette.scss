@@ -1,4 +1,22 @@
 .modal-dialog {
-	width: 80%;
-	max-width: 1200px;
+	width: 85%;
+	max-width: 1300px;
+}
+
+.vig-close {
+	margin: 0 auto;
+	width: 200px;
+	font-size: 2em;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	bottom: -18px;
+	background-color: $blue;
+	color: white;
+}
+
+.vig-close:hover {
+	color: $blue;
+	background-color: white;
+	border: 1px solid $blue;
 }

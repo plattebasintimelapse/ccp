@@ -31,7 +31,7 @@ nav #title h4 {
 	h1,h2 { text-align: center; margin: 0; }
 	h1 { font-size: 2.2em; font-style:italic; }
 	h2 { font-size: 1.4em; }
-	li a { color: $base-font-color; background-color: $black; &:hover { background-color: $blue; } }
+	li a { color: $base-font-color; background-color: $black; &:hover, &.active { background-color: $blue; } }
 }
 
 .main {

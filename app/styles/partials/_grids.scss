@@ -5,6 +5,8 @@
 	z-index: 1;
 }
 
+.above-map { z-index: 1030; }
+
 /***********************
 **** NAVIGATION *****
 ***********************/
@@ -18,7 +20,7 @@ nav {
 	position: fixed;
 	left: 50%;
 	top: 0;
-	z-index: 1030;
+	@extend .above-map;
 	width: 450px;
 	margin-left: -225px;
 	// @include box-shadow(4px, 4px, 20px);
@@ -35,8 +37,8 @@ nav {
 	bottom: 0;
 	background-color: $black;
 	color: $base-font-color;
-	z-index: 1030;
 	padding: 15px;
+	@extend .above-map;
 	@include box-shadow(4px, 4px, 20px);
 }
 
@@ -64,6 +66,19 @@ header {
     -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
     -moz-column-gap: 20px; /* Firefox */
     column-gap: 20px;
+}
+
+/***********************
+******* SIDEBAR  *******
+***********************/
+
+.sidebar {
+	position: absolute;
+	left: 20px;
+	top: 30%;
+	background-color: $black;
+	color: $base-font-color;
+	@extend .above-map;
 }
 
 /***********************

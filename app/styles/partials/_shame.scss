@@ -12,3 +12,50 @@
 	border-bottom: 1px solid gray;
 	font-style: italic;
 }
+
+.inline-video {
+	@include breakpoint(mama-bear) {
+		width: 100%;
+		margin: 30px 0;
+		.inline-media-wrapper {
+			border: none;
+		}
+	}
+
+	-webkit-transition: width 300ms linear;
+    -moz-transition: width 300ms linear;
+    -o-transition: width 300ms linear;
+    transition: width 300ms linear;
+
+    &.playing-inline-video {
+    	width: 140%;
+
+    	@include breakpoint(mama-bear) {
+			width: 100%;
+		}
+    	.inline-media-wrapper {
+    		border: none;
+    	}
+    }
+}
+
+.video-wrapper-16-9 {
+	position: relative;
+	padding-bottom: 54.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper-3-2 {
+	position: relative;
+	padding-bottom: 64%;
+	padding-top: 25px;
+	height: 0;
+}
+.vid-wrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
