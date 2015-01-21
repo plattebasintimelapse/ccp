@@ -2,13 +2,9 @@
 
 var $main_menu = $('.main-menu');
 
-$(document).ready(function() {
-    initPage();
-});
-
 function initPage() {
-    // Center Main Menu
-    // centerPosition($main_menu);
+    $('#map').height( $(window).height() );
+    makeMap();
 }
 
 function centerPosition(o) {
@@ -58,9 +54,8 @@ function listenVideo(id){
     }
 }
 
-$( document ).ready(function() {
-	$('#map').height( $(window).height() );
-    makeMap();
+$(document).ready(function() {
+    initPage();
 });
 
 $( window ).resize(function() {

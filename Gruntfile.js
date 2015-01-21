@@ -15,8 +15,8 @@ module.exports = function (grunt) {
 
         config: config,
         aws: grunt.file.readJSON("secrets.json"),
-        app: grunt.file.readJSON('app_config.json'),
-        // content: grunt.file.readJSON('<%= config.app %>/content/content.json'),
+        app: grunt.file.readJSON("app_config.json"),
+        vigs: grunt.file.readJSON("app/content/vigs.json"),
 
         watch: {
             bower: {
@@ -114,6 +114,10 @@ module.exports = function (grunt) {
             server: '.tmp'
         },
 
+        // for (var i=0; i < vigs.all.length; i++ ) {
+        //     console.log(i);
+        // }
+
         bake: {
             build: {
                 options: {
@@ -124,6 +128,7 @@ module.exports = function (grunt) {
                     '<%= config.app %>/history/index.html': '<%= config.app %>/templates/one.html',
                     '<%= config.app %>/problem/index.html': '<%= config.app %>/templates/two.html',
                     '<%= config.app %>/hope/index.html': '<%= config.app %>/templates/three.html',
+                    '<%= config.app %>/vig-end/<%= vigs.all[2].single %>.html': '<%= config.app %>/vig-start/<%= vigs.all[0].single %>.html',
                 }
             }
         },
@@ -272,7 +277,7 @@ module.exports = function (grunt) {
                         '!templates/{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
                         'media/{,*/}*.*',
-                        'img/{,*/}*.*',
+                        'images/{,*/}*.*',
                         'data/{,*/}*.*',
                         'content/{,*/}*.*' // CHANGE THIS LATER!!!
                     ]

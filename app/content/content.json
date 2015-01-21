@@ -3,7 +3,7 @@
 		"title": "Conserving the Platte",
 		"subhed": "A community of organizations work to conserve the Platte.",
 		"credits": "By Platte Basin Timelapse",
-		
+
 		"nav": {
 			"one": {
 				"h1": "History",
@@ -27,7 +27,15 @@
 		"content": {
 			"grafs": [
 				{ "graf":
-					"This is some space for some stuff."
+
+					"This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
+
+				},{ "graf":
+
+					"Put yer stuff here."
+				},{ "graf":
+
+					"Or more stuff here. Or more stuff here. Or more stuff here. Or more stuff here."
 				}
 			]
 		}
@@ -41,6 +49,8 @@
 			"grafs": [
 				{ "graf":
 					"Put yer stuff here."
+				},{ "graf":
+					"Or more stuff here."
 				}
 			]
 		}

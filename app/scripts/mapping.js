@@ -76,10 +76,12 @@ function makeMap() {
 
 	basemap.addTo(map);
 
-
-
     getVigs();
-    mapData();
+
+    if ( $('body').hasClass('three') ) {
+        mapData();
+    }
+
 
     for (var i=0; i<ccpLength; i++) {
         // console.log(i);
@@ -90,8 +92,7 @@ function makeMap() {
 function getVigs() {
     var vigs = [];
     $.getJSON( "../../content/vigs.json", function( data ) {
-        console.log(data);
-        vigs = data;
+        vigs = data.all;
     }).done(function() {
         mapVigs(vigs);
     });
@@ -105,6 +106,7 @@ function mapVigs(vigs) {
 
         var vig = new Vignette( [mlat ,mlong], {
             title: vigs[i].title,
+            single: vigs[i].single,
             order: vigs[i].order,
             direction: vigs[i].direction,
             html_src: vigs[i].html_src,

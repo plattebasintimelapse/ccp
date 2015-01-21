@@ -35,6 +35,12 @@ section.image-featured {
 	.container-fluid { padding: 0; }
 }
 
+section.video-featured { .container { max-width: $vig-container-width * 1.4;} }
+
+section.featured-image-behind { }
+
+section.featured-image-behind-series {  }
+
 img.full-width {
 	width: 100%;
 	height: auto;
