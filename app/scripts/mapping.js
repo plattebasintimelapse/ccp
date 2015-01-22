@@ -77,18 +77,18 @@ function makeMap(n) {
 	basemap.addTo(map);
 
     if ( n == 3 ) {
-        mapData();
+        mapLandData();
+
+        for (var i=0; i<ccpLength; i++) {
+            $('#land-ownership').append('<p id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '">' + ccpOwners[i].name + '</p>');
+        }
     }
     getVigs(n);
-
-    for (var i=0; i<ccpLength; i++) {
-        $('#land-ownership').append('<span id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '">' + ccpOwners[i].name + '</span>');
-    }
 }
 
 function getVigs(n) {
     var vigs = [];
-    $.getJSON( "../../content/vigs.json", function( data ) {
+    $.getJSON( "../content/vigs.json", function( data ) {
 
         for (var i=0; i < data.all.length; i++) {
             if (data.all[i].section == n ) {
@@ -128,34 +128,39 @@ function mapVigs(vigs) {
         map.addLayer(vig);
         vignettes.push(vig);
     }
-    console.log(vignettes);
-
+    // console.log(vignettes);
 }
 
 $('#map').on('click', '.vig-popup', function() {
-        var modal = $('.vig-modal');
+    var modal = $('.vig-modal');
 
-        var c = $(this).attr('class').split(' ');
+    var c = $(this).attr('class').split(' ');
 
-        for (var i=0; i<c.length; i++) {
-            if ( c[i] != 'leaflet-popup' && c[i] != 'vig-popup' && c[i] != 'leaflet-zoom-animated') {
-                f = c[i];
-            }
+    for (var i=0; i<c.length; i++) {
+        if ( c[i] != 'leaflet-popup' && c[i] != 'vig-popup' && c[i] != 'leaflet-zoom-animated') {
+            f = c[i];
         }
+    }
 
-        var url = '../../vigs/' + f + '.html';
+    var url = '../vigs/' + f + '.html';
 
-        $.get(url, function(data) {
-            modal.html(data);
-            modal.modal('show');
-        }).success(function() {
-            // location.href = location.href + "#/" + html_src;
-        });
+    $.get(url, function(data) {
+        modal.html(data);
+        modal.modal('show');
+    }).success(function() {
+        // location.href = location.href + "#/" + html_src;
+    });
 });
 
+var filter = function(feature) {
+    for (var i=0; i<ccpLength; i++){
+        if (ccpOwners[i].ownership == feature.properties.OWNERSHIP) {
+            return ccpOwners[i].filter;
+        }
+    }
+};
 
-
-function mapData() {
+function mapLandData() {
 
     function bindLabel (feature, layer) {
        // layer.bindPopup('Name: <b>' + feature.properties.NAME + '</b><br/>Owner: <b>' + feature.properties.OWNERSHIP + '</b><br/>Purchased: <b>' + feature.properties.PRRIPTract);
@@ -186,10 +191,28 @@ function mapData() {
 
                 return styles;
             },
-            onEachFeature: bindLabel
+            onEachFeature: bindLabel,
+            filter: filter
 
         }).addTo(map);
 
     });
+}
+
+function filterMap( $clicked ) {
+    $clicked.toggleClass('off');
+
+    for (var i=0; i<ccpLength; i++){
+        if (ccpOwners[i].name == $clicked.attr('id')) {
+            if (ccpOwners[i].filter) {
+                ccpOwners[i].filter = false;
+            } else {
+                ccpOwners[i].filter = true;
+            }
+        }
+    }
+
+    map.removeLayer(ccpGeoJSON);
+    mapLandData();
 
 }

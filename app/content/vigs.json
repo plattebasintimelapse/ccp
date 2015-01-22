@@ -4,7 +4,7 @@
             "title": "A Title Goes Here",
             "single": "one",
             "section":"1",
-            "lat": "40.7",
+            "lat": "40.9",
             "long":"-98.8",
             "direction":"up",
             "text":"The text can go here. Put text here! ",
@@ -22,6 +22,16 @@
             "title": "Some Title",
             "single": "three",
             "section":"1",
+            "lat": "40.659",
+            "long":"-99.5",
+            "direction":"up",
+            "text":"The text can go here. Put text here!",
+            "image": null
+        }
+        ,{
+            "title": "Some Title",
+            "single": "duh",
+            "section":"2",
             "lat": "40.659",
             "long":"-99.5",
             "direction":"up",

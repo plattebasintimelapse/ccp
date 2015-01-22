@@ -21,26 +21,5 @@ var Vignette = L.Popup.extend({
 
 		this._source = source;
 		this._animated = L.Browser.any3d && this.options.zoomAnimation;
-	},
-
-	click: function() {
-		var modal = $('.vig-modal');
-
-		var url = '../../vigs/' + this.single + '.html';
-
-		$.get(url, function(data) {
-            modal.html(data);
-            modal.modal('show');
-        }).success(function() {
-            // location.href = location.href + "#/" + html_src;
-        });
-	},
-
-	next: function(){
-		console.log('next');
-	},
-
-	prev: function(){
-		console.log('prev');
 	}
 });

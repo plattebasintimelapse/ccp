@@ -123,8 +123,7 @@ module.exports = function (grunt) {
                     '<%= config.app %>/index.html': '<%= config.app %>/templates/intro.html',
                     '<%= config.app %>/history/index.html': '<%= config.app %>/templates/one.html',
                     '<%= config.app %>/problem/index.html': '<%= config.app %>/templates/two.html',
-                    '<%= config.app %>/hope/index.html': '<%= config.app %>/templates/three.html',
-                    '<%= config.app %>/vig-end/<%= vigs.all[2].single %>.html': '<%= config.app %>/vig-start/<%= vigs.all[0].single %>.html',
+                    '<%= config.app %>/hope/index.html': '<%= config.app %>/templates/three.html'
                 }
             }
         },
@@ -180,7 +179,7 @@ module.exports = function (grunt) {
 
         bowerInstall: {
             app: {
-                src: ['<%= config.app %>/templates/partials/footer.html']
+                src: ['<%= config.app %>/templates/partials/footer.html', '<%= config.app %>/index.html']
             },
             sass: {
                 src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}']
