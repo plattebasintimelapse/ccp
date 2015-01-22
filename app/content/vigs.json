@@ -3,30 +3,30 @@
         {
             "title": "A Title Goes Here",
             "single": "one",
-            "lat": "41",
-            "long":"-99",
-            "direction":"up",
-            "meta":"Some meta information",
             "section":"1",
-            "order":"1"
+            "lat": "40.7",
+            "long":"-98.8",
+            "direction":"up",
+            "text":"The text can go here. Put text here! ",
+            "image": "intro.jpg"
         },{
             "title": "A Title Goes Here Two",
             "single": "two",
-            "lat": "41.1",
-            "long":"-99.5",
-            "direction":"up",
-            "meta":"Some meta information",
             "section":"1",
-            "order":"2"
+            "lat": "40.65",
+            "long":"-99.16",
+            "direction":"up",
+            "text":"The text can go here.",
+            "image": null
         },{
             "title": "Some Title",
             "single": "three",
-            "lat": "40.9",
+            "section":"1",
+            "lat": "40.659",
             "long":"-99.5",
             "direction":"up",
-            "meta":"Some meta information",
-            "section":"1",
-            "order":"2"
+            "text":"The text can go here. Put text here!",
+            "image": null
         }
     ]
 }

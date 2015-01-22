@@ -1,15 +1,26 @@
-var Vignette = L.Marker.extend({
-	initialize: function( latlng, options) {
-		L.Marker.prototype.initialize.call(this, latlng);
+var Vignette = L.Popup.extend({
 
-		this.title = options.title;
+	options: {
+		minWidth: 50,
+		maxWidth: 250,
+		maxHeight: null,
+		autoPan: true,
+		closeButton: false,
+		closeOnClick: false,
+		offset: new L.Point(0, 6),
+		autoPanPadding: new L.Point(5, 5),
+		zoomAnimation: true
+	},
+
+	initialize: function (options, source) {
+		L.setOptions(this, options);
+
 		this.single = options.single;
 		this.order = options.order;
 		this.direction = options.direction;
-	},
 
-	info: function() {
-		console.log(this);
+		this._source = source;
+		this._animated = L.Browser.any3d && this.options.zoomAnimation;
 	},
 
 	click: function() {
@@ -23,8 +34,6 @@ var Vignette = L.Marker.extend({
         }).success(function() {
             // location.href = location.href + "#/" + html_src;
         });
-
-		// $('.vig-modal').modal('show')
 	},
 
 	next: function(){

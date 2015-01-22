@@ -1,10 +1,22 @@
 'use strict';
 
+var $body = $('body');
 var $main_menu = $('.main-menu');
+var $map = $('#map');
 
 function initPage() {
-    $('#map').height( $(window).height() );
-    makeMap();
+    $map.height( $(window).height() );
+
+    if ( $body.hasClass('one') ) {
+        makeMap(1);
+        $main_menu.find( 'li:nth-child(1) a').addClass('active');
+    } else if ( $body.hasClass('two') ) {
+        makeMap(2);
+        $main_menu.find( 'li:nth-child(2) a').addClass('active');
+    } else if ( $body.hasClass('three') ) {
+        makeMap(3);
+        $main_menu.find( 'li:nth-child(3) a').addClass('active');
+    }
 }
 
 function centerPosition(o) {
@@ -59,7 +71,7 @@ $(document).ready(function() {
 });
 
 $( window ).resize(function() {
-    $('#map').height( $(window).height() );
+    $map.height( $(window).height() );
 });
 
 $(function() {

@@ -114,10 +114,6 @@ module.exports = function (grunt) {
             server: '.tmp'
         },
 
-        // for (var i=0; i < vigs.all.length; i++ ) {
-        //     console.log(i);
-        // }
-
         bake: {
             build: {
                 options: {

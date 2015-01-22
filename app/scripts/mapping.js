@@ -52,7 +52,7 @@ var ccpOwners = [
 
 var ccpLength = ccpOwners.length;
 
-function makeMap() {
+function makeMap(n) {
 
 	map = L.map('map', {
 		center: [40.8,-99.1],
@@ -68,7 +68,7 @@ function makeMap() {
 
 	var basemap = L.tileLayer(url, {
 	    subdomains: ['','a.','b.','c.','d.'],
-	    minZoom: 6,
+	    minZoom: 9,
 	    maxZoom: 14,
 	    type: 'png',
 	    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
@@ -76,27 +76,32 @@ function makeMap() {
 
 	basemap.addTo(map);
 
-    getVigs();
-
-    if ( $('body').hasClass('three') ) {
+    if ( n == 3 ) {
         mapData();
     }
-
+    getVigs(n);
 
     for (var i=0; i<ccpLength; i++) {
-        // console.log(i);
         $('#land-ownership').append('<span id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '">' + ccpOwners[i].name + '</span>');
     }
 }
 
-function getVigs() {
+function getVigs(n) {
     var vigs = [];
     $.getJSON( "../../content/vigs.json", function( data ) {
-        vigs = data.all;
+
+        for (var i=0; i < data.all.length; i++) {
+            if (data.all[i].section == n ) {
+                vigs.push(data.all[i])
+            }
+        }
+
     }).done(function() {
         mapVigs(vigs);
     });
 }
+
+var vignettes = [];
 
 function mapVigs(vigs) {
     for (var i=0; i < vigs.length; i++) {
@@ -104,20 +109,51 @@ function mapVigs(vigs) {
         var mlat = parseFloat(vigs[i].lat);
         var mlong = parseFloat(vigs[i].long);
 
-        var vig = new Vignette( [mlat ,mlong], {
-            title: vigs[i].title,
+        var vig_content;
+
+        if (vigs[i].image) {
+            vig_content = '<div class="row"><div class="col-xs-6"><img src="../images/' + vigs[i].image + '"/></div><div class="col-xs-6"><p>' + vigs[i].text + '</p></div></div>';
+        } else {
+            vig_content = '<p>' + vigs[i].text + '</p>';
+        }
+
+        var vig = new Vignette({
             single: vigs[i].single,
             order: vigs[i].order,
             direction: vigs[i].direction,
-            html_src: vigs[i].html_src,
+            className: vigs[i].single + ' vig-popup',
+            idName: vigs[i].single
+        }).setContent(vig_content).setLatLng([mlat ,mlong]);
 
-        } ).addTo(map).on('click', function() {
-            this.click();
-        });
-
-        vig.info();
+        map.addLayer(vig);
+        vignettes.push(vig);
     }
+    console.log(vignettes);
+
 }
+
+$('#map').on('click', '.vig-popup', function() {
+        var modal = $('.vig-modal');
+
+        var c = $(this).attr('class').split(' ');
+
+        for (var i=0; i<c.length; i++) {
+            if ( c[i] != 'leaflet-popup' && c[i] != 'vig-popup' && c[i] != 'leaflet-zoom-animated') {
+                f = c[i];
+            }
+        }
+
+        var url = '../../vigs/' + f + '.html';
+
+        $.get(url, function(data) {
+            modal.html(data);
+            modal.modal('show');
+        }).success(function() {
+            // location.href = location.href + "#/" + html_src;
+        });
+});
+
+
 
 function mapData() {
 

@@ -1,6 +1,27 @@
+.vig-popup .leaflet-popup-content-wrapper, .vig-popup .leaflet-popup-tip {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.vig-popup .leaflet-popup-content-wrapper:hover, .vig-popup .leaflet-popup-tip:hover {
+	background-color: $black;
+}
+
+.vig-popup .col-xs-6 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.vig-popup img {
+	width:100%;
+	height: auto;
+}
+
 .modal-dialog {
 	width: 85%;
 	max-width: 1300px;
+	margin: 40px auto 100px auto;
 }
 
 .vig-close {
