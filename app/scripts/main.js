@@ -17,16 +17,18 @@ function initPage() {
         makeMap(3);
         $main_menu.find( 'li:nth-child(3) a').addClass('active');
     }
+
+    $(".fancybox").fancybox();
 }
 
 function centerPosition(o) {
     o.css("margin-left", -(o.width() / 2) );
 }
 
-// listenVideo('snow');
+
 
 function listenVideo(id){
-    // console.log(id + ' video ready');
+    console.log(id + ' video ready');
     var $iframe = $('#' + id)[0];
     var player = $f($iframe);
 

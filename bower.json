@@ -8,7 +8,9 @@
     "font-awesome": "~4.2.0",
     "jquery-ui": "~1.11.2",
     "leaflet": "~0.7.3",
-    "vimeo-player-api": "*"
+    "vimeo-player-api": "*",
+    "fancybox": "~2.1.5",
+    "jplayer": "~2.9.2"
   },
   "devDependencies": {}
 }

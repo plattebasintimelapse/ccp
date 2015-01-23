@@ -5,7 +5,7 @@
 }
 
 .vig-popup .leaflet-popup-content-wrapper:hover, .vig-popup .leaflet-popup-tip:hover {
-	background-color: $black;
+	opacity: .9;
 }
 
 .vig-popup .col-xs-6 {
@@ -18,7 +18,7 @@
 	height: auto;
 }
 
-.modal-dialog {
+.vig-modal .modal-dialog {
 	width: 85%;
 	max-width: 1300px;
 	margin: 40px auto 100px auto;

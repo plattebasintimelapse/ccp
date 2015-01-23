@@ -111,11 +111,13 @@ function mapVigs(vigs) {
 
         var vig_content;
 
-        if (vigs[i].image) {
-            vig_content = '<div class="row"><div class="col-xs-6"><img src="../images/' + vigs[i].image + '"/></div><div class="col-xs-6"><p>' + vigs[i].text + '</p></div></div>';
-        } else {
-            vig_content = '<p>' + vigs[i].text + '</p>';
-        }
+        // if (vigs[i].image) {
+        //     vig_content = '<div class="row"><div class="col-xs-6"><img src="../images/' + vigs[i].image + '"/></div><div class="col-xs-6"><p>' + vigs[i].text + '</p></div></div>';
+        // } else {
+        //     vig_content = '<p>' + vigs[i].text + '</p>';
+        // }
+
+        vig_content = '<div class="row"><div class="col-xs-12"><img src="../images/' + vigs[i].image + '"/></div></div>';
 
         var vig = new Vignette({
             single: vigs[i].single,
@@ -163,7 +165,7 @@ var filter = function(feature) {
 function mapLandData() {
 
     function bindLabel (feature, layer) {
-       // layer.bindPopup('Name: <b>' + feature.properties.NAME + '</b><br/>Owner: <b>' + feature.properties.OWNERSHIP + '</b><br/>Purchased: <b>' + feature.properties.PRRIPTract);
+       layer.bindPopup('Name: <b>' + feature.properties.NAME + '</b><br/>Owner: <b>' + feature.properties.OWNERSHIP + '</b><br/>Purchased: <b>' + feature.properties.PRRIPTract);
        // layer.bindLabel('Name: <b>' + feature.properties.NAME + '</b><br/>Owner: <b>' + feature.properties.OWNERSHIP + '</b><br/>Purchased: <b>' + feature.properties.PRRIPTract, { noHide: true, className: 'layer-label' });
     }
 

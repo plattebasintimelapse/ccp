@@ -21,7 +21,11 @@ section {
 }
 
 section:first-child {
-	padding: 0;
+	padding-top: 0;
+}
+
+section:last-child {
+	padding-bottom: 100px;
 }
 
 section.no-padding {

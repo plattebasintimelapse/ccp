@@ -1,1 +1,12 @@
-<p>{{grafs.graf}}</p>
+<!--(bake-start _if="!content.image")-->
+<p>{{content.graf}}</p>
+<!--(bake-end)-->
+
+<!--(bake-start _if="content.image")-->
+<div class="inline-media inline-media-{{content.image.align}} inline-media-{{content.image.size}}">
+	<div class="inline-media-wrapper">
+		<a class="fancybox" rel="group" title="{{content.image.caption}}" href="../images/{{content.image.src}}"><img src="../images/{{content.image.src}}" alt=""></a>
+		<span class="image-caption image-caption-{{content.image.align}}">{{content.image.caption}}</span>
+	</div>
+</div>
+<!--(bake-end)-->

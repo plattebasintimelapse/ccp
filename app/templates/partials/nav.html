@@ -1,27 +1,67 @@
  <nav class="navbar-fixed-top" id="main-nav" role="navigation">
 
-        <!-- <div class="nav-button pull-left" id="home"><h4></h4></div> -->
+    <div class="nav-button pull-left" id="title"><h4><a href="/"><i class="fa fa-home fa-lg"></i> {{title}}</a></h4></div>
 
-        <div class="nav-button pull-left" id="title"><h4><a href="/"><i class="fa fa-home fa-lg"></i> {{title}}</a></h4></div>
+    <div class="nav-button pull-right" id="home-btn"><h4><a href="http://www.plattebasintimelapse.com">PBT</a></h4></div>
 
-        <div class="nav-button pull-right" id="home-btn"><h4><a href="http://www.plattebasintimelapse.com">PBT</a></h4></div>
+    <div class="nav-button pull-right" id="credit-btn" data-toggle="modal" data-target="#credits-modal"><h4><i class="fa fa-group fa-lg"></i></h4></div>
 
-        <div class="nav-button pull-right" id="credit-btn" data-toggle="modal" data-target="#credits-modal"><h4><i class="fa fa-group fa-lg"></i></h4></div>
+    <div class="nav-button pull-right" id="twitter-share">
+        <a target="_blank" href="https://twitter.com/share" data-count="none" data-url="http://projects.plattebasintimelapse.com/follow-the-water"><h4><i class="fa fa-twitter fa-lg"></i></h4></a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
 
-        <div class="nav-button pull-right" id="twitter-share">
-            <a target="_blank" href="https://twitter.com/share" data-count="none" data-url="http://projects.plattebasintimelapse.com/follow-the-water"><h4><i class="fa fa-twitter fa-lg"></i></h4></a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </div>
+    <div class="nav-button pull-right" id="facebook"><h4><i class="fa fa-facebook fa-lg"></i></h4></div>
 
-        <div class="nav-button pull-right" id="facebook"><h4><i class="fa fa-facebook fa-lg"></i></h4></div>
+    <div class="nav-button pull-right" id="instagram"><h4><i class="fa fa-instagram fa-lg"></i></h4></div>
 
-        <div class="nav-button pull-right" id="instagram"><h4><i class="fa fa-instagram fa-lg"></i></h4></div>
-
-        <div class="main-menu" role="navigation">
-            <ul class="nav navbar-nav">
-                <li><a href="../history"><h1>{{nav.one.h1}}</h1><h2>{{nav.one.h2}}</h2></a></li>
-                <li><a href="../problem"><h1>{{nav.two.h1}}</h1><h2>{{nav.two.h2}}</h2></a></li>
-                <li><a href="../hope"><h1>{{nav.three.h1}}</h1><h2>{{nav.three.h2}}</h2></a></li>
-            </ul>
-        </div>
+    <div class="main-menu" role="navigation">
+        <ul class="nav navbar-nav">
+            <li><a href="../history"><h1>{{nav.one.h1}}</h1><h2>{{nav.one.h2}}</h2></a></li>
+            <li><a href="../problem"><h1>{{nav.two.h1}}</h1><h2>{{nav.two.h2}}</h2></a></li>
+            <li><a href="../hope"><h1>{{nav.three.h1}}</h1><h2>{{nav.three.h2}}</h2></a></li>
+        </ul>
+    </div>
 </nav>
+
+
+<div class="modal fade" id="credits-modal" tabindex="-1" role="dialog" aria-labelledby="credits" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <p class="modal-title" id="credits">Credits</p>
+            </div>
+            <div class="modal-body">
+                <div class="credits team">
+                    <p class="credit">Design & Development: <span class="name">Steven Speicher</span></p>
+                    <p class="credit">Reporter & Writer: <span class="name">Ariana Brocious</span></p>
+                    <p class="credit">Video/Stills Editor: <span class="name">Peter Stegen</span></p>
+                    <p class="credit">Videography: <span class="name">Peter Stegen & Steven Speicher</span></p>
+                    <p class="credit">Photography: <span class="name">Michael Forsberg</span></p>
+                    <p class="credit">Audio: <span class="name">Emily Kreutz</span></p>
+                    <p class="credit">Production Assistants: <span class="name">Joe Arneson & Mariah Lundgren</span></p>
+                    <p class="credit">Historical Research: <span class="name">Andrew DeCamp</span></p>
+                    <p class="credit">Editorial Advisor: <span class="name">Matt Waite</span></p>
+                    <p class="credit">Transcription: <span class="name">Pat Richmond & Jann Howard</span></p>
+                    <p class="credit">Executive Producers: <span class="name">Michael Farrell & Michael Forsberg</span></p>
+                </div>
+
+                <div class="credits team">
+                    <p class="credit small">Special Thanks: <span class="name">Bob Busch, Mage Hultstrand, Matt Hoobler, Lyle Myler & Rick Preston</span></p>
+                    <p class="credit small">Historical Images: <span class="name"><a href="http://www.archives.gov/">The U.S. National Archives and Records Administration</a> & <a href="http://www.nebraskahistory.org/index.shtml">Nebraska State Historical Society</a></span></p>
+                    <p class="credit small">Snowflake Icons: <span class="name"><a href="http://www.flaticon.com">Freepik</a></span></p>
+                    <p class="credit small">Music: <span class="name"><a href="http://www.dewolfemusic.com/">DeWolfe Music Library</a></span></p>
+
+                </div>
+
+                <div class="credits">
+                    <p class="thanks">This project is part of the <a target="_blank" href="http://www.plattebasintimelapse.com">Platte Basin Timelapse</a> project, which puts an entire watershed in motion, revealing stories about our most precious resource: <span class="blue">water</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

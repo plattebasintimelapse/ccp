@@ -24,48 +24,67 @@
 		"hed": "The History Title",
 		"subhed": "The Subhead Goes Here",
 		"meta": "Published on March 7th 2015",
-		"content": {
-			"grafs": [
-				{ "graf":
+		"content": [
+			{ "graf":
 
-					"This is some space for some stuff. This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
+				"This is some space for some stuff. This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
 
-				},{ "graf":
+			},{ "graf":
 
-					"Put yer stuff here."
-				},{ "graf":
+				"This is some space for some stuff. some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff.This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
 
-					"Or more stuff here. Or more stuff here. Or more stuff here. Or more stuff here."
+			},{ "graf":
+
+				"This is some space for some stuff. This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
+
+			},{ "graf":
+
+				"This is some space for some stuff. some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff.This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
+
+			},{ "graf":
+
+				"This is some space for some stuff. some space for some stuff. is some space for some stuff.  This is some space for some stuff."
+
+			},{ "image":
+				{
+					"src": "intro.jpg",
+				  	"caption": "This is the caption.",
+				  	"align": "right",
+				  	"size": "medium"
 				}
-			]
-		}
+			},{ "graf":
+
+				"This is some space for stuff. This is some space f some stuff. This is someafrwebg awrgjabwg ar gjbargkja bergkjabe rg aergbael khgb alkerbg aergbae bgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
+
+			},{ "graf":
+
+				"This is some space for some is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff stuff. This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
+
+			}
+		]
 	},
 
 	"problem": {
 		"hed": "The Problem Title",
 		"subhed": "The Subhead Goes Here",
 		"meta": "Published on March 7th 2015",
-		"content": {
-			"grafs": [
-				{ "graf":
-					"Put yer stuff here."
-				},{ "graf":
-					"Or more stuff here."
-				}
-			]
-		}
+		"content": [
+			{ "graf":
+				"Put yer stuff here."
+			},{ "graf":
+				"Or more stuff here."
+			}
+		]
 	},
 
 	"hope": {
 		"hed": "The Hope Title",
 		"subhed": "The Subhead Goes Here",
 		"meta": "Published on March 7th 2015",
-		"content": {
-			"grafs": [
-				{ "graf":
-					"Duh."
-				}
-			]
-		}
+		"content": [
+			{ "graf":
+				"Duh."
+			}
+		]
 	}
 }
