@@ -35,3 +35,7 @@
 
 .main img { width: 100%; height: auto;}
 
+.owner-toggle { display: block; padding: 3px; margin: 5px 0; }
+.owner-toggle.off { background-color: lightgray !important; }
+.owner-toggle p { margin:0; }
+

@@ -33,6 +33,13 @@
 
 				"This is some space for some stuff. some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff.This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
 
+			},{ "image":
+				{
+					"src": "intro.jpg",
+				  	"caption": "This is the caption.",
+				  	"align": "right",
+				  	"size": "medium"
+				}
 			},{ "graf":
 
 				"This is some space for some stuff. This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
@@ -45,13 +52,6 @@
 
 				"This is some space for some stuff. some space for some stuff. is some space for some stuff.  This is some space for some stuff."
 
-			},{ "image":
-				{
-					"src": "intro.jpg",
-				  	"caption": "This is the caption.",
-				  	"align": "right",
-				  	"size": "medium"
-				}
 			},{ "graf":
 
 				"This is some space for stuff. This is some space f some stuff. This is someafrwebg awrgjabwg ar gjbargkja bergkjabe rg aergbael khgb alkerbg aergbae bgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."

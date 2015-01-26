@@ -5,8 +5,6 @@
 	z-index: 1;
 }
 
-.above-map { z-index: 1030; }
-
 /***********************
 **** NAVIGATION *****
 ***********************/
@@ -66,6 +64,8 @@ header {
     -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
     -moz-column-gap: 20px; /* Firefox */
     column-gap: 20px;
+    overflow: scroll;
+	height: 400px;
 }
 
 /***********************
@@ -74,7 +74,7 @@ header {
 
 .sidebar {
 	position: absolute;
-	left: 20px;
+	right: 20px;
 	top: 30%;
 	background-color: $black;
 	color: $base-font-color;
@@ -83,6 +83,19 @@ header {
 
 .sidebar-wrapper {
 	padding: 15px;
+}
+
+/***********************
+****** INSET MAP  ******
+***********************/
+
+.inset {
+	position: absolute;
+	right: 20px;
+	bottom: 100px;
+	@extend .above-map;
+
+	img { width: 180px; height: auto; }
 }
 
 /***********************

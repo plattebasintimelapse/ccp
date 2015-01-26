@@ -1,0 +1,9 @@
+.above-map { z-index: 1030; }
+
+#map .leaflet-top { top: 42%; }
+
+#map .leaflet-bar a, .leaflet-bar a:hover {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+}

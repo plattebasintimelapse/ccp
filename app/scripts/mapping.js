@@ -5,47 +5,47 @@ var ccpOwners = [
     {
         'name': 'Audubon',
         'ownership': 'Audubon',
-        'color': 'rgb(141,211,199)',
+        'color': 'rgb(84,48,5)',
         'filter': true
     }, {
         'name': 'CNPPID',
         'ownership': 'CNPPID',
-        'color': '#FFDF30',
+        'color': 'rgb(140,81,10)',
         'filter': true
     }, {
         'name': 'Ducks Unlimited',
         'ownership': 'Ducks Unlimited',
-        'color': 'rgb(190,186,218)',
+        'color': 'rgb(191,129,45)',
         'filter': true
     }, {
         'name': 'Nebraska Game & Parks',
-        'color': 'rgb(251,128,114)',
+        'color': 'rgb(223,194,125)',
         'ownership': 'NGPC',
         'filter': true
     }, {
         'name': 'NPPD',
         'ownership': 'NPPD',
-        'color': 'rgb(128,177,211)',
+        'color': 'rgb(199,234,229)',
         'filter': true
     }, {
         'name': 'PRRIP',
         'ownership': 'PRRIP',
-        'color': 'rgb(253,180,98)',
+        'color': 'rgb(128,205,193)',
         'filter': true
     }, {
         'name': 'The Crane Trust',
         'ownership': 'PRWCT',
-        'color': 'rgb(179,222,105)',
+        'color': 'rgb(53,151,143)',
         'filter': true
     }, {
         'name': 'The Nature Conservancy',
         'ownership': 'TNC',
-        'color': 'rgb(252,205,229)',
+        'color': 'rgb(1,102,94)',
         'filter': true
     }, {
         'name': 'USFWS',
         'ownership': 'USFWS',
-        'color': 'rgb(217,217,217)',
+        'color': 'rgb(0,60,48)',
         'filter': true
     }
 ];
@@ -62,16 +62,25 @@ function makeMap(n) {
 		center: [40.8,-99.1],
 		zoom: 10,
         maxBounds: bounds
-	})
-
-	var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
-
-	var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
-	    return s.toLowerCase();
 	});
 
-    // var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
+    if (n==1) { // PAGE ONE
+        var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
 
+        var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
+            return s.toLowerCase();
+        });
+    } else if (n==2) { // PAGE TWO
+        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
+    } else if (n==3) { // PAGE THREE
+        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
+    }
+
+    // var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
+
+    // var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
+    //     return s.toLowerCase();
+    // });
 
 	var basemap = L.tileLayer(url, {
 	    subdomains: ['','a.','b.','c.','d.'],
@@ -88,7 +97,7 @@ function makeMap(n) {
         mapLandData();
 
         for (var i=0; i<ccpLength; i++) {
-            $('#land-ownership').append('<p id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '">' + ccpOwners[i].name + '</p>');
+            $('#land-ownership').append('<span id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '"><p> ' + ccpOwners[i].name + '</p></span');
         }
     }
     getVigs(n);
@@ -125,7 +134,7 @@ function mapVigs(vigs) {
         //     vig_content = '<p>' + vigs[i].text + '</p>';
         // }
 
-        vig_content = '<div class="row"><div class="col-xs-12"><img src="../images/' + vigs[i].image + '"/></div></div>';
+        vig_content = '<div class="row"><div class="col-xs-12"><img src="../images/' + vigs[i].image + '"/><h3>' + vigs[i].title + '</h3></div></div>';
 
         var vig = new Vignette({
             single: vigs[i].single,
@@ -184,7 +193,7 @@ function mapLandData() {
                 var styles = {
                     fillOpacity: .9,
                     weight: 1,
-                    color: 'white'
+                    color: 'gray'
                 }
 
                 switch (feature.properties.OWNERSHIP) {

@@ -15,9 +15,9 @@ var Vignette = L.Popup.extend({
 	initialize: function (options, source) {
 		L.setOptions(this, options);
 
-		this.single = options.single;
-		this.order = options.order;
-		this.direction = options.direction;
+		this._single = options.single;
+		this._order = options.order;
+		this._direction = options.direction;
 
 		this._source = source;
 		this._animated = L.Browser.any3d && this.options.zoomAnimation;

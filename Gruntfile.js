@@ -16,7 +16,6 @@ module.exports = function (grunt) {
         config: config,
         aws: grunt.file.readJSON("secrets.json"),
         app: grunt.file.readJSON("app_config.json"),
-        vigs: grunt.file.readJSON("app/content/vigs.json"),
 
         watch: {
             bower: {
@@ -121,9 +120,9 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '<%= config.app %>/index.html': '<%= config.app %>/templates/intro.html',
-                    '<%= config.app %>/history/index.html': '<%= config.app %>/templates/one.html',
-                    '<%= config.app %>/problem/index.html': '<%= config.app %>/templates/two.html',
-                    '<%= config.app %>/hope/index.html': '<%= config.app %>/templates/three.html'
+                    '<%= config.app %>/<%= app.one %>/index.html': '<%= config.app %>/templates/one.html',
+                    '<%= config.app %>/<%= app.two %>/index.html': '<%= config.app %>/templates/two.html',
+                    '<%= config.app %>/<%= app.three %>/index.html': '<%= config.app %>/templates/three.html'
                 }
             }
         },

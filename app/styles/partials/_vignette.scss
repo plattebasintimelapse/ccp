@@ -5,7 +5,8 @@
 }
 
 .vig-popup .leaflet-popup-content-wrapper:hover, .vig-popup .leaflet-popup-tip:hover {
-	opacity: .9;
+	img { opacity: .1; }
+	h3 { display: block; }
 }
 
 .vig-popup .col-xs-6 {
