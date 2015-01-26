@@ -1,0 +1,57 @@
+.jp-play, .jp-state-playing .jp-play, .jp-stop {
+	background: none;
+}
+
+.jp-play-bar {
+	background: none;
+	background-color: $blue;
+}
+
+.jp-audio, .jp-audio-stream, .jp-video {
+	font-size: 16px;
+	font-family: $font-family;
+	line-height: 1.6;
+	color: #666;
+	border: none;
+	background-color: #eee;
+	width: 50%;
+	min-width: 400px;
+	max-width: 500px;
+	margin: 0 auto;
+
+}
+
+.jp-audio .jp-interface {
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.jp-controls-holder {
+	width: 100%;
+	top: -8px;
+	background: #eee;
+}
+
+.jp-audio .jp-controls {
+	width: 30%;
+	padding: 20px 20px 0 20px;
+}
+
+.jp-audio .jp-type-single .jp-progress {
+	width: 62%;
+	margin-left: 30%;
+	left: 0;
+}
+
+.jp-play:after {
+	content: '\f04b';
+}
+
+.jp-state-playing .jp-play:after {
+	content: '\f04c';
+}
+
+.jp-stop:after {
+	content: '\f04d';
+}

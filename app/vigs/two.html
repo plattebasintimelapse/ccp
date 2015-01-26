@@ -3,8 +3,8 @@
         <div class="modal-heder">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="vig-meta clearfix">
-                <h4 class="pull-left" id="myModalLabel">Published on March 8th 2015</h4>
-                <h4 class="pull-left" id="myModalLabel">By So and So</h4>
+                <h4 class="pull-left">Published on March 8th 2015</h4>
+                <h4 class="">By So and So</h4>
                 <h4 class="vig-location pull-right">Rowe Sanctuary, Kearney NE</h4>
             </div>
         </div>
@@ -36,6 +36,38 @@
                         <img class="full-width" src="../images/intro.jpg" alt="Lake Agnes sits just below the Continental Divide at 10,290 feet, in the highest reaches of the North Platte River Basin.">
                         <span class="image-caption image-caption-right">Lake Agnes sits just below the Continental Divide at 10,290 feet, in the highest reaches of the North Platte River Basin. It often receives more than 10 feet of snow. (Mike Forsberg)
                         </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="audio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+                            <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                                <div class="jp-type-single">
+                                    <div class="jp-gui jp-interface">
+                                        <div class="jp-controls-holder">
+                                            <div class="jp-controls">
+                                                <span class="jp-play fa fa-2x" role="button" tabindex="0"></span>
+                                                <span class="jp-stop fa fa-2x" role="button" tabindex="0"></span>
+                                            </div>
+                                            <div class="jp-progress"><div class="jp-seek-bar"><div class="jp-play-bar"></div></div></div>
+                                        </div>
+
+                                        <div class="jp-details"><div class="jp-title" aria-label="title">&nbsp;</div></div>
+                                    </div>
+
+                                    <div class="jp-no-solution">
+                                        <span>Update Required</span>
+                                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -83,51 +115,53 @@
                 </div>
             </section>
 
-            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+            <section class="audio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 
-            <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-                <div class="jp-type-single">
-                    <div class="jp-gui jp-interface">
-                        <div class="jp-volume-controls">
-                            <button class="jp-mute" role="button" tabindex="0">mute</button>
-                            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                            <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                                <div class="jp-type-single">
+                                    <div class="jp-gui jp-interface">
+                                        <div class="jp-volume-controls">
+                                            <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
 
-                            <div class="jp-volume-bar">
-                                <div class="jp-volume-bar-value"></div>
-                            </div>
-                        </div>
+                                            <div class="jp-volume-bar">
+                                                <div class="jp-volume-bar-value"></div>
+                                            </div>
+                                        </div>
 
-                        <div class="jp-controls-holder">
-                            <div class="jp-controls">
-                                <button class="jp-play" role="button" tabindex="0">play</button>
-                                <button class="jp-stop" role="button" tabindex="0">stop</button>
-                            </div>
+                                        <div class="jp-controls-holder">
+                                            <div class="jp-controls">
+                                                <span class="jp-play fa fa-2x" role="button" tabindex="0"></span>
+                                                <span class="jp-stop fa fa-2x" role="button" tabindex="0"></span>
+                                            </div>
 
-                            <div class="jp-progress">
-                                <div class="jp-seek-bar">
-                                    <div class="jp-play-bar"></div>
+                                            <div class="jp-progress">
+                                                <div class="jp-seek-bar">
+                                                    <div class="jp-play-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="jp-details">
+                                            <div class="jp-title" aria-label="title">&nbsp;</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="jp-no-solution">
+                                        <span>Update Required</span>
+                                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-                            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
                         </div>
-
-                        <div class="jp-details">
-                            <div class="jp-title" aria-label="title">&nbsp;</div>
-                        </div>
-                    </div>
-
-                    <div class="jp-no-solution">
-                        <span>Update Required</span>
-                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
                     </div>
                 </div>
-            </div>
-
-
-
-
+            </section>
 
         </div>
 
@@ -136,27 +170,27 @@
     </div>
 </div>
 
-  <script type="text/javascript">
+<script type="text/javascript">
     $(document).ready(function(){
-      $("#jquery_jplayer_1").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            title: "Lincoln",
-            m4a: "../media/linc.mp3"
-          });
-        },
-        cssSelectorAncestor: "#jp_container_1",
-        swfPath: "/js",
-        supplied: "m4a, oga",
-        useStateClassSkin: true,
-        autoBlur: false,
-        smoothPlayBar: true,
-        keyEnabled: true,
-        remainingDuration: true,
-        toggleDuration: true
-      });
+        $("#jquery_jplayer_1").jPlayer({
+            ready: function () {
+                $(this).jPlayer("setMedia", {
+                    title: "Lincoln Water Systems",     // CHANGE THIS
+                    m4a: "../media/linc.mp3"            // AND THIS, MAKE SURE THE .MP3 AUDIO IS IN THE MEDIA FOLDER
+                });
+            },
+            cssSelectorAncestor: "#jp_container_1",
+            swfPath: "/js",
+            supplied: "m4a, oga",
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true,
+            remainingDuration: true,
+            toggleDuration: true
+        });
     });
-  </script>
+</script>
 
 
 

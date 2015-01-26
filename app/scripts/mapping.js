@@ -54,9 +54,14 @@ var ccpLength = ccpOwners.length;
 
 function makeMap(n) {
 
+    var southWest = L.latLng(40.0350, -100.8463),
+        northEast = L.latLng(41.5672, -97.0642),
+        bounds = L.latLngBounds(southWest, northEast);
+
 	map = L.map('map', {
 		center: [40.8,-99.1],
-		zoom: 10
+		zoom: 10,
+        maxBounds: bounds
 	})
 
 	var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
@@ -65,13 +70,16 @@ function makeMap(n) {
 	    return s.toLowerCase();
 	});
 
+    // var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
+
 
 	var basemap = L.tileLayer(url, {
 	    subdomains: ['','a.','b.','c.','d.'],
-	    minZoom: 9,
-	    maxZoom: 14,
-	    type: 'png',
-	    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
+	    minZoom: 10,
+	    maxZoom: 13
+     //    ,
+	    // type: 'png',
+	    // attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
 	});
 
 	basemap.addTo(map);

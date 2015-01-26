@@ -17,7 +17,7 @@
             "long":"-99.16",
             "direction":"up",
             "text":"The text can go here.",
-            "image": null
+            "image": "test.jpg"
         },{
             "title": "Some Title",
             "single": "three",
@@ -26,7 +26,7 @@
             "long":"-99.5",
             "direction":"up",
             "text":"The text can go here. Put text here!",
-            "image": null
+            "image": "intro.jpg"
         }
         ,{
             "title": "Some Title",
@@ -36,7 +36,18 @@
             "long":"-99.5",
             "direction":"up",
             "text":"The text can go here. Put text here!",
-            "image": null
+            "image": "intro.jpg"
+        }
+
+        ,{
+            "title": "Some Title",
+            "single": "duh",
+            "section":"3",
+            "lat": "40.683514",
+            "long":"-99.360652",
+            "direction":"up",
+            "text":"The text can go here. Put text here!",
+            "image": "intro.jpg"
         }
     ]
 }
