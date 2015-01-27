@@ -32,10 +32,10 @@ nav {
 .main {
 	position: fixed;
 	width:100%;
-	bottom: 0;
+	bottom: -10000px;
 	background-color: $black;
 	color: $base-font-color;
-	padding: 15px;
+	padding: 15px 15px 0 15px;
 	@extend .above-map;
 	@include box-shadow(4px, 4px, 20px);
 }
@@ -56,6 +56,10 @@ header {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
+
+header .main-scroller-prompt { margin-top: 25px; }
+
+.main header .main-scroller { margin: 0; display: none; i { vertical-align: -5%; } }
 
 .main-content {
 	-webkit-column-count: 3; /* Chrome, Safari, Opera */

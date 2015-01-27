@@ -63,6 +63,20 @@ nav #title h4 {
 	font-size: 1.4em;
 	&:hover { color: $blue; p { color: $blue;} }
 	p { font-size: 1em;}
+	&.not-yet-opened { -webkit-animation: bob 1s ease-in-out infinite; animation: bob 1s ease-in-out infinite; }
+}
+
+@-webkit-keyframes bob {
+    0% {top: -80px;}
+    50% {top: -95px;}
+    100% {top: -80px;}
+}
+
+/* Standard syntax */
+@keyframes bob {
+    0% {top: -80px;}
+    50% {top: -95px;}
+    100% {top: -80px;}
 }
 
 .vig-popup h3 {
