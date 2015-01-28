@@ -64,23 +64,23 @@ function makeMap(n) {
         maxBounds: bounds
 	});
 
-    if (n==1) { // PAGE ONE
-        var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
+    // if (n==1) { // PAGE ONE
+    //     var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
 
-        var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
-            return s.toLowerCase();
-        });
-    } else if (n==2) { // PAGE TWO
-        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
-    } else if (n==3) { // PAGE THREE
-        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
-    }
+    //     var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
+    //         return s.toLowerCase();
+    //     });
+    // } else if (n==2) { // PAGE TWO
+    //     var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
+    // } else if (n==3) { // PAGE THREE
+    //     var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
+    // }
 
-    // var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
+    var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
 
-    // var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
-    //     return s.toLowerCase();
-    // });
+    var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
+        return s.toLowerCase();
+    });
 
 	var basemap = L.tileLayer(url, {
 	    subdomains: ['','a.','b.','c.','d.'],

@@ -1,16 +1,17 @@
 
 var $main = $('.main'); 						// MAIN CONTAINER OF CONTENT
+var windowWidth = $(document).width(); 			// MAIN CONTAINER OF CONTENT
 var $toggle = $('.main-toggle');				// TOGGLE BTN FOR MAIN CONTENT
 var $scroller = $('.main-scroller');			// SCROLLER PROMPT FOR UI
-var main_height = $main.height();				// HEIGHT OF MAIN CONTAINER
-var MAIN_CLOSED_HEIGHT = 68;					// CONSTANT FOR HEIGHT OF CLOSED MAIN
-var offset = main_height - MAIN_CLOSED_HEIGHT;	// COMPUTED VALUE FOR MAIN POSITION
+var main_height;								// HEIGHT OF MAIN CONTAINER
+var MAIN_CLOSED_HEIGHT;							// CONSTANT FOR HEIGHT OF CLOSED MAIN
+var offset;										// COMPUTED VALUE FOR MAIN POSITION
 var hasOpenedMain = false;						// HAS USER OPENED MAIN MENU?
 
 
 $(document).ready(function() {
 	// BEGINNING PAGE STYLINGS
-	$main.css('bottom', '-' + offset + 'px' );
+	$main.css('bottom', '-' + offset() + 'px' );
 
 	$toggle.click(function() {
 		if( $(this).hasClass('closed') ) {
@@ -22,9 +23,9 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-	main_height = $main.height();
-	offset = main_height - MAIN_CLOSED_HEIGHT;
-	$main.css('bottom', '-' + offset + 'px' );
+	windowWidth = $(document).width();
+
+	$main.css('bottom', '-' + offset() + 'px' );
 
 	close_main( $toggle );
 });
@@ -52,8 +53,18 @@ function close_main(t) {
 	t.find('p').html('open');
 
 	$main.animate({
-		bottom: '-' + offset + 'px'
+		bottom: '-' + offset() + 'px'
 	}, 300, 'linear' );
 
 	$scroller.fadeOut();
+}
+
+var offset = function() {
+	main_height = $main.height();
+	if(windowWidth > 1280) { MAIN_CLOSED_HEIGHT = 68 }
+	else if (windowWidth > 961) { MAIN_CLOSED_HEIGHT = 54 }
+	else if (windowWidth > 769) { MAIN_CLOSED_HEIGHT = 46 }
+	else { MAIN_CLOSED_HEIGHT = 36 }
+
+	return main_height - MAIN_CLOSED_HEIGHT;
 }

@@ -57,7 +57,7 @@ header {
 	padding-bottom: 10px;
 }
 
-header .main-scroller-prompt { margin-top: 25px; }
+header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) { display: none; } }
 
 .main header .main-scroller { margin: 0; display: none; i { vertical-align: -5%; } }
 
@@ -70,6 +70,28 @@ header .main-scroller-prompt { margin-top: 25px; }
     column-gap: 20px;
     overflow: scroll;
 	height: 400px;
+
+	@include breakpoint(papa-bear) {
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	    -moz-column-count: 2; /* Firefox */
+	    column-count: 2;
+	    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+	    -moz-column-gap: 20px; /* Firefox */
+	    column-gap: 20px;
+	    overflow: scroll;
+		height: 300px;
+	}
+
+	@include breakpoint(mama-bear) {
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	    -moz-column-count: 1; /* Firefox */
+	    column-count: 1;
+	    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+	    -moz-column-gap: 20px; /* Firefox */
+	    column-gap: 20px;
+	    overflow: scroll;
+		height: 300px;
+	}
 }
 
 /***********************
