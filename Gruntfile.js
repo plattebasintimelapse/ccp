@@ -14,8 +14,14 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         config: config,
+<<<<<<< Updated upstream
         aws: grunt.file.readJSON("secrets.json"),
         app: grunt.file.readJSON("app_config.json"),
+=======
+        // aws: grunt.file.readJSON("secrets.json"),
+        app: grunt.file.readJSON('app_config.json'),
+        // content: grunt.file.readJSON('<%= config.app %>/content/content.json'),
+>>>>>>> Stashed changes
 
         watch: {
             bower: {
@@ -323,32 +329,33 @@ module.exports = function (grunt) {
                 'copy:styles',
                 'svgmin'
             ]
-        },
-
-        aws_s3: {
-            options: {
-                accessKeyId: '<%= aws.accessKeyId %>',
-                secretAccessKey: '<%= aws.secretAccessKey %>',
-                region: '<%= aws.region %>',
-                uploadConcurrency: 5
-            },
-            production: {
-                options: {
-                    bucket: 'projects.plattebasintimelapse.com'
-                },
-                files: [
-                    {expand: true, cwd: 'dist/', src: ['**'], dest: '<%= app.PRODUCTION %>'}
-                ]
-            },
-            staging: {
-                options: {
-                    bucket: 'staging.plattebasintimelapse.com'
-                },
-                files: [
-                    {expand: true, cwd: 'dist/', src: ['**'], dest: '<%= app.STAGING %>'}
-                ]
-            }
         }
+        // ,
+
+        // aws_s3: {
+        //     options: {
+        //         accessKeyId: '<%= aws.accessKeyId %>',
+        //         secretAccessKey: '<%= aws.secretAccessKey %>',
+        //         region: '<%= aws.region %>',
+        //         uploadConcurrency: 5
+        //     },
+        //     production: {
+        //         options: {
+        //             bucket: 'projects.plattebasintimelapse.com'
+        //         },
+        //         files: [
+        //             {expand: true, cwd: 'dist/', src: ['**'], dest: '<%= app.PRODUCTION %>'}
+        //         ]
+        //     },
+        //     staging: {
+        //         options: {
+        //             bucket: 'staging.plattebasintimelapse.com'
+        //         },
+        //         files: [
+        //             {expand: true, cwd: 'dist/', src: ['**'], dest: '<%= app.STAGING %>'}
+        //         ]
+        //     }
+        // }
     });
 
 
