@@ -29,7 +29,8 @@
 
 				"“For approximately 40,000 years, in a period pre-dating human development of the Platte River basin, climate has been the dominant extrinsic factor shaping the Platte River”"
 
-			},{ "graf":
+			},
+			{ "graf":
 
 				"In the nineteenth century, that began to change. As westward expansion brought more and more settlers to the region, the human impact on the river increased, and by the twentieth century took the place of climate as the dominant factor shaping the river."
 
@@ -37,14 +38,16 @@
 
 				"reductions in average flows which creates size (width) of river, and peak flows, like spring floods, that scours channels, reforms sandbars and removes vegetation. Both of those factors lead to increased growth of vegetation in river channels, thus further narrowing of river width and sandbar habitat for wildlife"
 
-			},{ "image":
+			},
+			{ "image":
 				{
 					"src": "intro.jpg",
 				  	"caption": "This is the caption.",
 				  	"align": "right",
 				  	"size": "medium"
 				}
-			},{ "graf":
+			},
+			{ "graf":
 
 				"This is some space for some stuff. This is someafrwebg awrgjabwg ar;gjbargkjabergkjaberg aergbaelkhgbalkerbg aergbaebgaer kgbrgkah bgr space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff. This is some space for some stuff."
 
