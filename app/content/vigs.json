@@ -48,6 +48,15 @@
             "direction":"up",
             "text":"The text can go here. Put text here!",
             "image": "intro.jpg"
+        },{
+            "title": "Sample Content",
+            "single": "sample",
+            "section":"1",
+            "lat": "40.683514",
+            "long":"-99.320652",
+            "direction":"up",
+            "text":"The text can go here. Put text here!",
+            "image": "intro.jpg"
         }
     ]
 }

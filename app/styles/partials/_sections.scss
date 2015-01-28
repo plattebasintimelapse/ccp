@@ -32,6 +32,10 @@ section.no-padding {
 	padding: 0;
 }
 
+section.title { text-align:center; padding-bottom: 0; h1 { font-size: 4em; } }
+
+section.title-on-image { h1 { color: white; } }
+
 section.copy { width:100%; max-width: $vig-container-width; }
 
 section.image-featured {
@@ -41,7 +45,46 @@ section.image-featured {
 
 section.video-featured { .container { max-width: $vig-container-width * 1.4;} }
 
-section.featured-image-behind { }
+section.image-featured-behind {
+	.image-featured-behind-gap {
+		background-color: white;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		@media only screen and (min-device-width: 681px) and (max-device-width: 1024px) {
+	      	background-attachment: scroll;
+	    }
+		@include breakpoint(baby-bear) {
+			background-attachment: scroll;
+		}
+	}
+}
+
+.image-featured-behind-large {
+	height: 900px;
+	@include breakpoint(papa-bear) {
+		height: 800px;
+	}
+	@include breakpoint(mama-bear) {
+		height: 600px;
+	}
+	@include breakpoint(baby-bear) {
+		height: 400px;
+	}
+}
+.image-featured-behind-small {
+	height: 800px;
+	@include breakpoint(papa-bear) {
+		height: 700px;
+	}
+	@include breakpoint(mama-bear) {
+		height: 500px;
+	}
+	@include breakpoint(baby-bear) {
+		height: 300px;
+	}
+}
 
 section.featured-image-behind-series {  }
 
