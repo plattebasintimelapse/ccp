@@ -137,11 +137,11 @@ function mapVigs(vigs) {
         vig_content = '<div class="row"><div class="col-xs-12"><img src="../images/' + vigs[i].image + '"/><h3>' + vigs[i].title + '</h3></div></div>';
 
         var vig = new Vignette({
-            single: vigs[i].single,
+            page: vigs[i].page,
             order: vigs[i].order,
             direction: vigs[i].direction,
-            className: vigs[i].single + ' vig-popup',
-            idName: vigs[i].single
+            className: vigs[i].page + ' vig-popup',
+            idName: vigs[i].page
         }).setContent(vig_content).setLatLng([mlat ,mlong]);
 
         map.addLayer(vig);

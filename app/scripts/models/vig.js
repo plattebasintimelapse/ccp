@@ -15,7 +15,7 @@ var Vignette = L.Popup.extend({
 	initialize: function (options, source) {
 		L.setOptions(this, options);
 
-		this._single = options.single;
+		this.page = options.page;
 		this._order = options.order;
 		this._direction = options.direction;
 
