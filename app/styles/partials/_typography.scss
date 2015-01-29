@@ -59,7 +59,7 @@ nav #title h4 {
 		display:inline;
 		margin-bottom: 20px;
 	}
-	font-weight: regular;
+	font-weight: 400;
 
 }
 
@@ -89,6 +89,21 @@ nav #title h4 {
     50% {top: -95px;}
     100% {top: -80px;}
 }
+
+@-webkit-keyframes bobMargin {
+    0% {margin-top: 15px;}
+    50% {margin-top: 25px;}
+    100% {margin-top: 15px;}
+}
+
+/* Standard syntax */
+@keyframes bobMargin {
+    0% {margin-top: 15px;}
+    50% {margin-top: 25px;}
+    100% {margin-top: 15px;}
+}
+
+.main-scroller-prompt { -webkit-animation: bobMargin 1s ease-in-out infinite; animation: bobMargin 1s ease-in-out infinite; }
 
 .vig-popup h3 {
 	display: none;

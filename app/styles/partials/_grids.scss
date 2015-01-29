@@ -35,7 +35,6 @@ nav {
 	bottom: -10000px;
 	background-color: $black;
 	color: $base-font-color;
-	padding: 15px 15px 0 15px;
 	@extend .above-map;
 	@include box-shadow(4px, 4px, 20px);
 }
@@ -54,7 +53,11 @@ nav {
 header {
 	border-bottom: 1px solid white;
 	margin-bottom: 10px;
-	padding-bottom: 10px;
+	padding: 15px;
+}
+
+.main .content-meta {
+	padding-left: 15px;
 }
 
 header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) { display: none; } }
@@ -62,35 +65,39 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 .main header .main-scroller { margin: 0; display: none; i { vertical-align: -5%; } }
 
 .main-content {
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 20px; /* Firefox */
-    column-gap: 20px;
+	// -webkit-column-count: 3; /* Chrome, Safari, Opera */
+ //    -moz-column-count: 3; /* Firefox */
+ //    column-count: 3;
+ //    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+ //    -moz-column-gap: 20px; /* Firefox */
+ //    column-gap: 20px;
     overflow: scroll;
-	height: 400px;
+	// height: 600px;
 
-	@include breakpoint(papa-bear) {
-		-webkit-column-count: 2; /* Chrome, Safari, Opera */
-	    -moz-column-count: 2; /* Firefox */
-	    column-count: 2;
-	    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-	    -moz-column-gap: 20px; /* Firefox */
-	    column-gap: 20px;
-	    overflow: scroll;
-		height: 300px;
-	}
+	// @include breakpoint(papa-bear) {
+	// 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	//     -moz-column-count: 2; /* Firefox */
+	//     column-count: 2;
+	//     -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+	//     -moz-column-gap: 20px; /* Firefox */
+	//     column-gap: 20px;
+	//     overflow: scroll;
+	// 	height: 300px;
+	// }
 
-	@include breakpoint(mama-bear) {
-		-webkit-column-count: 1; /* Chrome, Safari, Opera */
-	    -moz-column-count: 1; /* Firefox */
-	    column-count: 1;
-	    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-	    -moz-column-gap: 20px; /* Firefox */
-	    column-gap: 20px;
-	    overflow: scroll;
-		height: 300px;
+	// @include breakpoint(mama-bear) {
+	// 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	//     -moz-column-count: 1; /* Firefox */
+	//     column-count: 1;
+	//     -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+	//     -moz-column-gap: 20px; /* Firefox */
+	//     column-gap: 20px;
+	//     overflow: scroll;
+	// 	height: 300px;
+	// }
+	.main-content-wrapper {
+		width: 900px;
+		margin: 0 auto;
 	}
 }
 

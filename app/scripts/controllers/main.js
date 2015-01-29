@@ -1,6 +1,8 @@
 
-var $main = $('.main'); 						// MAIN CONTAINER OF CONTENT
-var windowWidth = $(document).width(); 			// MAIN CONTAINER OF CONTENT
+var $main = $('.main'); 						// MAIN WRAPPER OF CONTENT
+var $mainContent = $('.main-content'); 			// MAIN CONTAINER OF CONTENT
+var windowWidth = $(document).width(); 			// WINDOW WIDTH
+var windowHeight = $(document).height(); 		// WINDOW WIDTH
 var $toggle = $('.main-toggle');				// TOGGLE BTN FOR MAIN CONTENT
 var $scroller = $('.main-scroller');			// SCROLLER PROMPT FOR UI
 var main_height;								// HEIGHT OF MAIN CONTAINER
@@ -11,7 +13,9 @@ var hasOpenedMain = false;						// HAS USER OPENED MAIN MENU?
 
 $(document).ready(function() {
 	// BEGINNING PAGE STYLINGS
+	$mainContent.height( windowHeight * .6);
 	$main.css('bottom', '-' + offset() + 'px' );
+
 
 	$toggle.click(function() {
 		if( $(this).hasClass('closed') ) {
@@ -24,10 +28,12 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 	windowWidth = $(document).width();
+	windowHeight = $(document).height();
+	$mainContent.height( windowHeight * .6 );
 
-	$main.css('bottom', '-' + offset() + 'px' );
+	// $main.css('bottom', '-' + offset() + 'px' );
 
-	close_main( $toggle );
+	// close_main( $toggle );
 });
 
 function open_main(t) {
@@ -42,8 +48,8 @@ function open_main(t) {
 
 	setTimeout(function() {
 		$scroller.fadeIn();
-		var f = function() { $scroller.animate({marginRight: "40px"}, 1000, function() { $(this).animate({marginRight: "0px"}, 1000, f ) }) }
-		f();
+		// var f = function() { $scroller.animate({marginRight: "40px"}, 1000, function() { $(this).animate({marginRight: "0px"}, 1000, f ) }) }
+		// f();
 	}, 5000);
 }
 function close_main(t) {
@@ -61,7 +67,7 @@ function close_main(t) {
 
 var offset = function() {
 	main_height = $main.height();
-	if(windowWidth > 1280) { MAIN_CLOSED_HEIGHT = 68 }
+	if(windowWidth > 1280) { MAIN_CLOSED_HEIGHT = 76 }
 	else if (windowWidth > 961) { MAIN_CLOSED_HEIGHT = 54 }
 	else if (windowWidth > 769) { MAIN_CLOSED_HEIGHT = 46 }
 	else { MAIN_CLOSED_HEIGHT = 36 }
