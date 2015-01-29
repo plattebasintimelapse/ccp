@@ -10,6 +10,10 @@
 	max-width: $vig-container-width * 1.5;
 }
 
+// .vig-content {
+// 	display:none;
+// }
+
 section {
 	width:100%;
 	padding: 40px 0;
@@ -33,6 +37,8 @@ section.no-padding {
 	padding: 0;
 }
 
+section.loading { text-align:center; padding: 100px 0; }
+
 section.title { text-align:center; padding-bottom: 0; }
 
 section.title.image-featured {
@@ -53,22 +59,6 @@ section.image-featured {
 }
 
 section.video-featured { .container { max-width: $vig-container-width * 1.4;} }
-
-section.image-featured-behind {
-	.image-featured-behind-gap {
-		background-color: white;
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		@media only screen and (min-device-width: 681px) and (max-device-width: 1024px) {
-	      	background-attachment: scroll;
-	    }
-		@include breakpoint(baby-bear) {
-			background-attachment: scroll;
-		}
-	}
-}
 
 .image-featured-behind-large {
 	height: 900px;

@@ -21,12 +21,6 @@ function initPage() {
     $(".fancybox").fancybox();
 }
 
-function centerPosition(o) {
-    o.css("margin-left", -(o.width() / 2) );
-}
-
-
-
 function listenVideo(id){
     console.log(id + ' video ready');
     var $iframe = $('#' + id)[0];

@@ -3,12 +3,12 @@ var ccpGeoJSON;
 
 var ccpOwners = [
     {
-        'name': 'Audubon',
+        'name': 'Audubon Socity',
         'ownership': 'Audubon',
         'color': 'rgb(84,48,5)',
         'filter': true
     }, {
-        'name': 'CNPPID',
+        'name': 'Central Nebraska Public Power & Irriation District',
         'ownership': 'CNPPID',
         'color': 'rgb(140,81,10)',
         'filter': true
@@ -19,16 +19,16 @@ var ccpOwners = [
         'filter': true
     }, {
         'name': 'Nebraska Game & Parks',
-        'color': 'rgb(223,194,125)',
         'ownership': 'NGPC',
+        'color': 'rgb(223,194,125)',
         'filter': true
     }, {
-        'name': 'NPPD',
+        'name': 'Nebraska Public Power District',
         'ownership': 'NPPD',
         'color': 'rgb(199,234,229)',
         'filter': true
     }, {
-        'name': 'PRRIP',
+        'name': 'Platte River Recovery Implemenation Program',
         'ownership': 'PRRIP',
         'color': 'rgb(128,205,193)',
         'filter': true
@@ -43,7 +43,7 @@ var ccpOwners = [
         'color': 'rgb(1,102,94)',
         'filter': true
     }, {
-        'name': 'USFWS',
+        'name': 'US Fish & Wildlife Service',
         'ownership': 'USFWS',
         'color': 'rgb(0,60,48)',
         'filter': true
@@ -166,8 +166,9 @@ $('#map').on('click', '.vig-popup', function() {
     $.get(url, function(data) {
         modal.html(data);
         modal.modal('show');
-    }).success(function() {
-        // location.href = location.href + "#/" + html_src;
+    }).done(function() {
+        // $('.loading').fadeOut();
+        // $('.vig-content').fadeIn();
     });
 });
 

@@ -2,7 +2,7 @@ body {
   	font-family: $font-family;
 }
 
-h1 { font-weight: 900; }
+h1 { font-weight: 700; }
 
 a, a.visited {
 	color: $base-font-color;
@@ -137,7 +137,13 @@ nav.navbar-default .main-menu {
 }
 
 section.title h1 { font-size: 4em; }
-section.title.image-featured h1 { font-size: 5em; color: white; text-shadow: 4px 4px 4px #2e2e2e; }
+section.title.image-featured h1 {
+	font-size: 5em;
+	color: white;
+	text-shadow: 4px 4px 4px #2e2e2e;
+	@include breakpoint(mama-bear) { font-size: 2em; }
+	@include breakpoint(baby-bear) { font-size: 1.4em; }
+}
 
 .content-meta p {
 	font-size: 1em;

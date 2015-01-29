@@ -1,45 +1,38 @@
 {
     "all": [
         {
-            "title": "A Title Goes Here",
-            "page": "one",
-            "section":"1",
-            "lat": "40.9",
-            "long":"-98.8",
-            "image": "intro.jpg"
-        },{
             "title": "A Title Goes Here Two",
             "page": "two",
             "section":"1",
             "lat": "40.65",
             "long":"-99.16",
             "image": "test.jpg"
-        },{
+        },
+        {
             "title": "Some Title",
             "page": "three",
             "section":"1",
             "lat": "40.659",
             "long":"-99.5",
             "image": "intro.jpg"
-        },{
+        },
+        {
             "title": "Sample Content",
             "page": "sample",
             "section":"1",
             "lat": "40.683514",
             "long":"-99.320652",
             "image": "intro.jpg"
-        }
-
-        ,{
+        },
+        {
             "title": "Planting Prairie",
             "page": "tnc-seeding",
             "section":"3",
             "lat": "40.739531",
             "long":"-98.573713",
             "image": "DawnIcyPlatte.jpg"
-        }
-
-        ,{
+        },
+        {
 
             "title": "Bridges",
             "page": "bridges",
