@@ -19,7 +19,9 @@ This app template spits out flat HTML, CSS, JS files to the PBT Amazon S3 accoun
 
 By Steven Speicher, circa October 2014
 
-[PBTers go here](docs/commiting.md)
+## PBTers Look here
+[How to Commit to the Repo]](docs/commiting.md)
+[How to Make Edits to the Project]](docs/commiting.md)
 
 ### What is This?
 
