@@ -9,16 +9,14 @@ To work on this project, you need several things:
 * The project's shared Dropbox folder
 * A copy of `secrets.json` and `app_config.json`
 * A text editor (Sublime Text 2)
-* Install * [Node](http://nodejs.org/), [Bower](http://bower.io/), [Grunt](http://gruntjs.com/), [Sass](http://sass-lang.com/)
+* Install [Node](http://nodejs.org/), [Bower](http://bower.io/), [Grunt](http://gruntjs.com/), [Sass](http://sass-lang.com/)
 * Install [Github](https://mac.github.com/)
 * Permissions to this repo
 
 ## Set-up
-On **Github.com**, go the project repo [page](https://github.com/stvnspchr/ccp) and click
+On **Github.com**, go the project repo [page](https://github.com/stvnspchr/ccp) and click **Clone to Desktop**
 
-	Clone to Desktop
-
-If not already done, create the folder at `~/username/Github/` and save project there.
+If not already done, create the folder at `~/username/Github/` and the save project.
 
 In **Terminal**, `cd` into the project root, ~/username/Github/project
 
@@ -81,3 +79,4 @@ Close out of Sublime Text 2.
 
 If you've made any changes to the `app/media` or `app/images` folder, make sure you upload those files to Dropbox for others to use in their project
 
+YAAAYY! You're now hacking on shid.
