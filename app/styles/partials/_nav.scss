@@ -2,31 +2,16 @@
     cursor: pointer;
     display:inline-block;
     text-transform: uppercase;
-    padding: 0 6px;
+    margin: 6px;
 
     &:hover {
     	color: $blue;
     }
 }
 
-#menu {
-    display: block;
-    @include breakpoint(baby-bear) { display: none; }
-    li {
-        display: inline-block;
-    }
-}
-#menu-mobile {
-    display: none;
-    @include breakpoint(baby-bear) { display: block; }
-
-    li {
-        display: block;
-    }
-
-    h5 {
-        font-size: 1em;
-    }
+.navbar-toggle {
+    float:left;
+    margin-left: 10px;
 }
 
 #credits-modal {
@@ -50,7 +35,7 @@
 
 	.credits {
 		margin-bottom: 10px;
-		font-size:.9em;
+		font-size:1.2em;
 		text-transform: uppercase;
         &.team { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid lightgray; }
 	}
@@ -58,7 +43,7 @@
         margin-bottom: 10px;
     }
 	.credit {
-		font-size: .7em;
+		font-size: 1em;
 		line-height: .6em;
         margin-bottom: 0;
 

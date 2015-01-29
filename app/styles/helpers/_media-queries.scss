@@ -1,11 +1,15 @@
 @mixin breakpoint($point) {
-  @if $point == papa-bear {
-    @media (max-width: 1280px) { @content; }
-  }
-  @else if $point == mama-bear {
-    @media (max-width: 960px) { @content; }
-  }
-  @else if $point == baby-bear {
-    @media (max-width: 768px)  { @content; }
-  }
+	@if $point == papa-bear {
+		@media (max-width: 1280px) { @content; }
+	}
+	@else if $point == mama-bear {
+		@media (max-width: 960px) { @content; }
+	}
+	@else if $point == baby-bear {
+		@media (max-width: 768px)  { @content; }
+	}
 }
+
+.baby-bear-hide { @include breakpoint(baby-bear) { display: none !important; } }
+
+.mama-bear-hide { @include breakpoint(mama-bear) { display: none !important; } }

@@ -32,12 +32,24 @@ nav #title h4 {
 
 .dark-font { color: black; }
 
-.main-menu {
+nav.navbar-default .main-menu {
 	h1,h2 { text-align: center; margin: 0; }
-	h1 { font-size: 2.2em; font-style:italic; }
-	h2 { font-size: 1.4em; }
-	li a { color: $base-font-color; background-color: $black; &:hover, &.active { background-color: $blue; } }
+	h1 { font-size: 2.2em; font-style: italic; @include breakpoint(baby-bear) { font-size: 1.6em; } }
+	h2 { font-size: 1.4em; @include breakpoint(baby-bear) { font-size: 1.2em; } }
+	li a {
+		color: $base-font-color;
+		background-color: $black;
+		@include breakpoint(baby-bear) { background-color: transparent; }
+		&:hover, &.active {
+			color: $base-font-color;
+			background-color: $blue;
+		}
+	}
 }
+
+.navbar-default .navbar-toggle .icon-bar { background-color: $base-font-color; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: $blue; }
 
 .main {
 	h1 {

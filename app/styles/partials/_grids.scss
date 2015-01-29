@@ -8,8 +8,8 @@
 /***********************
 **** NAVIGATION *****
 ***********************/
-nav {
-    background: $black;
+nav.navbar-default {
+    background-color: $black;
     padding: 0 6px;
     @include box-shadow(4px, 4px, 20px);
 }
@@ -21,7 +21,12 @@ nav {
 	@extend .above-map;
 	width: 450px;
 	margin-left: -225px;
-	// @include box-shadow(4px, 4px, 20px);
+	@include breakpoint(baby-bear) {
+		position: relative;
+		width:100%;
+		left: 0;
+		margin:0;
+	}
 }
 
 
