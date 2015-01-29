@@ -31,7 +31,10 @@ $(window).resize(function() {
 	windowHeight = $(document).height();
 	$mainContent.height( windowHeight * .6 );
 
-	// $main.css('bottom', '-' + offset() + 'px' );
+	if ( !$main.hasClass('open') ) {
+		$main.css('bottom', '-' + offset() + 'px' );
+	}
+
 
 	// close_main( $toggle );
 });
@@ -67,10 +70,10 @@ function close_main(t) {
 
 var offset = function() {
 	main_height = $main.height();
-	if(windowWidth > 1280) { MAIN_CLOSED_HEIGHT = 76 }
-	else if (windowWidth > 961) { MAIN_CLOSED_HEIGHT = 54 }
-	else if (windowWidth > 769) { MAIN_CLOSED_HEIGHT = 46 }
-	else { MAIN_CLOSED_HEIGHT = 36 }
+	if(windowWidth > 1280) { MAIN_CLOSED_HEIGHT = 78 }
+	else if (windowWidth > 961) { MAIN_CLOSED_HEIGHT = 70 }
+	else if (windowWidth > 769) { MAIN_CLOSED_HEIGHT = 56 }
+	else { MAIN_CLOSED_HEIGHT = 52 }
 
 	return main_height - MAIN_CLOSED_HEIGHT;
 }
