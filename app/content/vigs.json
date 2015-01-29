@@ -38,5 +38,16 @@
             "long":"-98.573713",
             "image": "DawnIcyPlatte.jpg"
         }
+
+        ,{
+
+            "title": "Bridges",
+            "page": "bridges",
+            "section":"1",
+            "lat": "40.926396",
+            "long":"-98.342012",
+            "image": "intro.jpg"
+        }
     ]
+
 }

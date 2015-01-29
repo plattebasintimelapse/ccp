@@ -38,8 +38,12 @@
 
 				"reductions in average flows which creates size (width) of river, and peak flows, like spring floods, that scours channels, reforms sandbars and removes vegetation. Both of those factors lead to increased growth of vegetation in river channels, thus further narrowing of river width and sandbar habitat for wildlife"
 
-			},
-			{ "image":
+			},{ "graf":
+
+				"reductions in average flows which creates size (width) of river, and peak flows, like spring floods, that scours channels, reforms sandbars and removes vegetation. Both of those factors lead to increased growth of vegetation in river channels, thus further narrowing of river width and sandbar habitat for wildlife"
+
+			},{ "image":
+			
 				{
 					"src": "intro.jpg",
 				  	"caption": "This is the caption.",
