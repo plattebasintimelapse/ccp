@@ -6,8 +6,6 @@
             "section":"1",
             "lat": "40.9",
             "long":"-98.8",
-            "direction":"up",
-            "text":"The title!",
             "image": "intro.jpg"
         },{
             "title": "A Title Goes Here Two",
@@ -15,8 +13,6 @@
             "section":"1",
             "lat": "40.65",
             "long":"-99.16",
-            "direction":"up",
-            "text":"The text can go here.",
             "image": "test.jpg"
         },{
             "title": "Some Title",
@@ -24,8 +20,6 @@
             "section":"1",
             "lat": "40.659",
             "long":"-99.5",
-            "direction":"up",
-            "text":"The text can go here. Put text here!",
             "image": "intro.jpg"
         },{
             "title": "Sample Content",
@@ -33,8 +27,6 @@
             "section":"1",
             "lat": "40.683514",
             "long":"-99.320652",
-            "direction":"up",
-            "text":"The text can go here. Put text here!",
             "image": "intro.jpg"
         }
 
@@ -44,8 +36,6 @@
             "section":"3",
             "lat": "40.739531",
             "long":"-98.573713",
-            "direction":"up",
-            "text":"The text can go here. Put text here!",
             "image": "DawnIcyPlatte.jpg"
         }
     ]
