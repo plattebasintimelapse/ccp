@@ -1,6 +1,12 @@
 ## Creating New Content
 
-There are three files you need to edit when creating new content.
+There are three files and two folders you need to edit when creating new content.
+
+* app/content/content.json - Main content file
+* app/content/vigs.json - Popup bubbles on maps
+* app/vigs/*.html - Content inside vignette modals
+* app/images - Images for the entire piece, note the folder /vigs for small images
+* app/media - Media files (audio, video) for the piece
 
 ### Main Content
 
@@ -36,9 +42,9 @@ The four sections here are:
 		}
 	}
 
-Here, you can change the **Title**, **subhead**, and **credits**. You can also change the nav titles.
+Here, you can change the **title**, **subhead**, and **credits**. You can also change the nav titles.
 
-##### Sections
+##### Three Sections
 
 	"history": {
 		"hed": "A Wild Prairie River",
@@ -73,7 +79,7 @@ You will also create an array of content inside the `[]` brackets. This is compo
 
 Make sure the key and value pair always have surrounded quotes.
 
-Remember 
+Remember to always close any open brackets or braces. And note any red errors in text editor when accidentally deleting commas, quotes, or spacing. White space doesn't matter but it helps make things readable!
 
 
 ### Vignette Content
@@ -134,10 +140,10 @@ In this file, you'll create a new JSON object which is wrapped in curly brackets
 You'll need to include key : value pairs for:
 
 * title - The copy that appears on the map on hover state
-* page - The refereced vig.html files created below. This string should be a unique single word, all lowercase.
-* lat - Latitute of vignette
+* page - The refereced vig/*.html files created below. This string should be a unique single word, all lowercase.
+* lat - Latitude of vignette
 * long - Longitude of vignette
-* image - Name of the image file located in app/images folder
+* image - Name of the image file located in app/images/vigs folder, only needs to be a small file, ~300px width ~100kb
 
 #### FILE - app/vigs/*.html
 
@@ -182,6 +188,14 @@ The `sample.html` file in this folder contains all sections of content that can 
 
 Copy and paste the entire `<section>` to `</section>` tag in each case. Delete comments where necessary. Adjust as needed.
 
+#### DIRECTORY - app/images/ & app/media
+
+We do not push media files to our repository, so as to protect access to them. Because of this, we have a separte Dropbox folder called `ccp-media` for all of these things.
+
+You do need to make sure you are always uploading images to the Dropbox folder as well. So that way, all editors can use them in their local version of the site.
+
+Be sure to **copy** files from the Dropbox folder into the appropriate folder in your local version when beginning work. Otherwise you'll have unlinked media.
+
 ## Final Notes
 
 These content pieces are rough drafts. Steven will continue to edit when returned. We simply want to be able to edit add content incrementally. To evolve the site as the story evolves.
@@ -192,7 +206,7 @@ If there are any major issues, delete the entire problem area and start over wit
 
 Good luck!
 
-Rock on, Code on!
+Rock on, code on!
 
 
 

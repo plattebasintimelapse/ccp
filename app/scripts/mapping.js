@@ -134,7 +134,7 @@ function mapVigs(vigs) {
         //     vig_content = '<p>' + vigs[i].text + '</p>';
         // }
 
-        vig_content = '<div class="row"><div class="col-xs-12"><img src="../images/' + vigs[i].image + '"/><h3>' + vigs[i].title + '</h3></div></div>';
+        vig_content = '<div class="row"><div class="col-xs-12"><img src="../images/vigs/' + vigs[i].image + '"/><h3>' + vigs[i].title + '</h3></div></div>';
 
         var vig = new Vignette({
             page: vigs[i].page,
