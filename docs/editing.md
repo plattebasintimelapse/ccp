@@ -165,8 +165,6 @@ This is the base template:
 	            	ACTUAL CONTENT HERE
 
 
-
-
 	</div><button class="btn btn-defalt vig-close" data-dismiss="modal" aria-label="Close">Return to Map</button></div></div>
 
 					SCRIPTS GO HERE
@@ -198,7 +196,7 @@ Be sure to **copy** files from the Dropbox folder into the appropriate folder in
 
 ## Final Notes
 
-These content pieces are rough drafts. Steven will continue to edit when returned. We simply want to be able to edit add content incrementally. To evolve the site as the story evolves.
+These content pieces are rough drafts. Steven will continue to edit when returned. We simply want to be able to edit/add content incrementally. To evolve the site as the story evolves.
 
 These steps will be used in March when publishing new vignettes during crane season.
 
