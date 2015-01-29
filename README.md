@@ -76,3 +76,5 @@ to push to the staging url
 Deploy the project with
 
 	grunt deploy
+
+[PBTers go here](commiting.md)

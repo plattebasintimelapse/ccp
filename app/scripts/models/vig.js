@@ -2,7 +2,7 @@ var Vignette = L.Popup.extend({
 
 	options: {
 		minWidth: 150,
-		maxWidth: 250,
+		maxWidth: 230,
 		maxHeight: null,
 		autoPan: true,
 		closeButton: false,
