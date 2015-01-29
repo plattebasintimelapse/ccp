@@ -19,6 +19,8 @@ This app template spits out flat HTML, CSS, JS files to the PBT Amazon S3 accoun
 
 By Steven Speicher, circa October 2014
 
+[PBTers go here](docs/commiting.md)
+
 ### What is This?
 
 #### Gruntfile.js
@@ -76,5 +78,3 @@ to push to the staging url
 Deploy the project with
 
 	grunt deploy
-
-[PBTers go here](commiting.md)

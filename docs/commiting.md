@@ -13,7 +13,7 @@ To work on this project, you need several things:
 * Install [Github](https://mac.github.com/)
 * Permissions to this repo
 
-## Set-up
+## Original Set-up
 On **Github.com**, go the project repo [page](https://github.com/stvnspchr/ccp) and click **Clone to Desktop**
 
 If not already done, create the folder at `~/username/Github/` and the save project.
@@ -37,7 +37,16 @@ Then you can run the site from your local machine with:
 
 ## Making Edits
 
-If the site isn't already running, do the above steps.
+If the site isn't already running, do these steps:
+
+In **Terminal**, `cd` into the project root, ~/username/Github/project
+
+	cd Github/ccp
+
+Then you can run the site from your local machine with:
+
+    grunt
+    grunt serve
 
 Make sure you are working on the most recent version by opening **Github** and clicking `Sync` in the top right.
 
@@ -50,6 +59,8 @@ In **Sublime Text 2**, open the project repository. The primary files that will 
 * app/vigs/*.html
 * app/images/*
 * app/media/*
+
+[How to Make Changes](editing.md)
 
 Make any changes in these files and witness the live changes in your broswer at `localhost:9000`
 
@@ -73,9 +84,8 @@ Once you've made changes, saved files, and commited, you need to exit **Terminal
 	Control+C
 	exit
 
-Then you can close out of Github.
+Then you can close out of Github, Terminal, and Sublime Text 2.
 
-Close out of Sublime Text 2. 
 
 If you've made any changes to the `app/media` or `app/images` folder, make sure you upload those files to Dropbox for others to use in their project
 
