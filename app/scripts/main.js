@@ -7,7 +7,9 @@ var $map = $('#map');
 function initPage() {
     $map.height( $(window).height() );
 
-    if ( $body.hasClass('one') ) {
+    if ( $body.hasClass('intro') ) {
+        listenForAudioCntl();
+    } else if ( $body.hasClass('one') ) {
         makeMap(1);
         $main_menu.find( 'li:nth-child(1) a').addClass('active');
     } else if ( $body.hasClass('two') ) {
@@ -60,6 +62,25 @@ function listenVideo(id){
         $vid_containder.removeClass('playing-inline-video');
         $inline_btn.addClass('fa-play').removeClass('fa-pause');
     }
+}
+
+function listenForAudioCntl() {
+
+    var sound = $('#opening-sounds');
+    sound[0].play();
+    var playing = true;
+
+    $('.sound-container').click(function() {
+        if (playing) {
+            sound[0].pause();
+            playing = false;
+            $('.sound-container i').removeClass('fa-volume-up').addClass('fa-volume-off');
+        } else {
+            sound[0].play();
+            playing = true;
+            $('.sound-container i').addClass('fa-volume-up').removeClass('fa-volume-off');
+        }
+    });
 }
 
 $(document).ready(function() {

@@ -1,6 +1,4 @@
-body {
-  	font-family: $font-family;
-}
+body { font-family: $font-family; }
 
 h1 { font-weight: 700; }
 
@@ -20,6 +18,8 @@ p { font-size: 22px;
 }
 
 .copy p { max-width: $vig-container-width; }
+
+body.intro { text-align: center; }
 
 nav { color: $base-font-color; }
 
