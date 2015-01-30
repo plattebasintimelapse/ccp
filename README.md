@@ -3,27 +3,27 @@ Conservation on the Central Platte
 
 By Steven Speicher, Ariana Brocious, & Peter Stegen
 
-#### About
+### About
 This app template spits out flat HTML, CSS, JS files to the PBT Amazon S3 account.
 
-##### Requirements
+#### Requirements
 
 * [Node](http://nodejs.org/)
 * [Bower](http://bower.io/)
 * [Grunt](http://gruntjs.com/)
 * [Sass](http://sass-lang.com/)
 
-##### Also needed
+#### Also needed
 * A copy of secrets.json (or environment variables)
 * Create app_config.json file, or edit existing
 
 By Steven Speicher, circa October 2014
 
 ## PBTers Look here
-[How to Commit to the Repo]](docs/commiting.md)
-[How to Make Edits to the Project]](docs/commiting.md)
+[How to Commit to the Repo](docs/commiting.md)
+[How to Make Edits to the Project](docs/commiting.md)
 
-### What is This?
+## What is This?
 
 #### Gruntfile.js
 The gruntfile is a configuration file that loads modules that automate the building process. Your `grunt` commands are defined in here.
@@ -44,7 +44,7 @@ In here, you'll find a `copy.json` file that contains text for the entire app. I
 Data used for the visualization are here. D3.js is used to load them into the page for rendering.
 
 #### app/templates
-In here, you'll find an assortment of `.html` template files which are used to spit out the `copy.json` contents to the `app/snow`, `app/storage`, and `app/field` directories.
+In here, you'll find an assortment of `.html` template files which are used to spit out the `copy.json` contents to the section directories.
 
 Everything above gets minimized, concatinated, etc. when running the `grunt deploy` command.
 
@@ -52,8 +52,6 @@ Speaking of commands...
 
 
 ### Usage
-
-Install above dependencies
 
 To install grunt tasks from package.json
 
@@ -63,20 +61,20 @@ To install bower components from bower.json
 
   	bower install
 
-Run local server
-
-    grunt serve
-
 Build deployment to `dist` directory
 
     grunt
 
-Make sure you have a copy of `secrets.json` and run
+Run local server
+
+    grunt serve
+
+Make sure you have a copy of `secrets.json`. To push to the staging url, run:
 
 	grunt stage
 
-to push to the staging url
-
-Deploy the project with
+Deploy the project with:
 
 	grunt deploy
+
+Woop, woop!
