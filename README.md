@@ -3,7 +3,12 @@ Conservation on the Central Platte
 
 By Steven Speicher, Ariana Brocious, & Peter Stegen
 
-### About
+* [About](#about)
+* [PBTers Start Here](#pbters-look-here)
+* [What is This?](#what-is-this)
+* [Usage](#usage)
+
+## About
 This app template spits out flat HTML, CSS, JS files to the PBT Amazon S3 account.
 
 #### Requirements
@@ -52,7 +57,7 @@ Everything above gets minimized, concatinated, etc. when running the `grunt depl
 Speaking of commands...
 
 
-### Usage
+## Usage
 
 To install grunt tasks from package.json
 
