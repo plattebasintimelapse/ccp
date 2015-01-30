@@ -4,17 +4,7 @@
 
     <!--(bake partials/nav.html _section="main")-->
 
-    <div id="map"></div>
-
-    <div class="inset"><img src="../images/app/nebraska-inset.png" alt=""></div>
-
-    <div class="modal fade vig-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-            </div>
-        </div>
-    </div>
+    <!--(bake partials/map.html)-->
 
     <div class="main">
         <div class="main-toggle closed not-yet-opened">
@@ -26,7 +16,7 @@
 
             <div class="main-content">
                 <div class="main-content-wrapper">
-                    <!--(bake partials/copy.html _foreach="content:history.content")-->
+                    <!--(bake partials/main-copy.html _foreach="content:history.content")-->
                 </div>
             </div>
         </div>

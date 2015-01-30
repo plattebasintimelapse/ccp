@@ -19,8 +19,9 @@ This app template spits out flat HTML, CSS, JS files to the PBT Amazon S3 accoun
 * [Sass](http://sass-lang.com/)
 
 #### Also needed
-* A copy of secrets.json (or environment variables)
-* Create app_config.json file, or edit existing
+* A copy of secrets.json (or environment variables) - goes in project root
+* Create app_config.json file, or edit existing - goes in project root
+* app/images & app/media - from shared Dropbox folder
 
 By Steven Speicher, circa October 2014
 

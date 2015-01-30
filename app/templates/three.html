@@ -4,21 +4,12 @@
 
     <!--(bake partials/nav.html _section="main")-->
 
-    <div id="map"></div>
+   <!--(bake partials/map.html)-->
 
-    <div class="inset"><img src="../images/app/nebraska-inset.png" alt=""></div>
-
-    <div class="sidebar">
-        <div class="sidebar-wrapper" id="land-ownership">
+    <div class="toggle panel">
+        <div class="panel-wrapper" id="land-ownership">
+            <div class="toggle-btn"><h4>Map Conservation Land</h4></div>
             <p>Conservation Land Ownership</p>
-        </div>
-    </div>
-
-    <div class="modal fade vig-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-            </div>
         </div>
     </div>
 
@@ -33,7 +24,7 @@
 
             <div class="main-content">
                 <div class="main-content-wrapper">
-                    <!--(bake partials/copy.html _foreach="content:hope.content")-->
+                    <!--(bake partials/main-copy.html _foreach="content:hope.content")-->
                 </div>
             </div>
         </div>

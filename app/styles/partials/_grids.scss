@@ -70,57 +70,44 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 .main header .main-scroller { margin: 0; display: none; i { vertical-align: -5%; } }
 
 .main-content {
-	// -webkit-column-count: 3; /* Chrome, Safari, Opera */
- //    -moz-column-count: 3; /* Firefox */
- //    column-count: 3;
- //    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
- //    -moz-column-gap: 20px; /* Firefox */
- //    column-gap: 20px;
     overflow: scroll;
-	// height: 600px;
 
-	// @include breakpoint(papa-bear) {
-	// 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-	//     -moz-column-count: 2; /* Firefox */
-	//     column-count: 2;
-	//     -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-	//     -moz-column-gap: 20px; /* Firefox */
-	//     column-gap: 20px;
-	//     overflow: scroll;
-	// 	height: 300px;
-	// }
-
-	// @include breakpoint(mama-bear) {
-	// 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-	//     -moz-column-count: 1; /* Firefox */
-	//     column-count: 1;
-	//     -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
-	//     -moz-column-gap: 20px; /* Firefox */
-	//     column-gap: 20px;
-	//     overflow: scroll;
-	// 	height: 300px;
-	// }
 	.main-content-wrapper {
 		width: 900px;
 		margin: 0 auto;
 	}
 }
 
-/***********************
-******* SIDEBAR  *******
-***********************/
+/*********************
+******* PANEL  *******
+*********************/
 
-.sidebar {
+.panel {
 	position: absolute;
-	right: 20px;
-	top: 30%;
 	background-color: $black;
 	color: $base-font-color;
 	@extend .above-map;
 }
 
-.sidebar-wrapper {
-	padding: 15px;
+.panel-wrapper {
+	padding: 10px;
+}
+
+/**********************
+******* TOGGLE  *******
+**********************/
+
+.toggle {
+	right: 20px;
+	top: 30%;
+	.toggle-btn {
+		@extend .panel;
+		left:-90px;
+		top: 20px;
+		-ms-transform: rotate(270deg); /* IE 9 */
+	    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+	    transform: rotate(270deg);
+	}
 }
 
 /***********************
@@ -128,12 +115,21 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 ***********************/
 
 .inset {
-	position: absolute;
 	right: 20px;
 	bottom: 100px;
-	@extend .above-map;
+	background-color: transparent;
 	width: 20%;
 	max-width: 180px;
+}
+
+/**************************
+****** INSTRUCTIONS  ******
+**************************/
+
+.instructions {
+	left: 20px;
+	bottom: 100px;
+	max-width: 250px;
 }
 
 /***********************

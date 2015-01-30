@@ -3,7 +3,7 @@ var ccpGeoJSON;
 
 var ccpOwners = [
     {
-        'name': 'Audubon Socity',
+        'name': 'Audubon Society',
         'ownership': 'Audubon',
         'color': 'rgb(84,48,5)',
         'filter': true
