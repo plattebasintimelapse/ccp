@@ -39,13 +39,13 @@ The `bower.json` file are your front-end components used in the app. Bower makes
 Most of the directories in here are self-explanatory. I'll explain the extras.
 
 #### app/content
-In here, you'll find a `copy.json` file that contains text for the entire app. It gets baked into the template files with the `grunt` command.
+In here, you'll find a `copy.json` file that contains text for the entire app. It gets baked into the template files with the `grunt` command. There is also a `vigs.json` file that creates the map popups on each page.
 
 #### app/data
 Data used for the visualization are here. D3.js is used to load them into the page for rendering.
 
 #### app/templates
-In here, you'll find an assortment of `.html` template files which are used to spit out the `copy.json` contents to the section directories.
+In here, you'll find an assortment of `.html` template files which are used to spit out the various partials to the section directories.
 
 Everything above gets minimized, concatinated, etc. when running the `grunt deploy` command.
 

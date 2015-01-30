@@ -2,7 +2,7 @@
 
 There are three files and two folders you need to edit when creating new content.
 
-* app/content/content.json - Main content file
+* [app/content/content.json](#file---appcontentcontentjson) - Main content file
 * app/content/vigs.json - Popup bubbles on maps
 * app/vigs/*.html - Content inside vignette modals
 * app/images - Images for the entire piece, note the different folders for differnet images, described below
@@ -138,6 +138,7 @@ You'll need to include key : value pairs for:
 
 * title - The copy that appears on the map on hover state
 * page - The referenced vigs/*.html files created below. This string should be a unique single word, all lowercase.
+* section - The page this vignette should appear on, 1 2 or 3
 * lat - Latitude of vignette
 * long - Longitude of vignette
 * image - Name of the image file located in app/images/thumbnail folder, only needs to be a small file, ~300px width ~100kb
