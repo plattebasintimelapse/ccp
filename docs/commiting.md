@@ -2,6 +2,10 @@
 
 A Primer for PBT Journalists
 
+* [Original Set-up](#original-set-up) - only needs to be done the first time
+* [Making Edits](#making-edits) - you want to add or edit content
+* [Committing Edits](#committing-edits) - make your edits available for others to see
+
 ## Pre-reqs
 To work on this project, you need several things:
 

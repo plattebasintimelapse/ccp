@@ -2,11 +2,11 @@
 
 There are three files and two folders you need to edit when creating new content.
 
-* [app/content/content.json](#file---appcontentcontentjson) - Main content file
-* app/content/vigs.json - Popup bubbles on maps
-* app/vigs/*.html - Content inside vignette modals
-* app/images - Images for the entire piece, note the different folders for differnet images, described below
-* app/media - Media files (audio, video) for the piece
+* [app/content/content.json](#main-content) - Main content file
+* [app/content/vigs.json](#vignette-content) - Popup bubbles on maps
+* [app/vigs/*.html](#file---appvigshtml) - Content inside vignette modals
+* [app/images](#directory---appimages--appmedia) - Images for the entire piece, note the different folders for differnet images, described below
+* [app/media](#directory---appimages--appmedia) - Media files (audio, video) for the piece
 
 ## Main Content
 
