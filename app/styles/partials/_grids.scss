@@ -93,6 +93,8 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 	padding: 10px;
 }
 
+.panel-title { margin: 0; }
+
 /**********************
 ******* TOGGLE  *******
 **********************/
@@ -104,7 +106,7 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 	.toggle-btn {
 		@extend .panel;
 		left: -121px;
-		top: 150px;
+		top: 175px;
 		-ms-transform: rotate(270deg); /* IE 9 */
 	    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
 	    transform: rotate(270deg);
