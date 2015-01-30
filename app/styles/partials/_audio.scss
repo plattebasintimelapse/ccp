@@ -39,7 +39,7 @@
 }
 
 .jp-audio .jp-type-single .jp-progress {
-	width: 62%;
+	width: 65%;
 	margin-left: 30%;
 	left: 0;
 }
@@ -54,6 +54,43 @@
 
 .jp-stop:after {
 	content: '\f04d';
+}
+
+.jp-volume-controls, .jp-play-pause-controls { display: block; }
+
+.jp-volume-controls {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.jp-volume-max { margin-left: 6px; }
+
+.jp-volume-bar {
+	position: relative;
+	float: left;
+	margin-top: 5px;
+	width: 38px;
+	top: 0;
+	left: 0;
+}
+
+.jp-mute:after {
+	content: '\f026';
+}
+
+.jp-volume-max:after {
+	content: '\f028';
+}
+
+.jp-volume-bar-value {
+	background-color: $blue;
+}
+
+.jp-mute, .jp-volume-max {
+	width: 12px;
+	height: 15px;
+	float: left;
 }
 
 .jp-duration {
