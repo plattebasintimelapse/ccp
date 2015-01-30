@@ -21,6 +21,7 @@ By Steven Speicher, circa October 2014
 
 ## PBTers Look here
 [How to Commit to the Repo](docs/commiting.md)
+
 [How to Make Edits to the Project](docs/commiting.md)
 
 ## What is This?
