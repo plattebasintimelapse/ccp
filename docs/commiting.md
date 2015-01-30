@@ -1,5 +1,6 @@
-### How to Use this Repo
-#### A Primer for PBT Journalists
+# How to Use this Repo
+
+A Primer for PBT Journalists
 
 ## Pre-reqs
 To work on this project, you need several things:

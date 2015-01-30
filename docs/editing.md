@@ -5,7 +5,7 @@ There are three files and two folders you need to edit when creating new content
 * app/content/content.json - Main content file
 * app/content/vigs.json - Popup bubbles on maps
 * app/vigs/*.html - Content inside vignette modals
-* app/images - Images for the entire piece, note the folder /vigs for small images
+* app/images - Images for the entire piece, note the different folders for differnet images, described below
 * app/media - Media files (audio, video) for the piece
 
 ## Main Content
@@ -86,64 +86,61 @@ Remember to always close any open brackets or braces. And note any red errors in
 
 #### FILE - app/content/vigs.json
 
-
 	{
 	    "all": [
 	        {
-	            "title": "A Title Goes Here",
-	            "page": "one",
-	            "section":"1",
-	            "lat": "40.9",
-	            "long":"-98.8",
-	            "image": "intro.jpg"
-	        },{
 	            "title": "A Title Goes Here Two",
 	            "page": "two",
 	            "section":"1",
 	            "lat": "40.65",
 	            "long":"-99.16",
-	            "image": "test.jpg"
-	        },{
+	            "image": "thumbnail.jpg"
+	        },
+	        {
 	            "title": "Some Title",
 	            "page": "three",
 	            "section":"1",
 	            "lat": "40.659",
 	            "long":"-99.5",
-	            "image": "intro.jpg"
-	        },{
+	            "image": "thumbnail.jpg"
+	        },
+	        {
 	            "title": "Sample Content",
 	            "page": "sample",
 	            "section":"1",
 	            "lat": "40.683514",
 	            "long":"-99.320652",
-	            "image": "intro.jpg"
-	        },{
+	            "image": "thumbnail.jpg"
+	        },
+	        {
 	            "title": "Planting Prairie",
 	            "page": "tnc-seeding",
 	            "section":"3",
 	            "lat": "40.739531",
 	            "long":"-98.573713",
-	            "image": "DawnIcyPlatte.jpg"
-	        },{
+	            "image": "thumbnail.jpg"
+	        },
+	        {
 	            "title": "Bridges",
 	            "page": "bridges",
 	            "section":"1",
 	            "lat": "40.926396",
 	            "long":"-98.342012",
-	            "image": "intro.jpg"
+	            "image": "thumbnail.jpg"
 	        }
 	    ]
 	}
+
 
 In this file, you'll create a new JSON object which is wrapped in curly brackets, `{}`. Each Vignette is separate by a `,`.
 
 You'll need to include key : value pairs for:
 
 * title - The copy that appears on the map on hover state
-* page - The refereced vig/*.html files created below. This string should be a unique single word, all lowercase.
+* page - The referenced vigs/*.html files created below. This string should be a unique single word, all lowercase.
 * lat - Latitude of vignette
 * long - Longitude of vignette
-* image - Name of the image file located in app/images/vigs folder, only needs to be a small file, ~300px width ~100kb
+* image - Name of the image file located in app/images/thumbnail folder, only needs to be a small file, ~300px width ~100kb
 
 #### FILE - app/vigs/*.html
 
@@ -188,9 +185,9 @@ Copy and paste the entire `<section>` to `</section>` tag in each case. Delete c
 
 #### DIRECTORY - app/images/ & app/media
 
-We do not push media files to our repository, so as to protect access to them. Because of this, we have a separte Dropbox folder called `ccp-media` for all of these things.
+We do not push media files to our repository, so as to protect access to them. Because of this, we have a separate Dropbox folder called `ccp-media` for all of these things.
 
-You do need to make sure you are always uploading images to the Dropbox folder as well. So that way, all editors can use them in their local version of the site.
+You do need to make sure you are always uploading images to the Dropbox folder as well. So that way all editors can use them in their local version of the site.
 
 Be sure to **copy** files from the Dropbox folder into the appropriate folder in your local version when beginning work. Otherwise you'll have unlinked media.
 
