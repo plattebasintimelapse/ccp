@@ -1,4 +1,4 @@
-.main-app { padding:0; }
+.main-app { padding:0; overflow: hidden; }
 
 #map {
 	width: 100%;
@@ -98,15 +98,22 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 **********************/
 
 .toggle {
-	right: 20px;
+	right: -300px;
 	top: 30%;
+	width: 300px;
 	.toggle-btn {
 		@extend .panel;
-		left:-90px;
-		top: 20px;
+		left: -121px;
+		top: 150px;
 		-ms-transform: rotate(270deg); /* IE 9 */
 	    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
 	    transform: rotate(270deg);
+	    border-top-left-radius:8px;
+		border-top-right-radius:8px;
+		border-bottom-right-radius:0;
+		border-bottom-left-radius:0;
+
+		cursor: pointer;
 	}
 }
 
@@ -116,7 +123,7 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 
 .inset {
 	right: 20px;
-	bottom: 100px;
+	bottom: 80px;
 	background-color: transparent;
 	width: 20%;
 	max-width: 180px;
@@ -128,7 +135,7 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 
 .instructions {
 	left: 20px;
-	bottom: 100px;
+	bottom: 80px;
 	max-width: 250px;
 }
 

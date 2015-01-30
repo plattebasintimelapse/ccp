@@ -8,17 +8,17 @@
 	line-height: 40px;
 }
 
-#map .leaflet-bar a:hover {
-	background-color: #f4f4f4;
-	color: $blue;
+#map .leaflet-bar a:hover, #map .leaflet-bar a.leaflet-disabled {
+	background-color: rgba(28,16,6,.5);
+	// color: $blue;
 }
-#map .leaflet-bar a, .leaflet-bar a:hover {
-	background-color: $blue;
+#map .leaflet-bar a, #map .leaflet-bar a {
+	background-color: $black;
 	color: $base-font-color;
 }
 
 #map .leaflet-bar a.leaflet-disabled {
-cursor: default;
-background-color: #f4f4f4;
-color: #bbb;
+	cursor: default;
+	background-color: rgba(28,16,6,.5);
+	color: #bbb;
 }
