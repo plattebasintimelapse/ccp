@@ -45,7 +45,7 @@
 			},{ "image":
 			
 				{
-					"src": "intro.jpg",
+					"src": "main.jpg",
 				  	"caption": "This is the caption.",
 				  	"align": "right",
 				  	"size": "medium"

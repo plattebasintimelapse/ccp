@@ -1,4 +1,4 @@
-## Creating New Content
+# Creating New Content
 
 There are three files and two folders you need to edit when creating new content.
 
@@ -8,7 +8,7 @@ There are three files and two folders you need to edit when creating new content
 * app/images - Images for the entire piece, note the folder /vigs for small images
 * app/media - Media files (audio, video) for the piece
 
-### Main Content
+## Main Content
 
 #### FILE - app/content/content.json
 
@@ -82,7 +82,7 @@ Make sure the key and value pair always have surrounded quotes.
 Remember to always close any open brackets or braces. And note any red errors in text editor when accidentally deleting commas, quotes, or spacing. White space doesn't matter but it helps make things readable!
 
 
-### Vignette Content
+## Vignette Content
 
 #### FILE - app/content/vigs.json
 
@@ -194,6 +194,17 @@ You do need to make sure you are always uploading images to the Dropbox folder a
 
 Be sure to **copy** files from the Dropbox folder into the appropriate folder in your local version when beginning work. Otherwise you'll have unlinked media.
 
+Available media types:
+
+* **Full** - jpg, width 1600px, used for full screen image (probably only intro page)
+* **Featured** - jpg, width 1200px, used for full width modal vignettes
+* **Pano** - jpg, width: 1200px, cropped to shorter than featured, used for full width modal vignettes
+* **Main** - jpg, width: 800px, used in main content panel or aside images
+* **Thumbnail** - jpg, width: 300px, used on map popup
+* **Audio** - mp3, used for audio embeds
+
+**ALWAYS** resize images to necessary dimensions. Try to minimize file size. Clean up directory of unused images regularly.
+
 ## Final Notes
 
 These content pieces are rough drafts. Steven will continue to edit when returned. We simply want to be able to edit/add content incrementally. To evolve the site as the story evolves.
@@ -205,14 +216,3 @@ If there are any major issues, delete the entire problem area and start over wit
 Good luck!
 
 Rock on, code on!
-
-
-
-
-
-
-
-
-
-
-

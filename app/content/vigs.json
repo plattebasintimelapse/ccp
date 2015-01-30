@@ -6,7 +6,7 @@
             "section":"1",
             "lat": "40.65",
             "long":"-99.16",
-            "image": "test.jpg"
+            "image": "thumbnail.jpg"
         },
         {
             "title": "Some Title",
@@ -14,7 +14,7 @@
             "section":"1",
             "lat": "40.659",
             "long":"-99.5",
-            "image": "intro.jpg"
+            "image": "thumbnail.jpg"
         },
         {
             "title": "Sample Content",
@@ -22,7 +22,7 @@
             "section":"1",
             "lat": "40.683514",
             "long":"-99.320652",
-            "image": "intro.jpg"
+            "image": "thumbnail.jpg"
         },
         {
             "title": "Planting Prairie",
@@ -30,7 +30,7 @@
             "section":"3",
             "lat": "40.739531",
             "long":"-98.573713",
-            "image": "DawnIcyPlatte.jpg"
+            "image": "thumbnail.jpg"
         },
         {
 
@@ -39,7 +39,7 @@
             "section":"1",
             "lat": "40.926396",
             "long":"-98.342012",
-            "image": "intro.jpg"
+            "image": "thumbnail.jpg"
         }
     ]
 

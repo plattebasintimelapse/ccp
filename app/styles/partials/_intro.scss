@@ -1,5 +1,5 @@
 body.intro {
-	background: url(../images/intro.jpg) no-repeat center center fixed;
+	background: url(../images/full/full.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -26,7 +26,7 @@ body.intro {
     h1 {
     	font-size: 5em;
     	color: white;
-    	font-weight: 900;
+    	font-weight: 700;
     	text-shadow: 4px 4px 4px black;
         // @include breakpoint(mama-bear) { font-size: 2.4em; margin-bottom: 0px; margin-top: 5px;}
         // @include breakpoint(baby-bear) { font-size: 1.8em; margin-top: 5px;}

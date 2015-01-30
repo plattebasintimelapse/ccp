@@ -337,7 +337,7 @@ module.exports = function (grunt) {
                     bucket: 'projects.plattebasintimelapse.com'
                 },
                 files: [
-                    {expand: true, cwd: 'dist/', src: ['**'], dest: '<%= app.PRODUCTION %>'}
+                    {expand: true, cwd: 'dist/', src: ['**'], differential: true, dest: '<%= app.PRODUCTION %>'}
                 ]
             },
             staging: {
@@ -345,7 +345,7 @@ module.exports = function (grunt) {
                     bucket: 'staging.plattebasintimelapse.com'
                 },
                 files: [
-                    {expand: true, cwd: 'dist/', src: ['**'], dest: '<%= app.STAGING %>'}
+                    {expand: true, cwd: 'dist/', src: ['**'], differential: true, dest: '<%= app.STAGING %>'}
                 ]
             }
         }

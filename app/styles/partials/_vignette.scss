@@ -25,6 +25,13 @@
 	@include breakpoint(baby-bear) { width: 100%; }
 }
 
+.close {
+	font-size: 52px;
+	font-weight: normal;
+	opacity: .6;
+	margin: 0 15px;
+}
+
 .vig-close {
 	margin: 0 auto;
 	width: 200px;

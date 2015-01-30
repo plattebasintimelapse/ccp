@@ -3,7 +3,22 @@
 #map .leaflet-top { top: 42%; }
 
 #map .leaflet-bar a, .leaflet-bar a:hover {
-	width: 32px;
-	height: 32px;
-	line-height: 32px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#map .leaflet-bar a:hover {
+	background-color: #f4f4f4;
+	color: $blue;
+}
+#map .leaflet-bar a, .leaflet-bar a:hover {
+	background-color: $blue;
+	color: $base-font-color;
+}
+
+#map .leaflet-bar a.leaflet-disabled {
+cursor: default;
+background-color: #f4f4f4;
+color: #bbb;
 }
