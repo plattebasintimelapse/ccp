@@ -64,14 +64,30 @@
 	},
 
 	"problem": {
-		"hed": "The Problem Title Goes Here",
-		"subhed": "The Subhead Goes Here",
-		"meta": "Published on March 7th 2015",
+		"hed": "Waves of Change",
+		"subhed": "The Rise of Environmental Consciousness and the Role of One Big Bird",
+		"meta": "March 7, 2015",
 		"content": [
 			{ "graf":
-				"Put yer stuff here."
+				"The mid-twentieth century brought a new wave of social awareness about the natural world and human impact on the environment. Some of these concerns centered around the Platte River, mostly because of one large bird."
 			},{ "graf":
-				"Or more stuff here."
+				"The whooping crane (grus Americana) stands five feet tall, a beautiful, graceful bird with nearly all-white plumage. As they have for centuries, each spring they migrate from their breeding grounds on the Texas Gulf Coast to their summer grounds in Alaska, stopping over at wetlands throughout the Great Plains, particularly the Platte River in central Nebraska."
+			},{ "graf":
+				"As dams and diversions for agriculture, cities and hydropower significantly reduced flows through the central Platte in the late 1800s and early 1900s, vegetation normally scoured out by spring floods instead took root, and habitat for cranes and other species diminished substantially. Cranes prefer shallow rivers and sandbars for roosting, and a wide field of view to spot predators. Gallery forests taking over shorelines made wide stretches of the Platte far less suitable habitat, and threatened the bird’s survival."
+			},{ "graf":
+				"By the middle of the twentieth century, complex international and cultural factors brought the nation into a rising tide of social consciousness. For many Americans, the 1950s, 60s and 70s were defined by movements advocating for the rights of minorities, women, gays and lesbians, and the environment. Congress passed a series of laws to protect some of these rights."
+			},{ "graf":
+				"For environmental activists in the Great Plains, the whooping crane became a cause celebre—a charismatic bird under threat that symbolized the need for environmental protections. Its listing as one of the first endangered species paralleled the national turn of attention to the environment, earning that status in the same few years that most bedrock environmental laws were passed."
+			},{ "graf":
+				"When a new dam was proposed on the Laramie River, a tributary of the North Platte in Wyoming, environmental groups mobilized the recently-passed endangered species legislation to fight it, arguing it would further destroy habitat for one of the first endangered species. Opponents to the hydropower project also included the state of Nebraska, concerned about wildlife and irrigation needs downstream."
+			},{ "graf":
+				"After a series of negotiations and lawsuits, parties finally reached agreement in 1978—allowing the Grayrocks Dam construction to proceed as long as the power company funded the creation of an organization and land dedicated to preserving and protecting whooping crane habitat."
+			},{ "graf":
+				"The Crane Trust joined other conservation groups already active on the central Platte, working to restore or conserve habitat for the whooping crane and other wildlife species."
+			},{ "graf":
+				"Twenty years after the Grayrocks conflict, whooping crane habitat preservation once again challenged an upstream hydropower project: this time, the relicensing of Kingsley Dam at Lake McConaughy and Keystone/North Platte Diversion Dam."
+			},{ "graf":
+				"As before, it took years of negotiations between public power entities, the Federal Energy Regulatory Commission and the states of Colorado, Wyoming and Nebraska before they finally settled on an agreement to protect endangered species on the Platte River. The agreement created a federal and state recovery plan, the details of which took another decade to iron out. Finally in 2007, the Platte River Recovery Implementation Program began—a collaborative effort between the three states, federal government and conservation partners to protect and preserve habitat for four threatened and endangered species in the Platte River: the piping plover, whooping crane, least tern and pallid sturgeon."
 			}
 		]
 	},

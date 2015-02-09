@@ -39,6 +39,14 @@
             "lat": "40.926396",
             "long":"-98.342012",
             "image": "thumbnail.jpg"
+        },
+        {
+            "title": "Parallel Tracks",
+            "page": "timeline",
+            "section":"2",
+            "lat": "40.926396",
+            "long":"-98.342012",
+            "image": "thumbnail.jpg"
         }
     ]
 }
