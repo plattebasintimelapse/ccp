@@ -19,8 +19,8 @@ nav.navbar-default {
 	left: 50%;
 	top: 0;
 	@extend .above-map;
-	width: 450px;
-	margin-left: -225px;
+	width: 500px;
+	margin-left: -250px;
 	@include breakpoint(baby-bear) {
 		position: relative;
 		width:100%;
@@ -79,6 +79,12 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 }
 
 /*********************
+*** POPUP CONETNT  ***
+*********************/
+
+.vig-popup .leaflet-popup-content .row { margin: 0; }
+
+/*********************
 ******* PANEL  *******
 *********************/
 
@@ -102,6 +108,8 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 .toggle {
 	right: -300px;
 	top: 30%;
+	@include breakpoint(mama-bear) { top: 15%; }
+	@include breakpoint(baby-bear) { top: 10%; }
 	width: 300px;
 	.toggle-btn {
 		@extend .panel;
@@ -138,7 +146,7 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 .instructions {
 	left: 20px;
 	bottom: 80px;
-	max-width: 250px;
+	max-width: 300px;
 }
 
 /***********************

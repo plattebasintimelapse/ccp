@@ -1,5 +1,7 @@
 var map;
 var ccpGeoJSON;
+var vignettes = [];
+
 
 var ccpOwners = [
     {
@@ -54,57 +56,50 @@ var ccpLength = ccpOwners.length;
 
 function makeMap(n) {
 
-    var southWest = L.latLng(40.0350, -100.8463),
-        northEast = L.latLng(41.5672, -97.0642),
+    var southWest = L.latLng(40.05, -100.85),
+        northEast = L.latLng(41.57, -97.06),
         bounds = L.latLngBounds(southWest, northEast);
 
 	map = L.map('map', {
-		center: [40.8,-99.1],
+		center: [40.8,-99],
 		zoom: 10,
-        maxBounds: bounds
+        maxBounds: bounds,
+        minZoom: 10,
+        maxZoom: 13
 	});
-
-
 
     // SAVE MAPBOX USAGE COMMENT OUT WHEN NOT NEEDED
 
+    if (n==1) { // PAGE ONE
+        // var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
 
-    // if (n==1) { // PAGE ONE
-    //     var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
+        // url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
+        //     return s.toLowerCase();
+        // });
 
-    //     var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
-    //         return s.toLowerCase();
-    //     });
-    // } else if (n==2) { // PAGE TWO
-    //     var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
-    // } else if (n==3) { // PAGE THREE
-    //     var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
-    // }
-
-
-    // USE THESE INSTEAD
-    var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
-    var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
-        return s.toLowerCase();
-    });
-
-
-
-	var basemap = L.tileLayer(url, {
-	    subdomains: ['','a.','b.','c.','d.'],
-	    minZoom: 10,
-	    maxZoom: 13
-	});
-
-	basemap.addTo(map);
-
-    if ( n == 3 ) {
+        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.956irudi/{z}/{x}/{y}.png';
+        addBaseMap(url);
+    } else if (n==2) { // PAGE TWO
+        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.9vrc0udi/{z}/{x}/{y}.png';
+        addBaseMap(url);
+    } else if (n==3) { // PAGE THREE
+        var googleLayer = new L.Google('SATELLITE');
+        map.addLayer(googleLayer);
         mapLandData();
 
         for (var i=0; i<ccpLength; i++) {
             $('#ccp-land').find('.panel-wrapper').append('<span id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '"><p> ' + ccpOwners[i].name + '</p></span');
         }
     }
+
+    function addBaseMap(url) {
+        var basemap = L.tileLayer(url, {
+            subdomains: ['','a.','b.','c.','d.']
+        });
+
+        basemap.addTo(map);
+    }
+
     getVigs(n);
 }
 
@@ -123,8 +118,6 @@ function getVigs(n) {
     });
 }
 
-var vignettes = [];
-
 function mapVigs(vigs) {
     for (var i=0; i < vigs.length; i++) {
 
@@ -133,7 +126,7 @@ function mapVigs(vigs) {
 
         var vig_content;
 
-        vig_content = '<div class="row"><div class="col-xs-12"><img src="../images/thumbnail/' + vigs[i].image + '"/><h3>' + vigs[i].title + '</h3></div></div>';
+        vig_content = '<div class="row"><div class="col-xs-6"><img src="../images/thumbnail/' + vigs[i].image + '"/></div><div class="col-xs-6"><h5 class="title">' + vigs[i].title + '</h5><i class="fa fa-volume-up fa-lg"></i><i class="fa fa-beer fa-lg"></i></div></div></div>';
 
         var vig = new Vignette({
             page: vigs[i].page,
@@ -151,16 +144,20 @@ function mapVigs(vigs) {
 $('#map').on('click', '.vig-popup', function() {
     var modal = $('.vig-modal');
 
+    // get classes of vig
     var c = $(this).attr('class').split(' ');
 
+    // strip away unnecessary classes
     for (var i=0; i<c.length; i++) {
         if ( c[i] != 'leaflet-popup' && c[i] != 'vig-popup' && c[i] != 'leaflet-zoom-animated') {
             f = c[i];
         }
     }
 
+    // isolate unique class and build ajax load url
     var url = '../vigs/' + f + '.html';
 
+    // ajax load content into modal
     $.get(url, function(data) {
         modal.html(data);
         modal.modal('show');

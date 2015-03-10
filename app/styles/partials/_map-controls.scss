@@ -1,6 +1,6 @@
 .above-map { z-index: 1030; }
 
-#map .leaflet-top { top: 42%; }
+#map .leaflet-control-container { top: 42%; position: absolute; }
 
 #map .leaflet-bar a, .leaflet-bar a:hover {
 	width: 40px;

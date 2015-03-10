@@ -1,11 +1,30 @@
 'use strict';
 
-var $body = $('body');
-var $main_menu = $('.main-menu');
-var $map = $('#map');
+var $body = $('body');                          // THE BODY
+var $main_app = $('.main-app');                  // THE MAIN APP CONTAINER
+var $main_menu = $('.main-menu');               // THE MAIN NAV MENU
+var $map = $('#map');                           // THE MAIN MAP
+var $main = $('.main');                         // MAIN WRAPPER OF CONTENT
+var $mainContent = $('.main-content');          // MAIN CONTAINER OF CONTENT
+var windowWidth = $(document).width();          // WINDOW WIDTH
+var windowHeight = $(document).height();        // WINDOW WIDTH
+var $toggle = $('.main-toggle');                // TOGGLE BTN FOR MAIN CONTENT
+var $scroller = $('.main-scroller');            // SCROLLER PROMPT FOR UI
+var main_height;                                // HEIGHT OF MAIN CONTAINER
+var MAIN_CLOSED_HEIGHT;                         // CONSTANT FOR HEIGHT OF CLOSED MAIN
+var set_main_offset;                            // COMPUTED VALUE FOR MAIN POSITION
+var hasOpenedMain = false;                      // HAS USER OPENED MAIN MENU?
 
 function initPage() {
-    $map.height( $(window).height() );
+    setStyles();
+
+    $toggle.click(function() {
+        if( $(this).hasClass('closed') ) {
+            open_main($(this));
+        } else if ( $(this).hasClass('open') ) {
+            close_main($(this));
+        }
+    });
 
     if ( $body.hasClass('intro') ) {
         listenForAudioCntl();
@@ -21,6 +40,23 @@ function initPage() {
     }
 
     $(".fancybox").fancybox();
+}
+
+function setStyles() {
+    windowWidth = $(document).width();
+    windowHeight = $(document).height();
+
+    $body.height( windowHeight );
+    $main_app.height( windowHeight );
+    $map.height( windowHeight );
+    $mainContent.height( windowHeight * .5 );
+
+    if ( !$main.hasClass('open') ) {
+        $main.css('bottom', '-' + set_main_offset() + 'px' );
+    } else {
+        $main.css('bottom', '-' + set_main_offset() + 'px' );
+    }
+
 }
 
 function listenVideo(id){
@@ -65,7 +101,6 @@ function listenVideo(id){
 }
 
 function listenForAudioCntl() {
-
     var sound = $('#opening-sounds');
     sound[0].play();
     var playing = true;
@@ -88,7 +123,7 @@ $(document).ready(function() {
 });
 
 $( window ).resize(function() {
-    $map.height( $(window).height() );
+    setStyles();
 });
 
 $(function() {

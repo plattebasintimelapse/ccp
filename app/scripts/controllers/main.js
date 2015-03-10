@@ -1,44 +1,3 @@
-
-var $main = $('.main'); 						// MAIN WRAPPER OF CONTENT
-var $mainContent = $('.main-content'); 			// MAIN CONTAINER OF CONTENT
-var windowWidth = $(document).width(); 			// WINDOW WIDTH
-var windowHeight = $(document).height(); 		// WINDOW WIDTH
-var $toggle = $('.main-toggle');				// TOGGLE BTN FOR MAIN CONTENT
-var $scroller = $('.main-scroller');			// SCROLLER PROMPT FOR UI
-var main_height;								// HEIGHT OF MAIN CONTAINER
-var MAIN_CLOSED_HEIGHT;							// CONSTANT FOR HEIGHT OF CLOSED MAIN
-var offset;										// COMPUTED VALUE FOR MAIN POSITION
-var hasOpenedMain = false;						// HAS USER OPENED MAIN MENU?
-
-
-$(document).ready(function() {
-	// BEGINNING PAGE STYLINGS
-	$mainContent.height( windowHeight * .6);
-	$main.css('bottom', '-' + offset() + 'px' );
-
-
-	$toggle.click(function() {
-		if( $(this).hasClass('closed') ) {
-			open_main($(this));
-		} else if ( $(this).hasClass('open') ) {
-			close_main($(this));
-		}
-	});
-});
-
-$(window).resize(function() {
-	windowWidth = $(document).width();
-	windowHeight = $(document).height();
-	$mainContent.height( windowHeight * .6 );
-
-	if ( !$main.hasClass('open') ) {
-		$main.css('bottom', '-' + offset() + 'px' );
-	}
-
-
-	// close_main( $toggle );
-});
-
 function open_main(t) {
 	hasOpenedMain = true;
 	t.toggleClass('closed').toggleClass('open').removeClass('not-yet-opened');
@@ -62,13 +21,13 @@ function close_main(t) {
 	t.find('p').html('open');
 
 	$main.animate({
-		bottom: '-' + offset() + 'px'
+		bottom: '-' + set_main_offset() + 'px'
 	}, 300, 'linear' );
 
 	$scroller.fadeOut();
 }
 
-var offset = function() {
+var set_main_offset = function() {
 	main_height = $main.height();
 	if(windowWidth > 1280) { MAIN_CLOSED_HEIGHT = 78 }
 	else if (windowWidth > 961) { MAIN_CLOSED_HEIGHT = 70 }

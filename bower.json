@@ -10,7 +10,8 @@
     "leaflet": "~0.7.3",
     "vimeo-player-api": "*",
     "fancybox": "~2.1.5",
-    "jplayer": "~2.9.2"
+    "jplayer": "~2.9.2",
+    "leaflet-plugins": "~1.2.1"
   },
   "devDependencies": {}
 }
