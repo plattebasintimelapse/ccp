@@ -83,7 +83,7 @@ nav.navbar-default .main-menu {
 
 .panel.instructions p { font-size: 1em; }
 
-.panel.instructions p:last-child { font-size: .9em; font-style: italic; margin-bottom: 0; text-align: right; }
+.panel.instructions p:last-child { font-size: .7em; font-style: italic; margin-bottom: 0; text-align: right; }
 
 .panel.instructions .panel-title { font-size: 2em; text-align: left; margin-bottom: .4em; }
 
@@ -127,8 +127,6 @@ nav.navbar-default .main-menu {
 }
 
 .main-scroller-prompt { -webkit-animation: bobMargin 1s ease-in-out infinite; animation: bobMargin 1s ease-in-out infinite; }
-
-// .vig-popup .leaflet-popup-content-wrapper:hover { color: $blue; }
 
 .vig-popup .leaflet-popup-content p {
 	margin: 0 0 10px 0;

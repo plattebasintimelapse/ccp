@@ -3,10 +3,18 @@
 }
 
 .vig-popup .leaflet-popup-content-wrapper, .vig-popup .leaflet-popup-tip {
-	background-color: black;
+	background-color: rgba(30,30,30,.9);
 	color: white;
 	cursor: pointer;
-	&:hover { color: $blue; }
+	&:hover {
+		color: $blue;
+		background-color: rgba(30,30,30,.95);
+		img { opacity: 1; }
+	}
+}
+
+.vig-popup img {
+	opacity: .7;
 }
 
 .vig-popup .col-xs-6 {
