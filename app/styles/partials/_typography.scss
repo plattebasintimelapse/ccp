@@ -128,26 +128,14 @@ nav.navbar-default .main-menu {
 
 .main-scroller-prompt { -webkit-animation: bobMargin 1s ease-in-out infinite; animation: bobMargin 1s ease-in-out infinite; }
 
-.vig-popup h3 {
-	// display: none;
-	// position: absolute;
-	// top: 5%;
-	// left: 50%;
-	// width: 200px;
-	// margin-left: -100px;
-	// padding: 10px;
-	// text-align: center;
-	// margin-top: 0;
-	// margin-bottom: 0;
-	// text-shadow: 2px 2px 8px #000000;
-}
+// .vig-popup .leaflet-popup-content-wrapper:hover { color: $blue; }
 
 .vig-popup .leaflet-popup-content p {
 	margin: 0 0 10px 0;
 	font-size: 1.3em;
 }
 
-.vig-popup .leaflet-popup-content .title { margin-top: 0; }
+.vig-popup .leaflet-popup-content .title { margin-top: 0; font-size: 1.4em; margin-bottom: 6px; font-weight: 200; }
 
 section.title h1 { font-size: 4em; }
 section.title.image-featured h1 {

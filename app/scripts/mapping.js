@@ -61,7 +61,7 @@ function makeMap(n) {
         bounds = L.latLngBounds(southWest, northEast);
 
 	map = L.map('map', {
-		center: [40.8,-99],
+		center: [40.75,-99],
 		zoom: 10,
         maxBounds: bounds,
         minZoom: 10,
@@ -116,6 +116,7 @@ function getVigs(n) {
     }).done(function() {
         mapVigs(vigs);
     });
+
 }
 
 function mapVigs(vigs) {
@@ -123,10 +124,37 @@ function mapVigs(vigs) {
 
         var mlat = parseFloat(vigs[i].lat);
         var mlong = parseFloat(vigs[i].long);
-
+        var types = [];
+        var types_classes = '';
         var vig_content;
 
-        vig_content = '<div class="row"><div class="col-xs-6"><img src="../images/thumbnail/' + vigs[i].image + '"/></div><div class="col-xs-6"><h5 class="title">' + vigs[i].title + '</h5><i class="fa fa-volume-up fa-lg"></i><i class="fa fa-beer fa-lg"></i></div></div></div>';
+        for (var j=0; j < 5; j++) {
+            if (typeof vigs[i].type[j] !== 'undefined') {
+                switch ( vigs[i].type[j] ) {
+                    case "audio":
+                        types.push('volume-up');
+                        break;
+                    case "video":
+                        types.push('play-circle');
+                        break;
+                    case "map":
+                        types.push('map-marker');
+                        break;
+                    case "text":
+                        types.push('book');
+                        break;
+                    case "photo":
+                        types.push('camera-retro');
+                        break;
+                }
+            }
+        }
+
+
+
+        for (var type in types) { types_classes += '<i class="fa fa-' + types[type] + ' fa-lg"></i>'; }
+
+        vig_content = '<div class="row"><div class="col-xs-6"><img src="../images/thumbnail/' + vigs[i].image + '"/></div><div class="col-xs-6"><h5 class="title">' + vigs[i].title + '</h5><div class="vig-types">' + types_classes + '</div></div></div></div>';
 
         var vig = new Vignette({
             page: vigs[i].page,

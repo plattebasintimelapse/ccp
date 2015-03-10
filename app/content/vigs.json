@@ -4,14 +4,16 @@
             "title": "A Title Goes Here Two",
             "page": "two",
             "section":"1",
-            "lat": "40.65",
-            "long":"-99.16",
+            "type":["map"],
+            "lat": "40.55",
+            "long":"-99.17",
             "image": "thumbnail.jpg"
         },
         {
             "title": "Guardian of the Plains",
             "page": "ft-kearny",
             "section":"1",
+            "type":["audio", "video"],
             "lat": "40.6500",
             "long":"-99.0000",
             "image": "thumbnail.jpg"
@@ -20,14 +22,16 @@
             "title": "Sample Content",
             "page": "sample",
             "section":"1",
-            "lat": "40.683514",
-            "long":"-99.320652",
+            "type":[],
+            "lat": "40.699514",
+            "long":"-99.420652",
             "image": "thumbnail.jpg"
         },
         {
             "title": "Planting Prairie",
             "page": "tnc-seeding",
             "section":"3",
+            "type":[],
             "lat": "40.739531",
             "long":"-98.573713",
             "image": "thumbnail.jpg"
@@ -36,6 +40,7 @@
             "title": "Bridges",
             "page": "bridges",
             "section":"1",
+            "type":["text"],
             "lat": "40.926396",
             "long":"-98.342012",
             "image": "thumbnail.jpg"
@@ -44,6 +49,7 @@
             "title": "Parallel Tracks",
             "page": "timeline",
             "section":"2",
+            "type":[],
             "lat": "40.926396",
             "long":"-98.342012",
             "image": "thumbnail.jpg"

@@ -6,17 +6,15 @@
 	background-color: black;
 	color: white;
 	cursor: pointer;
-}
-
-.vig-popup .leaflet-popup-content-wrapper:hover, .vig-popup .leaflet-popup-tip:hover {
-	img { opacity: .1; }
-	h3 { display: block; }
+	&:hover { color: $blue; }
 }
 
 .vig-popup .col-xs-6 {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
+.vig-popup .vig-types i { padding-right: 4px; }
 
 .vig-modal .modal-dialog {
 	width: 85%;
