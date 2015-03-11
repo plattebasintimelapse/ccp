@@ -35,7 +35,15 @@ nav.navbar-default .main-menu {
 	h1,h2 { text-align: center; margin: 0; }
 	h1 { font-size: 2.2em; font-style: italic; @include breakpoint(baby-bear) { font-size: 1.6em; } }
 	h2 { font-size: 1.4em; @include breakpoint(baby-bear) { font-size: 1.2em; } }
-	li { &:first-child a { border-bottom-left-radius: 8px; } &:last-child a { border-bottom-right-radius: 8px; } }
+	li {
+		&:first-child a {
+			border-bottom-left-radius: 8px;
+			@include breakpoint(baby-bear) { border-bottom-left-radius: 0; }
+		} &:last-child a {
+			border-bottom-right-radius: 8px;
+			@include breakpoint(baby-bear) { border-bottom-right-radius: 0; }
+		}
+	}
 	li a {
 		color: $base-font-color;
 		background-color: $black;
