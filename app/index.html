@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
         <link rel="stylesheet" href="../bower_components/leaflet/dist/leaflet.css" />
         <link rel="stylesheet" href="../bower_components/fancybox/source/jquery.fancybox.css" />
+        <link rel="stylesheet" href="../bower_components/fullpage.js/jquery.fullPage.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -32,17 +33,48 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-            <div class="opening-title-center" id="main-title">
-                <h1>Into the Current</h1>
-                <p class="subhed">For the sake of wildlife, a community of organization strives to stem the flow of habitat loss along the Central Platte River.</p>
-                <h5>By Platte Basin Timelapse</h5>
 
-                <a href="history" class="btn btn-lg btn-default" role="button">Explore</a>
-            </div>
+        
 
+        <div id="fullpage">
             <div class="sound-container">
-                <i class="fa fa-volume-up fa-3x"></i><audio id="opening-sounds" loop src="../media/audio/opening.mp3"></audio>
+                <i class="fa fa-volume-up fa-2x"></i><audio id="opening-sounds" loop src="../media/audio/opening.mp3"></audio>
             </div>
+            <div class="section">
+                <div class="slide" id="one">
+                    <div class="opening-title-center" id="main-title">
+                        <h1>Into the Current</h1>
+                        <p class="subhed">For the sake of wildlife, a community of organization strives to stem the flow of habitat loss along the Central Platte River.</p>
+                        <h5>By Platte Basin Timelapse</h5>
+
+                      <!-- <a href="history" class="btn btn-lg btn-default" role="button">Explore</a> -->
+                    </div>
+                    <!-- <p class="caption">This is a caption.</p> -->
+                </div>
+
+                <div class="slide" id="two">
+                    <p class="caption">This is a caption.</p>
+                </div>
+
+                <div class="slide" id="three">
+
+                    <p class="caption">This is a caption.</p>
+                </div>
+
+                <div class="slide" id="four">
+
+                    <div class="opening-title-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi impedit aperiam sint neque excepturi possimus, sed voluptatum delectus. Perspiciatis quam, vitae quae, sint odio labore illum laudantium. Laboriosam, maxime.</p>
+
+                        <a href="settlement" class="btn btn-lg btn-default" role="button">Explore</a>
+                        
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
@@ -67,6 +99,7 @@
         <script src="../bower_components/jplayer/dist/jplayer/jquery.jplayer.js"></script>
         <script src="../bower_components/vimeo-player-api/javascript/froogaloop.min.js"></script>
         <script src="../bower_components/leaflet-plugins/layer/tile/Google.js"></script>
+        <script src="../../../bower_components/fullpage.js/jquery.fullPage.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -80,5 +113,15 @@
         <script src="scripts/mapping.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    loopHorizontal: false,
+                    fixedElements: '.sound-container'
+                });
+            });
+        </script>
+
     </body>
 </html>

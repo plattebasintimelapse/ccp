@@ -1,19 +1,19 @@
-body.intro {
-	background: url(../images/full/full.jpg) no-repeat center center fixed;
+body.intro .slide {
+	background: url(../images/full/full.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
-#main-title {
-	position: absolute;
+.opening-title-center {
+	position: relative;
     $main-width: 800px;
     @include breakpoint(mama-bear) { width: 600px; margin-left: -(300px); top: 5%;}
     @include breakpoint(baby-bear) { width: 100%; margin-left: 0; left: 0; top: 10%;}
     width: $main-width;
     left: 50%;
-    top: 20%;
+    top: 16%;
     margin-left: -($main-width/2);
     background-color: rgba(0,0,0,.2);
     border-radius: 10px;

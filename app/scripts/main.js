@@ -27,7 +27,7 @@ function initPage() {
     });
 
     if ( $body.hasClass('intro') ) {
-        listenForAudioCntl();
+        // listenForAudioCntl();
     } else if ( $body.hasClass('one') ) {
         makeMap(1);
         $main_menu.find( 'li:nth-child(1) a').addClass('active');

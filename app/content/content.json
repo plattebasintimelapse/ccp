@@ -6,8 +6,8 @@
 
 		"nav": {
 			"one": {
-				"h1": "History",
-				"h2": "1800s"
+				"h1": "Settlement",
+				"h2": "1800s - 1930s"
 			},
 			"two": {
 				"h1": "Awareness",
@@ -15,7 +15,7 @@
 			},
 			"three": {
 				"h1": "Recovery",
-				"h2": "1970s - today"
+				"h2": "1970s - Today"
 			}
 		}
 	},

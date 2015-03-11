@@ -1,4 +1,4 @@
-body { font-family: $font-family; }
+body { font-family: $font-family; color: $base-font-color; }
 
 h1 { font-weight: 700; }
 
@@ -171,4 +171,6 @@ section.title.image-featured h1 {
 .image-featured .image-caption {
 	padding: 5px 20px;
 }
+
+.slide p { text-shadow: 2px 2px 2px black; }
 

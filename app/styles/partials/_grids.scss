@@ -19,8 +19,8 @@ nav.navbar-default {
 	left: 50%;
 	top: 0;
 	@extend .above-map;
-	width: 500px;
-	margin-left: -250px;
+	width: 550px;
+	margin-left: -275px;
 	@include breakpoint(baby-bear) {
 		position: relative;
 		width:100%;

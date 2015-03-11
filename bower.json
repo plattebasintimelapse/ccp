@@ -11,7 +11,8 @@
     "vimeo-player-api": "*",
     "fancybox": "~2.1.5",
     "jplayer": "~2.9.2",
-    "leaflet-plugins": "~1.2.1"
+    "leaflet-plugins": "~1.2.1",
+    "fullpage.js": "~2.6.0"
   },
   "devDependencies": {}
 }
