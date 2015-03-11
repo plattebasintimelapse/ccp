@@ -7,7 +7,8 @@
             "type":["map"],
             "lat": "40.55",
             "long":"-99.17",
-            "image": "thumbnail.jpg"
+            "image": "thumbnail.jpg",
+            "new": true
         },
         {
             "title": "Guardian of the Plains",
@@ -16,8 +17,8 @@
             "type":["audio", "video"],
             "lat": "40.6500",
             "long":"-99.0000",
-            "image": "thumbnail.jpg"
-        },
+            "image": "thumbnail.jpg",
+            "new": false        },
         {
             "title": "Sample Content",
             "page": "sample",
@@ -25,7 +26,8 @@
             "type":["video","map"],
             "lat": "40.699514",
             "long":"-99.420652",
-            "image": "thumbnail.jpg"
+            "image": "thumbnail.jpg",
+            "new": true
         },
         {
             "title": "Planting Prairie",
@@ -34,7 +36,8 @@
             "type":["map", "photo"],
             "lat": "40.739531",
             "long":"-98.573713",
-            "image": "thumbnail.jpg"
+            "image": "thumbnail.jpg",
+            "new": false
         },
         {
             "title": "Bridges",
@@ -43,7 +46,8 @@
             "type":["text"],
             "lat": "40.926396",
             "long":"-98.342012",
-            "image": "thumbnail.jpg"
+            "image": "thumbnail.jpg",
+            "new": false
         },
         {
             "title": "Parallel Tracks",
@@ -52,7 +56,8 @@
             "type":["photo"],
             "lat": "40.926396",
             "long":"-98.342012",
-            "image": "thumbnail.jpg"
+            "image": "thumbnail.jpg",
+            "new": false
         }
     ]
 }

@@ -12,6 +12,7 @@ nav.navbar-default {
     background-color: $black;
     padding: 0 6px;
     @include box-shadow(4px, 4px, 20px);
+    z-index: 1031;
 }
 
 .main-menu {

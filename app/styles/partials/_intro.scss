@@ -6,6 +6,30 @@ body.intro .slide {
 	background-size: cover;
 }
 
+body.intro .slide#one {
+    background: url(../images/full/intro-one.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.intro .slide#two {
+    background: url(../images/full/intro-two.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.intro .slide#three {
+    background: url(../images/full/intro-three.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .opening-title-center {
 	position: relative;
     $main-width: 800px;
@@ -60,10 +84,12 @@ body.intro .slide {
     color: white;
     text-shadow: 1px 1px 1px #000;
     border: 2px solid white;
+    padding: 16px 26px;
+    font-size: 24px;
 }
 
 .btn-default:hover, .btn-default:active {
-    // color: $blue;
+    color: $blue;
     border-color: $blue;
     background-color: rgba(255,255,255,.2);
 }
