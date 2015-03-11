@@ -11,7 +11,6 @@ a, a.visited {
 }
 
 p { font-size: 22px;
-
 	@include breakpoint(papa-bear) { font-size: 20px; }
 	@include breakpoint(mama-bear) { font-size: 18px; }
 	@include breakpoint(baby-bear) { font-size: 16px; }
@@ -65,13 +64,15 @@ nav.navbar-default .main-menu {
 	}
 	h2 {
 		font-size: 1.8em;
+		width: 40%;
 		@include breakpoint(papa-bear) { font-size: 1.4em; }
 		@include breakpoint(mama-bear) { font-size: 1.2em; }
 		@include breakpoint(baby-bear) { font-size: 1.0em; }
 	}
 	h1,h2 {
-		display:inline;
-		margin-bottom: 20px;
+		display:inline-block;
+		margin-bottom: 0;
+		margin-top: 0;
 	}
 	font-weight: 400;
 
