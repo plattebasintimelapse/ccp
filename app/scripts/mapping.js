@@ -68,15 +68,7 @@ function makeMap(n) {
         maxZoom: 13
 	});
 
-    // SAVE MAPBOX USAGE COMMENT OUT WHEN NOT NEEDED
-
-<<<<<<< Updated upstream
     if (n==1) { // PAGE ONE
-        // var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
-
-        // url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
-        //     return s.toLowerCase();
-        // });
 
         var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.956irudi/{z}/{x}/{y}.png';
         addBaseMap(url);
@@ -86,39 +78,7 @@ function makeMap(n) {
     } else if (n==3) { // PAGE THREE
         var googleLayer = new L.Google('SATELLITE');
         map.addLayer(googleLayer);
-=======
 
-    if (n==1) { // PAGE ONE
-        var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
-
-        var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
-            return s.toLowerCase();
-        });
-    } else if (n==2) { // PAGE TWO
-        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
-    } else if (n==3) { // PAGE THREE
-        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.4vi8jjor/{z}/{x}/{y}.png';
-    }
-
-
-    // USE THESE INSTEAD
-    // var tonerUrl = "http://{S}tile.stamen.com/toner/{Z}/{X}/{Y}.png";
-    // var url = tonerUrl.replace(/({[A-Z]})/g, function(s) {
-    //     return s.toLowerCase();
-    // });
-
-
-
-	var basemap = L.tileLayer(url, {
-	    subdomains: ['','a.','b.','c.','d.'],
-	    minZoom: 10,
-	    maxZoom: 13
-	});
-
-	basemap.addTo(map);
-
-    if ( n == 3 ) {
->>>>>>> Stashed changes
         mapLandData();
 
         for (var i=0; i<ccpLength; i++) {
@@ -183,8 +143,6 @@ function mapVigs(vigs) {
                 }
             }
         }
-
-
 
         for (var type in types) { types_classes += '<i class="fa fa-' + types[type] + ' fa-lg"></i>'; }
 
