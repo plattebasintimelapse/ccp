@@ -102,7 +102,9 @@ nav.navbar-default .main-menu {
 
 .modal p { font-size: 1em; }
 
-.vig-modal p { font-size: 1.2em; }
+.vig-modal p { font-size: 1.4em; }
+
+.vig-modal .vig-meta h4 { font-size: 1.1em; margin: 0; @include breakpoint(baby-bear) { font-size: .9em; } }
 
 #helper-modal h4 {
 	border-top: 1px solid $base-font-color;
@@ -155,13 +157,17 @@ nav.navbar-default .main-menu {
 
 .vig-popup .leaflet-popup-content .title { margin-top: 0; font-size: 1.4em; margin-bottom: 6px; font-weight: 200; }
 
-section.title h1 { font-size: 4em; }
+section.title h1 {
+	font-size: 4em;
+	@include breakpoint(mama-bear) { font-size: 3.2em; }
+	@include breakpoint(baby-bear) { font-size: 2em; }
+}
 section.title.image-featured h1 {
 	font-size: 5em;
 	color: white;
-	text-shadow: 4px 4px 4px #2e2e2e;
-	@include breakpoint(mama-bear) { font-size: 2em; }
-	@include breakpoint(baby-bear) { font-size: 1.4em; }
+	text-shadow: 4px 4px 4px black;
+	@include breakpoint(mama-bear) { font-size: 3.2em; }
+	@include breakpoint(baby-bear) { font-size: 2em; }
 }
 
 .content-meta p {

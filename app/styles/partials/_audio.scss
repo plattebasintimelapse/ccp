@@ -35,7 +35,7 @@
 
 .jp-audio .jp-controls {
 	width: 30%;
-	padding: 20px 20px 0 20px;
+	padding: 8px 20px 0 20px;
 }
 
 .jp-audio .jp-type-single .jp-progress {
@@ -103,12 +103,12 @@
 	left: 50%;
 }
 
-.jp-play {
-	@include breakpoint(baby-bear) {
-		width: 20px;
-		height: 20px;
-	}
-}
+// .jp-play {
+// 	@include breakpoint(baby-bear) {
+// 		width: 20px;
+// 		height: 20px;
+// 	}
+// }
 
 .jp-stop {
 	@include breakpoint(baby-bear) {

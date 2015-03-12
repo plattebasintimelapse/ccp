@@ -1,3 +1,5 @@
+var scrollerFadeIn;
+
 function open_main(t) {
 	hasOpenedMain = true;
 	t.toggleClass('closed').toggleClass('open').removeClass('not-yet-opened');
@@ -8,10 +10,8 @@ function open_main(t) {
 		bottom: '0'
 	}, 300, 'linear' );
 
-	setTimeout(function() {
+	scrollerFadeIn = setTimeout(function() {
 		$scroller.fadeIn();
-		// var f = function() { $scroller.animate({marginRight: "40px"}, 1000, function() { $(this).animate({marginRight: "0px"}, 1000, f ) }) }
-		// f();
 	}, 5000);
 }
 function close_main(t) {
@@ -24,6 +24,7 @@ function close_main(t) {
 		bottom: '-' + set_main_offset() + 'px'
 	}, 300, 'linear' );
 
+	clearTimeout(scrollerFadeIn);
 	$scroller.fadeOut();
 }
 
