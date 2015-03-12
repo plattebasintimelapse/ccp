@@ -1,16 +1,6 @@
 {
     "all": [
         {
-            "title": "A Title Goes Here Two",
-            "page": "two",
-            "section":"2",
-            "type":["map"],
-            "lat": "40.55",
-            "long":"-99.17",
-            "image": "thumbnail.jpg",
-            "new": true
-        },
-        {
             "title": "Station on the Plains",
             "page": "ft-kearny",
             "section":"1",
@@ -18,8 +8,7 @@
             "lat": "40.6500",
             "long":"-99.0000",
             "image": "thumbnail.jpg",
-            "new": false        
-
+            "new": false
         },
         {
             "title": "Irrigation at Rain's Edge",
@@ -29,8 +18,7 @@
             "lat": "40.773782",
             "long":"-99.849243",
             "image": "thumbnail.jpg",
-            "new": false        
-
+            "new": true
         },
         {
             "title": "Sample Content",
@@ -40,7 +28,7 @@
             "lat": "40.699514",
             "long":"-99.420652",
             "image": "thumbnail.jpg",
-            "new": true
+            "new": false
         },
         {
             "title": "Planting Prairie",

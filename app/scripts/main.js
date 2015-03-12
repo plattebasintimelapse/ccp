@@ -50,14 +50,20 @@ function setStyles() {
     $body.height( windowHeight );
     $main_app.height( windowHeight );
     $map.height( windowHeight );
-    $mainContent.height( windowHeight * .5 );
 
-    if ( !$main.hasClass('open') ) {
-        $main.css('bottom', '-' + set_main_offset() + 'px' );
+    if ( windowHeight < 500 ) {
+        $mainContent.height( windowHeight * .28 );
+    } else if ( windowHeight < 700) {
+        $mainContent.height( windowHeight * .4 );
     } else {
-        $main.css('bottom', '-' + set_main_offset() + 'px' );
+        $mainContent.height( windowHeight * .5 );
     }
 
+    $main.css('bottom', '-' + set_main_offset() + 'px' );
+
+    if ( $main.hasClass('open') ) {
+        close_main($toggle);
+    }
 }
 
 function listenVideo(id){
@@ -132,10 +138,7 @@ $(function() {
         filterMap( $(this) );
     });
 
-});
-
-$(function() {
-    $('.panel .panel-close').click(function() {
+     $('.panel .panel-close').click(function() {
         $(this).parent().parent().fadeOut();
     });
 

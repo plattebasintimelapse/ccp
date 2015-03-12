@@ -271,7 +271,7 @@ module.exports = function (grunt) {
                         '!templates/{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
                         'media/{,*/}*.*',
-                        'images/{,*/}*.*',
+                        'images/{,*/}{,*/}*.*',
                         'data/{,*/}*.*',
                         'content/{,*/}*.*' // CHANGE THIS LATER!!!
                     ]
