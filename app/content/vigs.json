@@ -3,7 +3,7 @@
         {
             "title": "A Title Goes Here Two",
             "page": "two",
-            "section":"1",
+            "section":"2",
             "type":["map"],
             "lat": "40.55",
             "long":"-99.17",
@@ -11,14 +11,27 @@
             "new": true
         },
         {
-            "title": "Guardian of the Plains",
+            "title": "Station on the Plains",
             "page": "ft-kearny",
             "section":"1",
             "type":["audio", "video"],
             "lat": "40.6500",
             "long":"-99.0000",
             "image": "thumbnail.jpg",
-            "new": false        },
+            "new": false        
+
+        },
+        {
+            "title": "Irrigation at Rain's Edge",
+            "page": "canals",
+            "section":"1",
+            "type":["video"],
+            "lat": "40.773782",
+            "long":"-99.849243",
+            "image": "thumbnail.jpg",
+            "new": false        
+
+        },
         {
             "title": "Sample Content",
             "page": "sample",
@@ -40,12 +53,12 @@
             "new": false
         },
         {
-            "title": "Bridges",
+            "title": "Bridges of the Platte",
             "page": "bridges",
             "section":"1",
             "type":["text"],
-            "lat": "40.926396",
-            "long":"-98.342012",
+            "lat": "40.690141",
+            "long":"-99.379406",
             "image": "thumbnail.jpg",
             "new": false
         },
