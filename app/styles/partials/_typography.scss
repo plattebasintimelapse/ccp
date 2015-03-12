@@ -90,21 +90,19 @@ nav.navbar-default .main-menu {
 
 .panel .panel-title { font-size: 1.4em; text-align: center; }
 
-// .panel-close i { background-color: $black; }
-
 .panel.instructions p { font-size: 1em; }
 
 .panel.instructions p:last-child { font-size: .7em; font-style: italic; margin-bottom: 0; text-align: right; }
 
 .panel.instructions .panel-title { font-size: 2em; text-align: left; margin-bottom: .4em; }
 
-.panel.toggle p { text-align: center; line-height: 1.2em; }
+.panel.toggle p { text-align: center; line-height: 1.2em; font-size: 1em; }
 
 .panel.toggle .toggle-btn h4 { margin: 5px 10px; }
 
-.modal p {
-	font-size: 1em;
-}
+.modal p { font-size: 1em; }
+
+.vig-modal p { font-size: 1.2em; }
 
 #helper-modal h4 {
 	border-top: 1px solid $base-font-color;
