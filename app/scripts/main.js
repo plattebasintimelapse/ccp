@@ -30,6 +30,7 @@ function initPage() {
         // listenForAudioCntl();
     } else if ( $body.hasClass('one') ) {
         makeMap(1);
+        $('#helper-modal').modal('show');
         $main_menu.find( 'li:nth-child(1) a').addClass('active');
     } else if ( $body.hasClass('two') ) {
         makeMap(2);
@@ -129,6 +130,13 @@ $( window ).resize(function() {
 $(function() {
     $('.owner-toggle').click(function() {
         filterMap( $(this) );
+    });
+
+});
+
+$(function() {
+    $('.panel .panel-close').click(function() {
+        $(this).parent().parent().fadeOut();
     });
 
 });

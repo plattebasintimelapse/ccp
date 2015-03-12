@@ -1,0 +1,8 @@
+{
+	"PRODUCTION": "ccp",
+	"STAGING": "ccp",
+
+	"one": "settlement",
+	"two": "awareness",
+	"three": "recovery"
+}

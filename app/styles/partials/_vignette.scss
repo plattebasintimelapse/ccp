@@ -24,6 +24,11 @@
 
 .vig-popup .vig-types i { padding-right: 4px; }
 
+.vig-modal .modal-content {
+	background-color: #fff;
+	color: #333333
+}
+
 .vig-modal .modal-dialog {
 	width: 85%;
 	max-width: 1300px;
@@ -31,11 +36,16 @@
 	@include breakpoint(baby-bear) { width: 100%; }
 }
 
-.close {
-	font-size: 52px;
-	font-weight: normal;
-	opacity: .6;
-	margin: 0 15px;
+.modal .close {
+	opacity: .8;
+	color: white;
+}
+
+.vig-modal .close {
+	color: #333333;
+	font-size: 3em;
+	margin: 4px 10px;
+	opacity: 1;
 }
 
 .vig-close {

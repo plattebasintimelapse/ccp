@@ -102,6 +102,27 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 
 .panel-title { margin: 0; }
 
+.panel-close {
+	position: absolute;
+	right:3px;
+	top:0px;
+	cursor: pointer;
+	&:hover i { color: $blue; }
+}
+
+/**************************
+********* MODALS  *********
+**************************/
+
+.modal .modal-content {
+	background-color: $black;
+	color: $base-font-color;
+}
+
+.modal .modal-dialog {
+	margin: 100px auto;
+}
+
 /**********************
 ******* TOGGLE  *******
 **********************/
