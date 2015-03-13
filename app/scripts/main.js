@@ -51,6 +51,13 @@ function setStyles() {
     $main_app.height( windowHeight );
     $map.height( windowHeight );
 
+    // BABY BEAR BREAKPOINT
+    if ( windowWidth > 767 ) {
+        $main_menu.css( 'margin-left', - ( $main_menu.width() / 2 ) );
+    } else {
+        $main_menu.css( 'margin-left', 0 );
+    }
+
     if ( windowHeight < 500 ) {
         $mainContent.height( windowHeight * .28 );
     } else if ( windowHeight < 700) {

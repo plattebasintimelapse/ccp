@@ -33,8 +33,8 @@ nav #title h4 {
 
 nav.navbar-default .main-menu {
 	h1,h2 { text-align: center; margin: 0; }
-	h1 { font-size: 2.2em; font-style: italic; @include breakpoint(baby-bear) { font-size: 1.6em; } }
-	h2 { font-size: 1.4em; @include breakpoint(baby-bear) { font-size: 1.2em; } }
+	h1 { font-size: 2.2em; font-style: italic; @include breakpoint(papa-bear) { font-size: 1.8em; } }
+	h2 { font-size: 1.4em; @include breakpoint(papa-bear) { font-size: 1.2em; } }
 	li {
 		&:first-child a {
 			border-bottom-left-radius: 8px;
@@ -72,7 +72,7 @@ nav.navbar-default .main-menu {
 	}
 	h2 {
 		font-size: 1.8em;
-		width: 40%;
+		width: 45%;
 		@include breakpoint(papa-bear) { font-size: 1.4em; }
 		@include breakpoint(mama-bear) { font-size: 1.2em; }
 		@include breakpoint(baby-bear) { font-size: 1.0em; }
@@ -102,7 +102,7 @@ nav.navbar-default .main-menu {
 
 .modal p { font-size: 1em; }
 
-.vig-modal p { font-size: 1.4em; }
+.vig-modal p { font-size: 1.4em; @include breakpoint(mama-bear) { font-size: 1.2em; } @include breakpoint(baby-bear) { font-size: 1.1em; } }
 
 .vig-modal .vig-meta h5 { margin: 0; @include breakpoint(baby-bear) { font-size: .9em; } }
 
@@ -177,6 +177,8 @@ section.title.image-featured h1 {
 
 .image-caption {
 	font-size: 1.1em;
+	@include breakpoint(mama-bear) { font-size: 1em; }
+	@include breakpoint(baby-bear) { font-size: .9em; }
 	&.image-caption-right { text-align: right; }
 	&.image-caption-left { text-align: left; }
 }

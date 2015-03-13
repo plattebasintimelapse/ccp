@@ -16,7 +16,7 @@
 .owner-toggle.off { background-color: lightgray !important; }
 .owner-toggle p { margin:0; }
 
-.wrapper {
+.new-wrapper {
 opacity: 1;
 border-radius: 10px;
 -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
@@ -26,7 +26,7 @@ position: relative;
 z-index: 10090;
 }
 
-.ribbon-wrapper {
+.new-ribbon-wrapper {
 width: 85px;
 height: 88px;
 overflow: hidden;
@@ -36,10 +36,10 @@ left: -10px;
 z-index: 10;
 }
 
-.ribbon {
+.new-ribbon {
 color: #333;
 text-align: center;
-text-shadow: rgba(0,0,0,0.5) 0px 1px 0px;
+text-shadow: rgba(0, 0, 0, 1) 1px 3px 5px;
 -webkit-transform: rotate(-45deg);
 -moz-transform:    rotate(-45deg);
 -ms-transform:     rotate(-45deg);
@@ -56,7 +56,7 @@ color: $base-font-color;
  box-shadow:         0px 0px 3px rgba(0,0,0,0.6);
 }
 
-.ribbon:before, .ribbon:after {
+.new-ribbon:before, .new-ribbon:after {
 content: "";
 border-top:   3px solid #6e8900;   
 border-left:  3px solid transparent;
@@ -65,9 +65,9 @@ position:absolute;
 bottom: -3px;
 }
 
-.ribbon:before {
+.new-ribbon:before {
 right: 0;
 }
-.ribbon:after {
+.new-ribbon:after {
  left: 0;
 }

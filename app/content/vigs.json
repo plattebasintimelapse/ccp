@@ -8,7 +8,7 @@
             "lat": "40.6500",
             "long":"-99.0000",
             "image": "thumbnail.jpg",
-            "new": false
+            "new": true
         },
         {
             "title": "Irrigation at Rain's Edge",
@@ -38,7 +38,7 @@
             "lat": "40.739531",
             "long":"-98.573713",
             "image": "thumbnail.jpg",
-            "new": false
+            "new": true
         },
         {
             "title": "Bridges of the Platte",
@@ -48,7 +48,7 @@
             "lat": "40.690141",
             "long":"-99.379406",
             "image": "thumbnail.jpg",
-            "new": false
+            "new": true
         },
         {
             "title": "Parallel Tracks",
@@ -58,7 +58,7 @@
             "lat": "40.926396",
             "long":"-98.342012",
             "image": "thumbnail.jpg",
-            "new": false
+            "new": true
         }
     ]
 }

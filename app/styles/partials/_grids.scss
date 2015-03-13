@@ -24,8 +24,6 @@ nav.navbar-default {
 	left: 50%;
 	top: 0;
 	@extend .above-map;
-	width: 550px;
-	margin-left: -275px;
 	@include breakpoint(baby-bear) {
 		position: relative;
 		width:100%;
@@ -78,7 +76,8 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
     overflow: scroll;
 
 	.main-content-wrapper {
-		width: 900px;
+		width: 92%;
+		max-width: 900px;
 		margin: 0 auto 50px auto;
 	}
 }
@@ -88,6 +87,12 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 *********************/
 
 .vig-popup .leaflet-popup-content .row { margin: 0; }
+
+.leaflet-popup-content { margin: 8px 10px; }
+
+.leaflet-popup-close-button { display: none; }
+
+.vig-popup .leaflet-popup-content { margin: 7px; }
 
 /*********************
 ******* PANEL  *******
@@ -201,6 +206,7 @@ img { width: 100%; height: auto; }
 		margin-right: 0;
 		float: none;
 	}
+	padding:10px;
 }
 
 .inline-media-ex-large {
@@ -228,7 +234,7 @@ img { width: 100%; height: auto; }
 	width: 50%;
 }
 
-.inline-media-extend { margin-right: -100px; @include breakpoint(mama-bear) { margin-right:0; } }
+.inline-media-extend { margin-right: -100px; @include breakpoint(papa-bear) { margin-right:0; } }
 
 .inline-media-wrapper {
 	padding-top: 0;
