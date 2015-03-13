@@ -198,11 +198,11 @@
             This will be custom developed by Steven, case by case
             ****************** -->
             <section class="interactive">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div id="twentytwenty">
-                                <img src="../images/pano/canals/orchard-pano.jpg">
+                            <div id="slider-1">
+                                <img src="../images/pano/pano.jpg">
                                 <img src="../images/pano/canals/orchard-pano.jpg">
                             </div>
                         </div>
@@ -213,17 +213,28 @@
 </div><button class="btn btn-defalt vig-close" data-dismiss="modal" aria-label="Close">Return to Map</button></div></div>
 
 
-<!--*********************
+<!--*****************************
 ***** Inline Video Script *******
 Use the same tag as listed above
-********************* -->
+***************************** -->
 <script>
     listenVideo('CHANGE');
-    $(window).load(function() {
-        $("#twentytwenty").twentytwenty();
-    });
-
 </script>
+
+<!--*****************************
+***** Photo Slider Script *******
+Use the same tag as listed above
+***************************** -->
+<script>
+    $(document).ready(function() {
+        setTimeout(function() {
+            console.log('hello');
+            $("#slider-1").twentytwenty(); // CHANGE THIS WITH THE #
+            $('.twentytwenty-overlay').remove();
+        }, 1000);
+    });
+</script>
+
 
 
 <!--*********************

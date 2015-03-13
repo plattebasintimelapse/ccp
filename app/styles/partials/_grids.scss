@@ -113,8 +113,8 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 
 .panel-close {
 	position: absolute;
-	right:3px;
-	top:0px;
+	right:5px;
+	top:2px;
 	cursor: pointer;
 	&:hover i { color: $blue; }
 }

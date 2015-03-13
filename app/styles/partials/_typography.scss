@@ -155,7 +155,14 @@ nav.navbar-default .main-menu {
 	font-size: 1.3em;
 }
 
-.vig-popup .leaflet-popup-content .title { margin-top: 0; font-size: 1.4em; margin-bottom: 6px; font-weight: 200; }
+.vig-popup .leaflet-popup-content .title {
+	margin-top: 0;
+	font-size: 1.4em;
+	margin-bottom: 4px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid rgba(255,255,255,.4);
+	font-weight: 200;
+}
 
 section.title h1 {
 	font-size: 4em;
