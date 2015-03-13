@@ -35,13 +35,13 @@
 		margin-bottom: 10px;
 		font-size:1.2em;
 		text-transform: uppercase;
-        &.team { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid lightgray; }
+        &.team { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid lightgray; }
 	}
     .speical-thanks {
         margin-bottom: 10px;
     }
 	.credit {
-		font-size: 1em;
+		font-size: .7em;
 		line-height: .6em;
         margin-bottom: 0;
 
@@ -56,7 +56,7 @@
         font-size: .7em;
     }
     a {
-        color: black;
+        color: $base-font-color;
         &:hover {
             color: $blue;
         }

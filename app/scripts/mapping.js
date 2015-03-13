@@ -71,10 +71,10 @@ function makeMap(n) {
 
     if (n==1) { // PAGE ONE
 
-        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.956irudi/{z}/{x}/{y}.png';
+        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.956irudi/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGxhdHRlYmFzaW50bCIsImEiOiJFX3ZkQmRRIn0.L73n0OBNy5NZMhhb3aLfUA';
         addBaseMap(url);
     } else if (n==2) { // PAGE TWO
-        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.9vrc0udi/{z}/{x}/{y}.png';
+        var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.9vrc0udi/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGxhdHRlYmFzaW50bCIsImEiOiJFX3ZkQmRRIn0.L73n0OBNy5NZMhhb3aLfUA';
         addBaseMap(url);
     } else if (n==3) { // PAGE THREE
         var googleLayer = new L.Google('SATELLITE');
