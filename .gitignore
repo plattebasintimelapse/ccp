@@ -6,9 +6,9 @@ dist
 node_modules
 bower_components
 
-app/settlement
-app/awareness
-app/recovery
+app/settlement/
+app/awareness/
+app/recovery/
 
 app/media
 app/img
