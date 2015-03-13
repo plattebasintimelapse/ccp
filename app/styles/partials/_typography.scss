@@ -112,7 +112,7 @@ nav.navbar-default .main-menu {
 }
 
 .main-toggle {
-	color: $black;
+	color: $base-font-color;
 	text-align:center;
 	font-size: 1.4em;
 	&:hover { color: $blue; p { color: $blue;} }
