@@ -21,16 +21,6 @@
             "new": true
         },
         {
-            "title": "Sample Content",
-            "page": "sample",
-            "section":"1",
-            "type":["video","map"],
-            "lat": "40.699514",
-            "long":"-99.420652",
-            "image": "thumbnail.jpg",
-            "new": false
-        },
-        {
             "title": "Planting Prairie",
             "page": "tnc-seeding",
             "section":"3",
@@ -52,7 +42,7 @@
         },
         {
             "title": "Parallel Tracks",
-            "page": "timeline",
+            "page": "whooper",
             "section":"2",
             "type":["photo"],
             "lat": "40.926396",

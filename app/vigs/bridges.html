@@ -21,16 +21,27 @@
                             <p>Just south of Interstate 80, a little west of Kearney, semi trucks, trailers, and cars zip over the Elm Creek bridge on a January afternoon. Most drivers barely glance at the Platte River below.</p>
                             <p>Today we may think nothing of driving over a bridge. One hundred and fifty years ago, it wasn’t so easy.</p>
 
-                            <aside class="inline-media inline-media-right inline-media-large inline-media-extend inline-video" id="bridge-video">
-                                <div class="inline-media-wrapper">
-                                    <div class="video-wrapper-16-9 vid-wrap">
-
-                                        <iframe id="bridge" src="//player.vimeo.com/video/107067451?title=0&amp;byline=0&amp;portrait=0&amp;loop=0&amp;player_id=bridge&amp;api=1" frameborder="0"></iframe>
-
-                                    </div>
-                                    <span class="image-caption image-caption-right">Mage Hultstrand of the Natural Resources Conservation Service explains a SNOTEL site.</span>
-                                </div>
-                            </aside>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#jquery_jplayer_1").jPlayer({                // The #jquery_jplayer_1 should match the ID agove of the jp_player div
+            ready: function () {
+                $(this).jPlayer("setMedia", {
+                    title: "Lincoln Water Systems",     // CHANGE THIS
+                    m4a: "../media/audio/linc.mp3"            // AND THIS, MAKE SURE THE .MP3 AUDIO IS IN THE MEDIA FOLDER
+                });
+            },
+            cssSelectorAncestor: "#jp_container_1",
+            swfPath: "/js",
+            supplied: "m4a, oga",
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true,
+            remainingDuration: true,
+            toggleDuration: true
+        });
+    });
+</script>
 
                             <p>The Platte River Valley is mostly flat, oriented east to west and adjacent to the Missouri. As a result, the “Great Platte River Road” became a major thoroughfare for explorers, settlers, and homestead traffic in the 1800s. Many goods and services first concentrated along the route of Union Pacific’s transcontinental railroad, north of the river.</p>
                             <p>“The area was being settled fairly quickly, and the river really was the key stopping point,” said Russ Czaplewski, a historian who spent many years working in Dawson County in central Nebraska.</p>
