@@ -31,13 +31,13 @@
             "new": true
         },
         {
-            "title": "Bridges of the Platte",
+            "title": "Bridging the Platte",
             "page": "bridges",
             "section":"1",
-            "type":["text"],
+            "type":["text", "audio", "photo"],
             "lat": "40.690141",
             "long":"-99.379406",
-            "image": "thumbnail.jpg",
+            "image": "bridgethumbnail.jpg",
             "new": true
         },
         {
