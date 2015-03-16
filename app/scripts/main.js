@@ -27,7 +27,7 @@ function initPage() {
     });
 
     if ( $body.hasClass('intro') ) {
-        // listenForAudioCntl();
+        listenForAudioCntl();
     } else if ( $body.hasClass('one') ) {
         makeMap(1);
         $('#helper-modal').modal('show');
@@ -116,8 +116,12 @@ function listenVideo(id){
 
 function listenForAudioCntl() {
     var sound = $('#opening-sounds');
-    sound[0].play();
     var playing = true;
+    setTimeout(function() {
+        sound[0].play();
+        sound[0].volume = 0;
+        sound.animate({volume: 1}, 3000);
+    },500);
 
     $('.sound-container').click(function() {
         if (playing) {
