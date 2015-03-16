@@ -72,7 +72,17 @@
         },
         {
             "title": "Parallel Tracks",
-            "page": "whooper",
+            "page": "ESA-timeline",
+            "section":"2",
+            "type":["text",],
+            "lat": "40.926396",
+            "long":"-98.342012",
+            "image": "thumbnail.jpg",
+            "new": true
+        },
+        {
+            "title": "Whooper Recovery",
+            "page": "whoopers",
             "section":"2",
             "type":[],
             "lat": "40.926396",
