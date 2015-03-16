@@ -71,12 +71,12 @@ function makeMap(n) {
 
     if (n==1) { // PAGE ONE
         map.setZoom(9);
-        
+
         var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.956irudi/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGxhdHRlYmFzaW50bCIsImEiOiJFX3ZkQmRRIn0.L73n0OBNy5NZMhhb3aLfUA';
 
         var basemap = L.tileLayer(url, {
             zoom: 9,
-            minZoom: 9,
+            minZoom: 8,
             maxZoom: 10,
             subdomains: ['','a.','b.','c.','d.']
         });

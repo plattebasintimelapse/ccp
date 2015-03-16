@@ -26,7 +26,7 @@ section:first-child {
 }
 
 section:last-child {
-	padding-bottom: 100px;
+	padding-bottom: 100px !important;
 }
 
 section.no-padding {
@@ -47,7 +47,9 @@ section.title.image-featured {
 	}
 }
 
-section.copy { width:100%; max-width: $vig-container-width; }
+section.copy { width:100%; max-width: $vig-container-width; &.narrow { max-width: $vig-container-width / 3; } }
+
+section.audio { height: 150px; }
 
 section.image-featured {
 	width: 100%;
