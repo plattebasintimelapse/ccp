@@ -74,9 +74,9 @@
             "title": "Parallel Tracks",
             "page": "ESA-timeline",
             "section":"2",
-            "type":["text",],
-            "lat": "40.926396",
-            "long":"-98.342012",
+            "type":["text"],
+            "lat": "40.787398",
+            "long":"-98.464944",
             "image": "thumbnail.jpg",
             "new": true
         },
