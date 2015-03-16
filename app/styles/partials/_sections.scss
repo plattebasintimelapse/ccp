@@ -51,7 +51,7 @@ section.copy { width:100%; max-width: $vig-container-width; &.narrow { max-width
 
 section.audio { height: 150px; }
 
-section.image-featured {
+section.image-featured, section.full-width {
 	width: 100%;
 	.container-fluid { padding: 0; }
 }

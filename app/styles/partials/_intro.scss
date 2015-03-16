@@ -23,7 +23,7 @@ body.intro .slide#two {
 }
 
 body.intro .slide#three {
-    background: url(../images/pano/bridges/kearney-bridge-1930-map.jpg) no-repeat center center;
+    background: url(../images/full/intro-three.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,6 +44,8 @@ body.intro .slide#five {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    p { font-size: 1.4em; text-align: left; margin-bottom: 2px; }
 }
 
 .opening-title-center {
@@ -53,12 +55,10 @@ body.intro .slide#five {
     @include breakpoint(baby-bear) { width: 100%; margin-left: 0; left: 0; top: 10%;}
     width: $main-width;
     left: 50%;
-    top: 16%;
     margin-left: -($main-width/2);
     background-color: rgba(0,0,0,.2);
     border-radius: 10px;
     padding: 15px;
-    margin-bottom: 200px;
 }
 
 .sound-container {
