@@ -76,7 +76,7 @@ function makeMap(n) {
 
         var basemap = L.tileLayer(url, {
             zoom: 9,
-            minZoom: 8,
+            minZoom: 9,
             maxZoom: 10,
             subdomains: ['','a.','b.','c.','d.']
         });
