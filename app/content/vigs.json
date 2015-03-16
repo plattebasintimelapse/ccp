@@ -87,7 +87,7 @@
             "type":["text", "video"],
             "lat": "40.777236",
             "long":"-98.506178",
-            "image": "jpg",
+            "image": "thumbnail.jpg",
             "new": true
         },
         {
