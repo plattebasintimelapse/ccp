@@ -131,7 +131,6 @@
                 </div>
             </section>
 
-            
 </div><button class="btn btn-defalt vig-close" data-dismiss="modal" aria-label="Close">Return to Map</button></div></div>
 
 
@@ -142,7 +141,7 @@
                 $(this).jPlayer("setMedia", {
                     title: "The River",     // CHANGE THIS
                     m4a: "../media/audio/WhiteCranesInSpring_withMusic.mp3"            // AND THIS, MAKE SURE THE .MP3 AUDIO IS IN THE MEDIA FOLDER
-                });
+                }).jPlayer('play');
             },
             cssSelectorAncestor: "#jp_container_1",
             swfPath: "/js",

@@ -191,7 +191,7 @@
                 $(this).jPlayer("setMedia", {
                     title: "The River",     // CHANGE THIS
                     m4a: "../media/audio/TheRiver_WithMusicmp3.mp3"            // AND THIS, MAKE SURE THE .MP3 AUDIO IS IN THE MEDIA FOLDER
-                });
+                }).jPlayer('play');
             },
             cssSelectorAncestor: "#jp_container_1",
             swfPath: "/js",
@@ -203,6 +203,8 @@
             remainingDuration: true,
             toggleDuration: true
         });
+
+
 
         setTimeout(function() {
             console.log('hello');

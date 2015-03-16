@@ -157,7 +157,7 @@ function mapVigs(vigs) {
             }
         }
 
-        for (var type in types) { types_classes += '<i class="fa fa-' + types[type] + ' fa"></i>'; }
+        for (var type in types) { types_classes += '<i class="fa fa-' + types[type] + ' fa-lg"></i>'; }
 
         if ( vigs[i].new ) {
             vig_content = '<div class="new-wrapper"><div class="new-ribbon-wrapper"><div class="new-ribbon">NEW</div></div><div class="row"><div class="col-xs-6"><img src="../images/thumbnail/' + vigs[i].image + '"/></div><div class="col-xs-6"><h5 class="title">' + vigs[i].title + '</h5><div class="vig-types">' + types_classes + '</div></div></div></div>';
