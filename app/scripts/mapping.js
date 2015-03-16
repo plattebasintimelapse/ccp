@@ -64,18 +64,38 @@ function makeMap(n) {
 	map = L.map('map', {
 		center: [40.75,-99],
 		zoom: 10,
-        maxBounds: bounds,
-        minZoom: 10,
-        maxZoom: 13
+        maxBounds: bounds
+        // minZoom: 10,
+        // maxZoom: 13
 	});
 
     if (n==1) { // PAGE ONE
-
+        map.setZoom(9);
+        
         var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.956irudi/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGxhdHRlYmFzaW50bCIsImEiOiJFX3ZkQmRRIn0.L73n0OBNy5NZMhhb3aLfUA';
-        addBaseMap(url);
+
+        var basemap = L.tileLayer(url, {
+            zoom: 9,
+            minZoom: 9,
+            maxZoom: 10,
+            subdomains: ['','a.','b.','c.','d.']
+        });
+
+        basemap.addTo(map);
+
     } else if (n==2) { // PAGE TWO
+        map.setZoom(10);
+
         var url = 'http://api.tiles.mapbox.com/v3/plattebasintl.9vrc0udi/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGxhdHRlYmFzaW50bCIsImEiOiJFX3ZkQmRRIn0.L73n0OBNy5NZMhhb3aLfUA';
-        addBaseMap(url);
+
+        var basemap = L.tileLayer(url, {
+            zoom: 10,
+            minZoom: 10,
+            maxZoom: 13,
+            subdomains: ['','a.','b.','c.','d.']
+        });
+
+        basemap.addTo(map);
     } else if (n==3) { // PAGE THREE
         var googleLayer = new L.Google('SATELLITE');
         map.addLayer(googleLayer);
@@ -85,14 +105,6 @@ function makeMap(n) {
         for (var i=0; i<ccpLength; i++) {
             $('#ccp-land').find('.panel-wrapper').append('<span id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '"><p> ' + ccpOwners[i].name + '</p></span');
         }
-    }
-
-    function addBaseMap(url) {
-        var basemap = L.tileLayer(url, {
-            subdomains: ['','a.','b.','c.','d.']
-        });
-
-        basemap.addTo(map);
     }
 
     getVigs(n);
