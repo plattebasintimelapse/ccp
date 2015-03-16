@@ -25,9 +25,29 @@
             "page": "donwelch1",
             "section":"1",
             "type":["text", "audio"],
+            "lat": "40.716038",
+            "long":"-98.759193",
+            "image": "donwelch1_thumb.jpg",
+            "new": true
+        },
+        {
+            "title": "The Tale of Water",
+            "page": "donwelch2",
+            "section":"2",
+            "type":["text", "audio"],
             "lat": "40.677253",
             "long":"-98.861675",
-            "image": "canals-thumb.jpg",
+            "image": "donwelch1_thumb.jpg",
+            "new": true
+        },
+        {
+            "title": "White Cranes in Spring",
+            "page": "donwelch3",
+            "section":"3",
+            "type":["text", "audio"],
+            "lat": "40.668660",
+            "long":"-99.170494",
+            "image": "donwelch1_thumb.jpg",
             "new": true
         },
         {
