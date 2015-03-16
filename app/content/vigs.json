@@ -21,6 +21,16 @@
             "new": true
         },
         {
+            "title": "The River",
+            "page": "donwelch1",
+            "section":"1",
+            "type":["text", "audio"],
+            "lat": "40.687928",
+            "long":"-98.917809",
+            "image": "canals-thumb.jpg",
+            "new": true
+        },
+        {
             "title": "Planting Prairie",
             "page": "tnc-seeding",
             "section":"3",
