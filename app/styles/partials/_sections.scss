@@ -47,7 +47,7 @@ section.title.image-featured {
 	}
 }
 
-section.copy { width:100%; max-width: $vig-container-width; &.narrow { max-width: $vig-container-width / 3; } }
+section.copy { width:100%; max-width: $vig-container-width; &.narrow { max-width: $vig-container-width / 2; } }
 
 section.audio { height: 150px; }
 
