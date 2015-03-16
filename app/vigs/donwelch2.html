@@ -194,4 +194,8 @@
             $('.twentytwenty-overlay').remove();
         }, 1000);
     });
+
+    $('.modal').on('hide.bs.modal', function (e) {
+        $("#jquery_jplayer_1").jPlayer("stop");
+    });
 </script>
