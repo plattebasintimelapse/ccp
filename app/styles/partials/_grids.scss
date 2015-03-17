@@ -188,9 +188,9 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 	background-color: transparent;
 	i {
 		cursor: pointer;
-		color: $base-font-color;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $black;
+		color: $black;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: $base-font-color;
 		&:hover { color: $blue; }
 	}
 }
