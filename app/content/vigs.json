@@ -4,7 +4,7 @@
             "title": "Station on the Plains",
             "page": "ft-kearny",
             "section":"1",
-            "type":["text"],
+            "type":["text", "photo"],
             "lat": "40.6500",
             "long":"-99.0000",
             "image": "ftkearny_camp.jpg",
@@ -81,7 +81,7 @@
             "new": true
         },
         {
-            "title": "Wet Meadow Habitat",
+            "title": "Inside Wet Meadows",
             "page": "wetmeadow",
             "section":"2",
             "type":["text", "video"],
@@ -94,10 +94,10 @@
             "title": "Whooper Recovery",
             "page": "whoopers",
             "section":"2",
-            "type":[],
-            "lat": "40.926396",
-            "long":"-98.342012",
-            "image": "thumbnail.jpg",
+            "type":["text", "audio", "photo"],
+            "lat": "40.963826",
+            "long":"-98.683662",
+            "image": "whooper_thumb.jpg",
             "new": true
         },
         {
