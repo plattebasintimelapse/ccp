@@ -56,6 +56,10 @@ section.image-featured, section.full-width {
 	.container-fluid { padding: 0; }
 }
 
+section.full-width {
+	padding-bottom: 50px;
+}
+
 section.video-featured { .container { max-width: $vig-container-width * 1.4;} }
 
 .image-featured-behind-large {
@@ -82,8 +86,6 @@ section.video-featured { .container { max-width: $vig-container-width * 1.4;} }
 		height: 300px;
 	}
 }
-
-section.featured-image-behind-series {  }
 
 .video-wrapper-16-9 {
 	position: relative;
