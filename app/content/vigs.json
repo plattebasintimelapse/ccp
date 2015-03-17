@@ -21,6 +21,16 @@
             "new": true
         },
         {
+            "title": "Tapping Groundwater",
+            "page": "canals2",
+            "section":"2",
+            "type":["text"],
+            "lat": "40.613562",
+            "long":"-98.727522",
+            "image": "canals-thumb.jpg",
+            "new": true
+        },
+        {
             "title": "The River",
             "page": "donwelch1",
             "section":"1",
