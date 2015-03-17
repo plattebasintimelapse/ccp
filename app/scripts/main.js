@@ -126,7 +126,7 @@ function listenForAudioCntl() {
     },500);
 
     $('.sound-container').click(function() {
-        if (playing) {
+        if (opening_is_playing) {
             opening_sound[0].pause();
             opening_is_playing = false;
             $('.sound-container i').removeClass('fa-volume-up').addClass('fa-volume-off');

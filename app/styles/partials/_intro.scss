@@ -60,7 +60,7 @@ body.intro .slide#five {
 	position: relative;
     $main-width: 500px;
     @include breakpoint(mama-bear) { width: 600px; margin-left: -(300px); top: 5%;}
-    @include breakpoint(baby-bear) { width: 100%; margin-left: 0; left: 0; top: 10%;}
+    @include breakpoint(baby-bear) { width: 90%; margin-left: 0; left: 0; top: 10%;}
     width: $main-width;
     left: 50%;
     margin-left: -($main-width/2);
@@ -71,6 +71,8 @@ body.intro .slide#five {
 
 .align-bottom .opening-title-center {
     bottom: 100px;
+    @include breakpoint(mama-bear) { width: 600px; margin-left: -(300px); top: 5%;}
+    @include breakpoint(baby-bear) { width: 90%; margin-left: 0; left: 0; top: 10%;}
 }
 
 .sound-container {
