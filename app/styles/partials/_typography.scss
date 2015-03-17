@@ -192,6 +192,7 @@ section.title.image-featured h1 {
 	@include breakpoint(baby-bear) { font-size: .9em; }
 	&.image-caption-right { text-align: right; }
 	&.image-caption-left { text-align: left; }
+	em { font-size: .8em; }
 }
 
 .image-large .image-caption {
