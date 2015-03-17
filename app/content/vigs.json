@@ -94,7 +94,7 @@
             "title": "Whooper Recovery",
             "page": "whoopers",
             "section":"2",
-            "type":["text", "audio", "photo"],
+            "type":["text", "audio", "video"],
             "lat": "40.963826",
             "long":"-98.683662",
             "image": "whooper_thumb.jpg",
