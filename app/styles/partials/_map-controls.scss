@@ -8,9 +8,12 @@
 	line-height: 40px;
 }
 
-#map .leaflet-bar a:hover, #map .leaflet-bar a.leaflet-disabled {
+#map .leaflet-bar a.leaflet-disabled {
 	background-color: rgba(28,16,6,.5);
-	// color: $blue;
+}
+
+#map .leaflet-bar a:hover {
+	background-color: $blue;
 }
 #map .leaflet-bar a, #map .leaflet-bar a {
 	background-color: $black;

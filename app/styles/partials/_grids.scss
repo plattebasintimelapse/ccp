@@ -183,13 +183,14 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 ***********************/
 
 .help {
-	right: 20px;
-	top: 70px;
+	left: 8px;
+	top: 160px;
 	background-color: transparent;
-	
 	i {
 		cursor: pointer;
-		color: $black;
+		color: $base-font-color;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: $black;
 		&:hover { color: $blue; }
 	}
 }
