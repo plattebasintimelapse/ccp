@@ -1,10 +1,10 @@
-body.intro .slide {
-	background: url(../images/full/full.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
+// body.intro .slide {
+// 	background: url(../images/full/full.jpg) no-repeat center center;
+// 	-webkit-background-size: cover;
+// 	-moz-background-size: cover;
+// 	-o-background-size: cover;
+// 	background-size: cover;
+// }
 
 body.intro .slide#one {
     background: url(../images/full/intro-one.jpg) no-repeat center center;
@@ -12,6 +12,10 @@ body.intro .slide#one {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+body.intro .slide#crane-video {
+    background-color: black;
 }
 
 body.intro .slide#two {
@@ -45,7 +49,11 @@ body.intro .slide#five {
     -o-background-size: cover;
     background-size: cover;
 
-    p { font-size: 1.4em; text-align: left; margin-bottom: 2px; }
+    p { margin-bottom: 30px; }
+}
+
+.align-bottom .fp-tableCell {
+  vertical-align: bottom;
 }
 
 .opening-title-center {
@@ -61,6 +69,10 @@ body.intro .slide#five {
     padding: 15px;
 }
 
+.align-bottom .opening-title-center {
+    bottom: 100px;
+}
+
 .sound-container {
     position: absolute;
     bottom: 20px;
@@ -73,6 +85,10 @@ body.intro .slide#five {
 }
 
 #main-title {
+    $main-width: 700px;
+    width: $main-width;
+    left: 50%;
+    margin-left: -($main-width/2);
     h1 {
     	font-size: 5em;
     	color: white;

@@ -178,6 +178,22 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 	max-width: 180px;
 }
 
+/***********************
+****** INSET MAP  ******
+***********************/
+
+.help {
+	right: 20px;
+	top: 70px;
+	background-color: transparent;
+	
+	i {
+		cursor: pointer;
+		color: $black;
+		&:hover { color: $blue; }
+	}
+}
+
 /**************************
 ****** INSTRUCTIONS  ******
 **************************/

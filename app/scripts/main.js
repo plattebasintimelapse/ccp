@@ -14,6 +14,7 @@ var main_height;                                // HEIGHT OF MAIN CONTAINER
 var MAIN_CLOSED_HEIGHT;                         // CONSTANT FOR HEIGHT OF CLOSED MAIN
 var set_main_offset;                            // COMPUTED VALUE FOR MAIN POSITION
 var hasOpenedMain = false;                      // HAS USER OPENED MAIN MENU?
+var opening_sound = $('#opening-sounds');       // OPENING AUDIO
 
 function initPage() {
     setStyles();
@@ -30,7 +31,7 @@ function initPage() {
         listenForAudioCntl();
     } else if ( $body.hasClass('one') ) {
         makeMap(1);
-        $('#helper-modal').modal('show');
+        // $('#helper-modal').modal('show');
         $main_menu.find( 'li:nth-child(1) a').addClass('active');
     } else if ( $body.hasClass('two') ) {
         makeMap(2);
@@ -115,21 +116,21 @@ function listenVideo(id){
 }
 
 function listenForAudioCntl() {
-    var sound = $('#opening-sounds');
+    var opening_sound = $('#opening-sounds');
     var playing = true;
     setTimeout(function() {
-        sound[0].play();
-        sound[0].volume = 0;
-        sound.animate({volume: 1}, 3000);
+        opening_sound[0].play();
+        opening_sound[0].volume = 0;
+        opening_sound.animate({volume: 1}, 3000);
     },500);
 
     $('.sound-container').click(function() {
         if (playing) {
-            sound[0].pause();
+            opening_sound[0].pause();
             playing = false;
             $('.sound-container i').removeClass('fa-volume-up').addClass('fa-volume-off');
         } else {
-            sound[0].play();
+            opening_sound[0].play();
             playing = true;
             $('.sound-container i').addClass('fa-volume-up').removeClass('fa-volume-off');
         }
