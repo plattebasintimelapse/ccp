@@ -15,6 +15,7 @@ var MAIN_CLOSED_HEIGHT;                         // CONSTANT FOR HEIGHT OF CLOSED
 var set_main_offset;                            // COMPUTED VALUE FOR MAIN POSITION
 var hasOpenedMain = false;                      // HAS USER OPENED MAIN MENU?
 var opening_sound = $('#opening-sounds');       // OPENING AUDIO
+var opening_is_playing = true;
 
 function initPage() {
     setStyles();
@@ -117,7 +118,7 @@ function listenVideo(id){
 
 function listenForAudioCntl() {
     var opening_sound = $('#opening-sounds');
-    var playing = true;
+    opening_is_playing = true;
     setTimeout(function() {
         opening_sound[0].play();
         opening_sound[0].volume = 0;
@@ -127,11 +128,11 @@ function listenForAudioCntl() {
     $('.sound-container').click(function() {
         if (playing) {
             opening_sound[0].pause();
-            playing = false;
+            opening_is_playing = false;
             $('.sound-container i').removeClass('fa-volume-up').addClass('fa-volume-off');
         } else {
             opening_sound[0].play();
-            playing = true;
+            opening_is_playing = true;
             $('.sound-container i').addClass('fa-volume-up').removeClass('fa-volume-off');
         }
     });
