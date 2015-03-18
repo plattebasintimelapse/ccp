@@ -27,7 +27,7 @@
 		"content": [
 			{ "image":
 				{
-					"src": "main/section-one/native american image.jpg",
+					"src": "main/section-one/earth-lodges.jpg",
 				  	"caption": "This is the caption.",
 				  	"align": "right",
 				  	"size": "medium"
@@ -43,15 +43,27 @@
 
 			},{ "image":
 				{
-					"src": "main/section-one/wagon crossing platte.jpg",
+					"src": "main/section-one/sioux-camp.jpg",
 				  	"caption": "This is the caption.",
 				  	"align": "right",
-				  	"size": "medium"
+				  	"size": "small"
 				}
 
 			},{ "graf":
 
-				"As Euro-American explorers started arriving to colonize this new land, the Platte River Valley began to change. Beginning in the late seventeenth century, the Spanish, French, and other colonial settlers introduced native groups to horses, guns, and other trade goods as well as deadly Old World diseases. These changes affected native settlement, social and subsistence patterns and in some cases caused further friction between warring groups. In the early nineteenth century, starting with explorers like Lewis and Clark, westward expansion brought increasing numbers of Euro-American settlers to the region. The human population, and impact on the river, grew."
+				"As Euro-American explorers started arriving to colonize this new land, the Platte River Valley began to change. Beginning in the late seventeenth century, the Spanish, French, and other colonial settlers introduced native groups to horses, guns, and other trade goods as well as deadly Old World diseases. These changes affected native settlement, social and subsistence patterns and in some cases caused further friction between warring groups."
+
+			},{ "graf":
+			
+				"In the early nineteenth century, starting with explorers like Lewis and Clark, westward expansion brought increasing numbers of Euro-American settlers to the region. The human population, and impact on the river, grew."
+
+			},{ "image":
+				{
+					"src": "main/section-one/wagons-crossing.jpg",
+				  	"caption": "This is the caption.",
+				  	"align": "left",
+				  	"size": "small"
+				}
 
 			},{ "graf":
 
