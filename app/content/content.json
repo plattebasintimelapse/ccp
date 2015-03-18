@@ -28,7 +28,7 @@
 			{ "image":
 				{
 					"src": "main/section-one/earth-lodges.jpg",
-				  	"caption": "Native Americans earth lodges in the Pawnee Loup Fork Village near Genoa, Neb. <em>(Nebraska State Historical Society)</em>",
+				  	"caption": "Native American earth lodges in the Pawnee Loup Fork Village near Genoa, Neb. <em>(Nebraska State Historical Society)</em>",
 				  	"align": "right",
 				  	"extend": "extend",
 				  	"size": "medium"
@@ -103,7 +103,7 @@
 			{ "image":
 				{
 					"src": "main/section-two/whooping-crane.jpg",
-				  	"caption": "<a href='https://www.flickr.com/photos/_hemant_' target='_blank' ><em>(Hemant Kulkarni)</em></a>",
+				  	"caption": "Whooping cranes were one of the first species to be listed as endangered. <a href='https://www.flickr.com/photos/_hemant_' target='_blank' ><em>(Hemant Kulkarni)</em></a>",
 				  	"align": "right",
 				  	"extend": "extend",
 				  	"size": "small"
