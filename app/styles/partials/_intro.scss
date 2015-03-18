@@ -24,6 +24,8 @@ body.intro .slide#two {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    .opening-title-center { background-color: rgba(0,0,0,.6); }
 }
 
 body.intro .slide#three {
@@ -70,7 +72,7 @@ body.intro .slide#five {
 .align-bottom .opening-title-center {
     bottom: 100px;
     @include breakpoint(mama-bear) { width: 500px; margin-left: -(300px); top: 5%;}
-    @include breakpoint(baby-bear) { width: 240px; margin-left: -120px; left: 50%; bottom: 30%;}
+    @include breakpoint(baby-bear) { width: 240px; margin-left: -120px; left: 50%; bottom: 40%;}
 }
 
 .sound-container {
@@ -85,11 +87,11 @@ body.intro .slide#five {
 }
 
 #main-title {
-    width: 700px;
+    width: 600px;
     @include breakpoint(mama-bear) { width: 500px; margin-left: -250px;}
     @include breakpoint(baby-bear) { width: 250px; margin-left: -125px;}
     left: 50%;
-    margin-left: -350px;
+    margin-left: -300px;
     text-shadow: 4px 4px 4px black;
 
     h1 {

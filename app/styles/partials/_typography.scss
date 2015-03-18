@@ -207,7 +207,12 @@ section.title.image-featured h1 {
 
 .slide-wrapper { width: 100%; }
 
-.slide p { text-shadow: 3px 3px 3px black; }
+.slide p {
+	text-shadow: 3px 3px 3px black;
+	font-size: 2em;
+	@include breakpoint(mama-bear) { font-size: 1.6em; }
+	@include breakpoint(baby-bear) { font-size: 1.2em; }
+}
 
 .byline { font-weight: bold; font-size: 1.3em; }
 
