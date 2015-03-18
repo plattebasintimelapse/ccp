@@ -1,7 +1,7 @@
 {
 	"main": {
 		"title": "Into the Current",
-		"subhed": "A community works to conserve wildlife habitat along the central Platte River.",
+		"subhed": "A community works to conserve wildlife habitat along the central Platte River in Nebraska.",
 		"credits": "By Platte Basin Timelapse",
 
 		"nav": {
@@ -117,25 +117,35 @@
 				"Like many other birds, whooping cranes were hunted through the 19th and early 20th centuries. The Migratory Bird Treaty Act in 1918 aimed to stop this, banning the hunting or killing of species listed in the act. But for whooping cranes, significant damage had already been done."
 			},{ "graf":
 				"Cranes prefer shallow wetlands and marshes for roosting and a wide field of view to spot predators. As dams and diversions for agriculture, cities and hydropower significantly reduced flows through the central Platte in the late 1800s and early 1900s, vegetation normally scoured out by spring floods instead took root. Wide stretches of the Platte became unsuitable habitat, threatening the bird’s survival. Combined with hunting and habitat losses in other parts of the bird’s migratory flyway, by the 1940s, only 16 whooping cranes remained in the wild."
-			},{ "graf":
-				"In the middle of the twentieth century, the nation rode a rising tide of social consciousness. For many Americans, the 1950s, 60s and 70s were defined by social movements advocating for the rights of minorities, women, the gay community, and the environment."
 			},{ "image":
 				{
 					"src": "main/section-two/bird-hunt.jpg",
 				  	"caption": "“One day's sport” in Blaine County, Neb., by Solomon D. Butcher. <em>(Nebraska State Historical Society)</em>",
 				  	"align": "right",
 				  	"extend": "extend",
-				  	"size": "medium"
+				  	"size": "small"
 				}
 
 			},{ "graf":
+				"In the middle of the twentieth century, the nation rode a rising tide of social consciousness. For many Americans, the 1950s, 60s and 70s were defined by social movements advocating for the rights of minorities, women, the gay community, and the environment."
+			},{ "graf":
 				"For environmental activists, the whooping crane became a cause célèbre —a charismatic bird under threat that symbolized the need for environmental protections. Its listing as one of the country’s first endangered species paralleled the national turn of attention toward the environment. The habitat requirements for the whooping crane were hammered out during the same few years that most of the country’s bedrock environmental laws were passed in the 1970s: the National Environmental Policy Act, the Endangered Species Act, the Clean Water Act, and Endangered Species Act, and the establishment of the U.S. Environmental Protection Agency."
+			},{ "image":
+				{
+					"src": "main/section-two/whooper-hunt.png",
+				  	"caption": "Whooping cranes were hunted for hat-making and fashion trades. <em>(Joel Sartore)</em>",
+				  	"align": "left",
+				  	"size": "small"
+				}
+
 			},{ "graf":
 				"When a group of public power companies proposed a new dam and reservoir on the Laramie River, a tributary of the North Platte in Wyoming, environmental groups mobilized behind the brand-new endangered species legislation to fight it. The National Wildlife Federation and state of Nebraska opposed the project, arguing the dam would further compromise wildlife habitat and irrigation needs downstream."
 			},{ "graf":
 				"After a series of lawsuits and negotiations, parties finally reached agreement in 1978. Construction of Grayrocks Dam and Reservoir was allowed to proceed as long as the power companies limited their annual water use and created a trust fund dedicated to protecting and enhancing whooping crane habitat."
 			},{ "graf":
 				"The resulting Platte River Whooping Crane Habitat Maintenance Trust, now commonly called the Crane Trust, joined other conservation groups already active in habitat restoration along the central Platte."
+			},{ "graf":
+				"Less than a decade after after the Grayrocks settlement, whooping crane habitat once again challenged an upstream power project: this time, the relicensing of Kingsley Dam at Lake McConaughy."
 			},{ "image":
 				{
 					"src": "main/section-two/kingsley-dam-1930.jpg",
@@ -145,8 +155,6 @@
 				  	"size": "medium"
 				}
 
-			},{ "graf":
-				"Less than a decade after after the Grayrocks settlement, whooping crane habitat once again challenged an upstream power project: this time, the relicensing of Kingsley Dam at Lake McConaughy."
 			},{ "graf":
 				"As before, it took years of legal wrangling and negotiations between public power entities, the Federal Energy Regulatory Commission and the states of Colorado, Wyoming and Nebraska before they finally settled on an cooperative agreement that would further work to protect endangered species on the Platte River—especially the whooping crane. Part of Kingsley Dam relicensing agreement included the creation of an “environmental account” of water at Lake McConaughy that can be released when needed for wildlife."
 			},{ "graf":
