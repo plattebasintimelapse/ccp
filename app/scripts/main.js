@@ -163,7 +163,7 @@ $(function() {
     });
 
     $('.vig-modal').on('hidden.bs.modal', function (e) {
-        location.hash = '';
+        window.location.hash = '';
     });
 
 });
