@@ -87,32 +87,20 @@ body.intro .slide#five {
 }
 
 #main-title {
-    $main-width: 700px;
-    @include breakpoint(mama-bear) { $main-width: 500px;}
-    @include breakpoint(baby-bear) { $main-width: 250px}
-    width: $main-width;
+    width: 700px;
+    @include breakpoint(mama-bear) { width: 500px; margin-left: -250px;}
+    @include breakpoint(baby-bear) { width: 250px; margin-left: -125px;}
     left: 50%;
-    margin-left: -($main-width/2);
-    // h1 {
-    // 	font-size: 5em;
-    // 	color: white;
-    // 	font-weight: 700;
-    // 	text-shadow: 4px 4px 4px black;
-    //     // @include breakpoint(mama-bear) { font-size: 2.4em; margin-bottom: 0px; margin-top: 5px;}
-    //     // @include breakpoint(baby-bear) { font-size: 1.8em; margin-top: 5px;}
-    // }
+    margin-left: -350px;
+    text-shadow: 4px 4px 4px black;
 
-    // p {
-    //     font-size: 2.2em;
-    // 	color: white;
-    // 	text-shadow: 4px 4px 4px black;
-    // }
-
-    // h5 {
-    // 	color: white;
-    // 	text-shadow: 4px 4px 4px black;
-    // 	// font-size: 1.2em;
-    // }
+    h1 {
+    	font-size: 5em;
+    	color: white;
+    	font-weight: 700;
+        @include breakpoint(mama-bear) { font-size: 2.8em; margin-bottom: 0px; margin-top: 5px;}
+        @include breakpoint(baby-bear) { font-size: 2.2em; margin-top: 5px;}
+    }
 }
 
 .intro .btn-default, .intro .btn-default:focus {
