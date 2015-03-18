@@ -28,7 +28,7 @@
 			{ "image":
 				{
 					"src": "main/section-one/earth-lodges.jpg",
-				  	"caption": "This is the caption.",
+				  	"caption": "Native Americans earth lodges in the Pawnee Loup Fork Village near Genoa, Neb. <em>(Nebraska State Historical Society)</em>",
 				  	"align": "right",
 				  	"size": "medium"
 				}
@@ -44,7 +44,7 @@
 			},{ "image":
 				{
 					"src": "main/section-one/sioux-camp.jpg",
-				  	"caption": "This is the caption.",
+				  	"caption": "A Sioux teepee camp, circa 1891. <em>(Nebraska State Historical Society)</em>",
 				  	"align": "right",
 				  	"size": "small"
 				}
@@ -60,7 +60,7 @@
 			},{ "image":
 				{
 					"src": "main/section-one/wagons-crossing.jpg",
-				  	"caption": "This is the caption.",
+				  	"caption": "An emigrant wagon train crossing the river. <em>(Nebraska State Historical Society)</em>",
 				  	"align": "left",
 				  	"size": "small"
 				}
@@ -76,7 +76,7 @@
 			},{ "image":
 				{
 					"src": "main/section-one/pathfinder.jpg",
-				  	"caption": "This is the caption.",
+				  	"caption": "Pathfinder Dam was the first major dam on the North Platte River, completed in 1909. <em>(National Archives and Records Administration)</em>",
 				  	"align": "right",
 				  	"size": "medium"
 				}
@@ -118,7 +118,7 @@
 			},{ "image":
 				{
 					"src": "main/section-two/bird-hunt.jpg",
-				  	"caption": "Caption",
+				  	"caption": "“One day's sport” in Blaine County, Neb., by Solomon D. Butcher. <em>(Nebraska State Historical Society)</em>",
 				  	"align": "right",
 				  	"size": "small"
 				}
@@ -134,7 +134,7 @@
 			},{ "image":
 				{
 					"src": "main/section-two/kingsley-dam-1930.jpg",
-				  	"caption": "This is the caption.",
+				  	"caption": "A view of Morning Glory Spillway with Kingsley dam almost completed in the background, circa 1940. <em>(Central Public Power and Irrigation District)</em>",
 				  	"align": "right",
 				  	"size": "medium"
 				}
