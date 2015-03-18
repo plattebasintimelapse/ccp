@@ -71,8 +71,8 @@ body.intro .slide#five {
 
 .align-bottom .opening-title-center {
     bottom: 100px;
-    @include breakpoint(mama-bear) { width: 600px; margin-left: -(300px); top: 5%;}
-    @include breakpoint(baby-bear) { width: 90%; margin-left: 0; left: 0; top: 10%;}
+    @include breakpoint(mama-bear) { width: 500px; margin-left: -(300px); top: 5%;}
+    @include breakpoint(baby-bear) { width: 240px; margin-left: -120px; left: 50%; bottom: 30%;}
 }
 
 .sound-container {
@@ -88,29 +88,31 @@ body.intro .slide#five {
 
 #main-title {
     $main-width: 700px;
+    @include breakpoint(mama-bear) { $main-width: 500px;}
+    @include breakpoint(baby-bear) { $main-width: 250px}
     width: $main-width;
     left: 50%;
     margin-left: -($main-width/2);
-    h1 {
-    	font-size: 5em;
-    	color: white;
-    	font-weight: 700;
-    	text-shadow: 4px 4px 4px black;
-        // @include breakpoint(mama-bear) { font-size: 2.4em; margin-bottom: 0px; margin-top: 5px;}
-        // @include breakpoint(baby-bear) { font-size: 1.8em; margin-top: 5px;}
-    }
+    // h1 {
+    // 	font-size: 5em;
+    // 	color: white;
+    // 	font-weight: 700;
+    // 	text-shadow: 4px 4px 4px black;
+    //     // @include breakpoint(mama-bear) { font-size: 2.4em; margin-bottom: 0px; margin-top: 5px;}
+    //     // @include breakpoint(baby-bear) { font-size: 1.8em; margin-top: 5px;}
+    // }
 
-    p {
-        font-size: 2.2em;
-    	color: white;
-    	text-shadow: 4px 4px 4px black;
-    }
+    // p {
+    //     font-size: 2.2em;
+    // 	color: white;
+    // 	text-shadow: 4px 4px 4px black;
+    // }
 
-    h5 {
-    	color: white;
-    	text-shadow: 4px 4px 4px black;
-    	font-size: 1.2em;
-    }
+    // h5 {
+    // 	color: white;
+    // 	text-shadow: 4px 4px 4px black;
+    // 	// font-size: 1.2em;
+    // }
 }
 
 .intro .btn-default, .intro .btn-default:focus {
