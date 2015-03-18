@@ -213,7 +213,8 @@ function openModal(modal, f) {
 
     // send google analytics event
     ga('send', 'pageview', {
-     'page': location.pathname + location.search  + location.hash
+     'page': location.pathname + location.search  + location.hash,
+     'title': f
     });
 }
 
