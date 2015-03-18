@@ -84,5 +84,6 @@ right: 0;
 .big-ole-video { width: 100%; }
 
 .vig-popup.square .leaflet-popup-content { width: 90px !important; }
-.vig-popup.video .leaflet-popup-content, .vig-popup.map .leaflet-popup-content { width: 90px !important; }
+.vig-popup.video .leaflet-popup-content, .vig-popup.map .leaflet-popup-content, .vig-popup.audio .leaflet-popup-content { width: 90px !important; }
 .vig-popup .atop-icon { position: absolute; left: 50%; top: 5%; width: 26px; margin-left:-13px; opacity: .8; }
+.vig-popup.audio .atop-icon { top: 15%; }

@@ -165,6 +165,8 @@ function mapVigs(vigs) {
             vig_content = '<div class="row"><div class="col col-xs-12"><img src="../images/thumbnail/' + vigs[i].image + '"/><h5 class="atop-icon"><i class="fa fa-play fa-3x"></i></h5></div></div>';
         } else if ( vigs[i].size == 'map' ) {
             vig_content = '<div class="row"><div class="col col-xs-12"><img src="../images/thumbnail/' + vigs[i].image + '"/><h5 class="atop-icon"><i class="fa fa-map-marker fa-3x"></i></h5></div></div>';
+        } else if ( vigs[i].size == 'audio' ) {
+            vig_content = '<div class="row"><div class="col col-xs-12"><img src="../images/thumbnail/' + vigs[i].image + '"/><h5 class="atop-icon"><i class="fa fa-volume-up fa-2x"></i></h5></div></div>';
         }
 
         if ( vigs[i].new ) {
@@ -190,7 +192,7 @@ $('#map').on('click', '.vig-popup', function() {
 
     // strip away unnecessary classes
     for (var i=0; i<c.length; i++) {
-        if ( c[i] != 'leaflet-popup' && c[i] != 'vig-popup' && c[i] != 'leaflet-zoom-animated' && c[i] != 'square' && c[i] != 'full' && c[i] != 'video' && c[i] != 'map') {
+        if ( c[i] != 'leaflet-popup' && c[i] != 'vig-popup' && c[i] != 'leaflet-zoom-animated' && c[i] != 'square' && c[i] != 'full' && c[i] != 'video' && c[i] != 'map' && c[i] != 'audio') {
             f = c[i];
         }
     }

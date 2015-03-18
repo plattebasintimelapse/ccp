@@ -154,6 +154,8 @@ nav.navbar-default .main-menu {
 
 .vig-modal { color: #333333; }
 
+.vig-modal a { color: #333333; &:hover { color: $blue; } }
+
 .vig-popup .leaflet-popup-content p {
 	margin: 0 0 10px 0;
 	font-size: 1.3em;
