@@ -30,6 +30,7 @@
 					"src": "main/section-one/earth-lodges.jpg",
 				  	"caption": "This is the caption.",
 				  	"align": "right",
+				  	"extend": "extend",
 				  	"size": "medium"
 				}
 
@@ -46,6 +47,7 @@
 					"src": "main/section-one/sioux-camp.jpg",
 				  	"caption": "This is the caption.",
 				  	"align": "right",
+				  	"extend": "extend",
 				  	"size": "small"
 				}
 
@@ -78,6 +80,7 @@
 					"src": "main/section-one/pathfinder.jpg",
 				  	"caption": "This is the caption.",
 				  	"align": "right",
+				  	"extend": "extend",
 				  	"size": "medium"
 				}
 
@@ -102,6 +105,7 @@
 					"src": "main/section-two/whooping-crane.jpg",
 				  	"caption": "<a href='https://www.flickr.com/photos/_hemant_' target='_blank' ><em>(Hemant Kulkarni)</em></a>",
 				  	"align": "right",
+				  	"extend": "extend",
 				  	"size": "small"
 				}
 
@@ -120,7 +124,8 @@
 					"src": "main/section-two/bird-hunt.jpg",
 				  	"caption": "Caption",
 				  	"align": "right",
-				  	"size": "small"
+				  	"extend": "extend",
+				  	"size": "medium"
 				}
 
 			},{ "graf":
@@ -136,6 +141,7 @@
 					"src": "main/section-two/kingsley-dam-1930.jpg",
 				  	"caption": "This is the caption.",
 				  	"align": "right",
+				  	"extend": "extend",
 				  	"size": "medium"
 				}
 
