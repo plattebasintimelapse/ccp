@@ -89,10 +89,10 @@
 		"content": [
 			{ "image":
 				{
-					"src": "main/section-one/one days hunt.jpg",
-				  	"caption": "CRANE PICTURE HERE!!!!!",
+					"src": "main/section-two/whooping-crane.jpg",
+				  	"caption": "<a href='https://www.flickr.com/photos/_hemant_' target='_blank' >Hemant Kulkarni</a>",
 				  	"align": "right",
-				  	"size": "large"
+				  	"size": "small"
 				}
 
 			},{ "graf":
