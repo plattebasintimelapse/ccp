@@ -20,9 +20,8 @@ var opening_is_playing = true;
 function initPage() {
     setStyles();
 
-    if(window.location.hash) {
-        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-        alert (hash);
+    if( location.hash && location.hash != '#intro' ) {
+        var hash = location.hash.substring(1);
         openModal( $('.vig-modal'), hash);
     } else {
       // No hash found
@@ -37,7 +36,7 @@ function initPage() {
     });
 
     if ( $body.hasClass('intro') ) {
-        listenForAudioCntl();
+        // listenForAudioCntl();
     } else if ( $body.hasClass('one') ) {
         makeMap(1);
         // $('#helper-modal').modal('show');
@@ -164,7 +163,7 @@ $(function() {
     });
 
     $('.vig-modal').on('hidden.bs.modal', function (e) {
-        window.location.hash = '';
+        location.hash = '';
     });
 
 });

@@ -198,17 +198,22 @@ $('#map').on('click', '.vig-popup', function() {
     }
 
     openModal(modal, f);
-    window.location.hash = f;
 });
 
 function openModal(modal, f) {
     // isolate unique class and build ajax load url
     var url = '../vigs/' + f + '.html';
+    location.hash = f;
 
     // ajax load content into modal
     $.get(url, function(data) {
         modal.html(data);
         modal.modal('show');
+    });
+
+    // send google analytics event
+    ga('send', 'pageview', {
+     'page': location.pathname + location.search  + location.hash
     });
 }
 

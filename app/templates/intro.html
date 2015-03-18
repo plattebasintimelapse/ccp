@@ -55,7 +55,7 @@
                         <!-- <p class="caption">From settlement times to today we've significantly altered the flow of the Platte River.</p> -->
                         <div class="video-wrapper-16-9 vid-wrap">
                                 <div class="video-wrapper-16-9 vid-wrap">
-                                    <iframe id="opening" src="//player.vimeo.com/video/122550470?title=0&amp;byline=0&amp;portrait=0&amp;loop=1&amp;player_id=opening&amp;api=1" frameborder="0"></iframe>
+                                    <iframe id="opening" src="//player.vimeo.com/video/122553023?title=0&amp;autoplay=1&amp;byline=0&amp;portrait=0&amp;loop=1&amp;player_id=opening&amp;api=1" frameborder="0"></iframe>
                                 </div>
                             </div>
                     </div>
@@ -126,6 +126,17 @@
         <!-- endbower -->
         <!-- endbuild -->
 
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-40570778-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+
         <!-- build:js scripts/plugins.js -->
         <!-- endbuild -->
 
@@ -142,26 +153,40 @@
                 var $iframe = $('#opening')[0];
                 var player = $f($iframe);
 
+                $('.sound-container').click(function() {
+                    if (opening_is_playing) {
+                        // opening_sound[0].pause();
+                        opening_is_playing = false;
+                        $('.sound-container i').removeClass('fa-volume-up').addClass('fa-volume-off');
+                        // player.mute();
+                    } else {
+                        // opening_sound[0].play();
+                        opening_is_playing = true;
+                        $('.sound-container i').addClass('fa-volume-up').removeClass('fa-volume-off');
+                        // player.setVolume(1);
+                    }
+                });
+
                 $('#fullpage').fullpage({
                     anchors:['intro'],
                     loopHorizontal: false,
                     fixedElements: '.sound-container',
                     afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-                        var loadedSlide = $(this);
+                        // var loadedSlide = $(this);
 
-                        if( slideIndex == 1 ){
-                            player.api('play');
-                            opening_sound[0].pause();
-                            opening_is_playing = false;
-                            $('.sound-container i').removeClass('fa-volume-up').addClass('fa-volume-off');
-                        }
+                        // if( slideIndex == 1 ){
+                        //     player.api('play');
+                        //     opening_sound[0].pause();
+                        //     opening_is_playing = false;
+                        //     $('.sound-container i').removeClass('fa-volume-up').addClass('fa-volume-off');
+                        // }
 
-                        if( slideIndex == 2 || slideIndex == 0 ){
-                            player.api('pause');
-                            opening_sound[0].play();
-                            opening_is_playing = true;
-                            $('.sound-container i').addClass('fa-volume-up').removeClass('fa-volume-off');
-                        }
+                        // if( slideIndex == 2 || slideIndex == 0 ){
+                        //     player.api('pause');
+                        //     opening_sound[0].play();
+                        //     opening_is_playing = true;
+                        //     $('.sound-container i').addClass('fa-volume-up').removeClass('fa-volume-off');
+                        // }
 
                     },onSlideLeave: function( anchorLink, index, slideIndex, direction){
                         var leavingSlide = $(this);
