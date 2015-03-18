@@ -18,13 +18,8 @@
             "type":["text"],
             "lat": "40.773782",
             "long":"-99.849243",
-<<<<<<< HEAD
             "image": "bicyclethumbnail.jpg",
-            "size": "video",
-=======
-            "image": "canals-thumb.jpg",
             "size": "full",
->>>>>>> origin/master
             "new": true
         },
         {
