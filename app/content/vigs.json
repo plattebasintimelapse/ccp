@@ -19,7 +19,7 @@
             "lat": "40.773782",
             "long":"-99.849243",
             "image": "canals-thumb.jpg",
-            "size": "video",
+            "size": "full",
             "new": true
         },
         {
@@ -41,7 +41,7 @@
             "lat": "40.746038",
             "long":"-98.519193",
             "image": "donwelch1_thumb.jpg",
-            "size": "square",
+            "size": "audio",
             "new": true
         },
         {
@@ -52,7 +52,7 @@
             "lat": "40.677253",
             "long":"-98.861675",
             "image": "mormonfrozen_thumb.jpg",
-            "size": "full",
+            "size": "audio",
             "new": true
         },
         {
