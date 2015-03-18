@@ -15,7 +15,7 @@
             "title": "Irrigation at Rain's Edge",
             "page": "canals",
             "section":"1",
-            "type":["text"],
+            "type":["text", "photo"],
             "lat": "40.773782",
             "long":"-99.849243",
             "image": "bicyclethumbnail.jpg",
