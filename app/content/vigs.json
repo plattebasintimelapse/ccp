@@ -2,7 +2,7 @@
     "all": [
         {
             "title": "Station on the Plains",
-            "page": "ft-kearny",
+            "page": "station-on-the-plains",
             "section":"1",
             "type":["text", "photo"],
             "lat": "40.6500",
@@ -13,7 +13,7 @@
         },
         {
             "title": "Irrigation at Rain's Edge",
-            "page": "canals",
+            "page": "irrigation-at-rains-edge",
             "section":"1",
             "type":["text", "photo"],
             "lat": "40.773782",
@@ -24,7 +24,7 @@
         },
         {
             "title": "Tapping Groundwater",
-            "page": "canals2",
+            "page": "tapping-groundwater",
             "section":"2",
             "type":["text"],
             "lat": "40.613562",
@@ -35,7 +35,7 @@
         },
         {
             "title": "The River",
-            "page": "donwelch1",
+            "page": "the-river",
             "section":"1",
             "type":["text", "audio"],
             "lat": "40.746038",
@@ -46,7 +46,7 @@
         },
         {
             "title": "The Tale of Water",
-            "page": "donwelch2",
+            "page": "the-tale-of-water",
             "section":"2",
             "type":["text", "audio"],
             "lat": "40.677253",
@@ -57,7 +57,7 @@
         },
         {
             "title": "White Cranes in Spring",
-            "page": "donwelch3",
+            "page": "white-cranes-in-spring",
             "section":"3",
             "type":["text", "audio"],
             "lat": "40.668660",
@@ -68,7 +68,7 @@
         },
         {
             "title": "Planting Prairie",
-            "page": "tnc-seeding",
+            "page": "planting-prairie",
             "section":"3",
             "type":["map", "photo"],
             "lat": "40.739531",
@@ -79,7 +79,7 @@
         },
         {
             "title": "Bridging the Platte",
-            "page": "bridges",
+            "page": "bridging-the-platte",
             "section":"1",
             "type":["audio", "photo", "map"],
             "lat": "40.690141",
@@ -90,7 +90,7 @@
         },
         {
             "title": "Parallel Tracks",
-            "page": "ESA-timeline",
+            "page": "parallel-tracks",
             "section":"2",
             "type":["text"],
             "lat": "40.787398",
@@ -100,8 +100,8 @@
             "new": true
         },
         {
-            "title": "Shrinking Habitat",
-            "page": "wetmeadow",
+            "title": "Inside Wet Meadows",
+            "page": "inside-wet-meadows",
             "section":"2",
             "type":["text", "video"],
             "lat": "40.777236",
@@ -112,7 +112,7 @@
         },
         {
             "title": "Whooper Recovery",
-            "page": "whoopers",
+            "page": "whooper-recovery",
             "section":"2",
             "type":["text", "audio", "video"],
             "lat": "40.963826",
@@ -122,8 +122,8 @@
             "new": true
         },
         {
-            "title": "Bridges Over the River",
-            "page": "bridge-comp",
+            "title": "Compare Bridges Over the Platte",
+            "page": "compare-bridges-over-platte",
             "section":"2",
             "type":["map"],
             "lat": "40.656396",
