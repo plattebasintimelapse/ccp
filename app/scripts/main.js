@@ -159,8 +159,12 @@ $(function() {
         filterMap( $(this) );
     });
 
-     $('.panel .panel-close').click(function() {
+    $('.panel .panel-close').click(function() {
         $(this).parent().parent().fadeOut();
+    });
+
+    $('.vig-modal').on('hidden.bs.modal', function (e) {
+        window.location.hash = '';
     });
 
 });
