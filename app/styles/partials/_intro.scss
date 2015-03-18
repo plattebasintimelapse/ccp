@@ -50,6 +50,8 @@ body.intro .slide#five {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    p { margin-bottom: 40px; }
 }
 
 .align-bottom .fp-tableCell {
@@ -101,6 +103,12 @@ body.intro .slide#five {
         @include breakpoint(mama-bear) { font-size: 2.8em; margin-bottom: 0px; margin-top: 5px;}
         @include breakpoint(baby-bear) { font-size: 2.2em; margin-top: 5px;}
     }
+
+
+}
+
+.logo {
+    img { width: 100px; }
 }
 
 .intro .btn-default, .intro .btn-default:focus {
