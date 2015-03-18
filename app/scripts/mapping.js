@@ -197,6 +197,11 @@ $('#map').on('click', '.vig-popup', function() {
         }
     }
 
+    openModal(modal, f);
+    window.location.hash = f;
+});
+
+function openModal(modal, f) {
     // isolate unique class and build ajax load url
     var url = '../vigs/' + f + '.html';
 
@@ -205,7 +210,7 @@ $('#map').on('click', '.vig-popup', function() {
         modal.html(data);
         modal.modal('show');
     });
-});
+}
 
 var filter = function(feature) {
     for (var i=0; i<ccpLength; i++){

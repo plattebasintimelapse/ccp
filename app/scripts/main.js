@@ -20,6 +20,14 @@ var opening_is_playing = true;
 function initPage() {
     setStyles();
 
+    if(window.location.hash) {
+        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        alert (hash);
+        openModal( $('.vig-modal'), hash);
+    } else {
+      // No hash found
+    }
+
     $toggle.click(function() {
         if( $(this).hasClass('closed') ) {
             open_main($(this));
