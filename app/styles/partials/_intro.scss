@@ -51,7 +51,9 @@ body.intro .slide#five {
     -o-background-size: cover;
     background-size: cover;
 
-    p { margin-bottom: 40px; }
+    .opening-title-center { width: 400px; margin-left: -200px; }
+
+    p { margin-bottom: 20px; }
 }
 
 .align-bottom .fp-tableCell {
@@ -74,7 +76,7 @@ body.intro .slide#five {
 .align-bottom .opening-title-center {
     bottom: 100px;
     @include breakpoint(mama-bear) { width: 500px; margin-left: -(300px); top: 5%;}
-    @include breakpoint(baby-bear) { width: 240px; margin-left: -120px; left: 50%; bottom: 40%;}
+    @include breakpoint(baby-bear) { width: 240px; margin-left: -120px; left: 50%; top: -20%;}
 }
 
 .sound-container {
@@ -108,7 +110,7 @@ body.intro .slide#five {
 }
 
 .logo {
-    img { width: 100px; }
+    img { width: 120px; }
 }
 
 .intro .btn-default, .intro .btn-default:focus {

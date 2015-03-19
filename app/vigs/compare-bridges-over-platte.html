@@ -170,7 +170,7 @@
             positionLeft = $(this).find('.twentytwenty-handle').position().left;
             $('.slider .twentytwenty-handle').css('left', positionLeft);
 
-            h = $('.slider').height();
+            h = $(this).height();
             $('.slider .twentytwenty-before').css('clip', 'rect(0px, '+ positionLeft +'px, ' + h + 'px, 0px)');
         });
     });
