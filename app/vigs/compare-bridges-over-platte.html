@@ -19,7 +19,7 @@
                         <div class="col-sm-12">
                             <p>If you look at aerial imagery of bridges over the Platte River in the 1930s, it sort of looks like a zip tie pulled too tight around a balloon.</p>
                             <p>Many early bridge builders constructed embankments out into the Platte River, shortening the total length of the bridge and reducing construction costs and labor. The constrained banks make the river more narrow, creating faster currents and deeper channels.</p>
-                            <p>Explore the satellite imagery below by sliding the arrows left and right across each picture.</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -28,10 +28,15 @@
             <section class="interactive" id="bridge-comparison">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
+                            <h4 style="text-align: center; font-style: italic; width: 70%; margin: 0 auto;">Compare historical and modern satellite imagery of each bridge over the central Platte River below by sliding the arrows left and right across each picture.</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
                             <h1>1930</h1>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-xs-6">
                             <h1>2014</h1>
                         </div>
                         <div class="col-md-12">
@@ -163,15 +168,5 @@
             $(".slider").twentytwenty();
             $('.twentytwenty-overlay').remove();
         }, 1000);
-
-        var positionLeft, h;
-
-        $('.slider').on('mouseover', function() {
-            positionLeft = $(this).find('.twentytwenty-handle').position().left;
-            $('.slider .twentytwenty-handle').css('left', positionLeft);
-
-            h = $(this).height();
-            $('.slider .twentytwenty-before').css('clip', 'rect(0px, '+ positionLeft +'px, ' + h + 'px, 0px)');
-        });
     });
 </script>

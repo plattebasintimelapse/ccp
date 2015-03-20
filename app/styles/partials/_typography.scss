@@ -2,6 +2,11 @@ body { font-family: $font-family; color: $base-font-color; }
 
 h1 { font-weight: 700; }
 
+h3 {
+	@include breakpoint(mama-bear) { font-size: 1.6em; }
+	@include breakpoint(baby-bear) { font-size: 1.2em; }
+}
+
 a, a.visited {
 	color: $base-font-color;
 	&:hover {
