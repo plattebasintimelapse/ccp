@@ -34,7 +34,7 @@
                 </div>
             </section>
 
-<!-- <section class="audio">
+<section class="audio">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             <section class="copy">
                 <div class="container">
@@ -81,7 +81,7 @@
                         <div class="col-sm-12">
                             <p>“As far as North America goes, [whooping cranes] are a charismatic megafauna,” said Greg Wright, a wildlife biologist formerly with the Crane Trust.</p>
                             <p>“We don't have elephants and giraffes, say, but it is the biggest bird that we have on this continent. Because of that, people are able to quickly identify it and because of its plight, identify with it, as well,” Wright said.</p>
-                            <p>The Crane Trust, originally called the Platte River Whooping Crane Habitat Maintenance Trust, resulted from a lawsuit between Nebraska and public power companies over a proposed dam on a tributary of the North Platte River in Wyoming. Nebraska worried the dam would mean less water for irrigators downstream. Environmentalists alarmed by increasing habitat loss advocated for the bird’s needs under the newly-established Endangered Species Act of 1973.</p>
+                            <p>The Crane Trust, originally called the Platte River Whooping Crane Maintenance Trust, resulted from a lawsuit between Nebraska and public power companies over a proposed dam on a tributary of the North Platte River in Wyoming. Nebraska worried the dam would mean less water for irrigators downstream. Environmentalists alarmed by increasing habitat loss advocated for the bird’s needs under the newly-established Endangered Species Act of 1973.</p>
                             <p>The court settlement ordered the power company to create and fund the Crane Trust to preserve some of the critical habitat in the area. “And then the dam was allowed to go through,” Wright said.</p>
                             <p>Since that time, various conservation groups in Nebraska and elsewhere have worked tirelessly to bring the whoopers back from near extinction. Eighty years ago, whooping cranes were nearly extinct. Through decades of conservation work, the birds have recovered substantially.</p>
                         </div>
@@ -174,4 +174,30 @@
          
 
 </div><button class="btn btn-defalt vig-close" data-dismiss="modal" aria-label="Close">Return to Map</button></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#jquery_jplayer_1").jPlayer({                // The #jquery_jplayer_1 should match the ID agove of the jp_player div
+            ready: function () {
+                $(this).jPlayer("setMedia", {
+                    title: "Whooper Recovery",     // CHANGE THIS
+                    m4a: "../media/audio/whoopingcranes3_24_15web.mp3"            // AND THIS, MAKE SURE THE .MP3 AUDIO IS IN THE MEDIA FOLDER
+                });
+            },
+            cssSelectorAncestor: "#jp_container_1",
+            swfPath: "/js",
+            supplied: "m4a, oga",
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true,
+            remainingDuration: true,
+            toggleDuration: true
+        });
+    });
+
+    $('.modal').on('hide.bs.modal', function (e) {
+        $("#jquery_jplayer_1").jPlayer("stop");
+    });
+</script>
 

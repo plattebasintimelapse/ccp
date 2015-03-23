@@ -9,7 +9,7 @@
             "long":"-99.0000",
             "image": "ftkearny_camp.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "Irrigation at Rain's Edge",
@@ -20,7 +20,7 @@
             "long":"-99.849243",
             "image": "bicyclethumbnail.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "Tapping Groundwater",
@@ -31,7 +31,7 @@
             "long":"-98.727522",
             "image": "centerpivots_thumb.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "The River",
@@ -42,7 +42,7 @@
             "long":"-98.519193",
             "image": "donwelch1_thumb.jpg",
             "size": "audio",
-            "new": true
+            "new": false
         },
         {
             "title": "The Tale of Water",
@@ -53,7 +53,7 @@
             "long":"-98.861675",
             "image": "don2_thumbnail.jpg",
             "size": "audio",
-            "new": true
+            "new": false
         },
         {
             "title": "White Cranes in Spring",
@@ -64,7 +64,7 @@
             "long":"-99.170494",
             "image": "sixcranes_thumb.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "Planting Prairie",
@@ -75,7 +75,7 @@
             "long":"-98.573713",
             "image": "thumbnail.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "Bridging the Platte",
@@ -86,7 +86,7 @@
             "long":"-99.379406",
             "image": "bridgethumbnail.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "Parallel Tracks",
@@ -97,7 +97,7 @@
             "long":"-98.464944",
             "image": "silentspring.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "Inside Wet Meadows",
@@ -108,7 +108,7 @@
             "long":"-98.506178",
             "image": "wetmeadows.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "Whooper Recovery",
@@ -130,7 +130,7 @@
             "long":"-99.086012",
             "image": "bridge-comp-thumb.jpg",
             "size": "map",
-            "new": true
+            "new": false
         }
     ]
 }
