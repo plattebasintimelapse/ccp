@@ -131,6 +131,28 @@
             "image": "bridge-comp-thumb.jpg",
             "size": "map",
             "new": false
+        },
+        {
+            "title": "Bison Return",
+            "page": "bison-return",
+            "section":"3",
+            "type":["text", "audio", "video"],
+            "lat": "40.787398",
+            "long":"-98.463314",
+            "image": "bison_thumb.jpg",
+            "size": "map",
+            "new": false
+        },
+        {
+            "title": "Ancient Travelers",
+            "page": "ancient-travelers",
+            "section":"2",
+            "type":["text", "photo"],
+            "lat": "40.666577",
+            "long":"-99.264565",
+            "image": "sandhill_thumb.jpg",
+            "size": "full",
+            "new": false
         }
     ]
 }
