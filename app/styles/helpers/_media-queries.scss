@@ -13,3 +13,7 @@
 .baby-bear-hide { @include breakpoint(baby-bear) { display: none !important; } }
 
 .mama-bear-hide { @include breakpoint(mama-bear) { display: none !important; } }
+
+.baby-bear-only { display: none; @include breakpoint(baby-bear) { display: block; } }
+
+.mama-bear-only { display: none; @include breakpoint(mama-bear) { display: block; } }

@@ -56,17 +56,6 @@
             "new": false
         },
         {
-            "title": "White Cranes in Spring",
-            "page": "white-cranes-in-spring",
-            "section":"3",
-            "type":["text", "audio"],
-            "lat": "40.668660",
-            "long":"-99.170494",
-            "image": "sixcranes_thumb.jpg",
-            "size": "full",
-            "new": false
-        },
-        {
             "title": "Bridging the Platte",
             "page": "bridging-the-platte",
             "section":"1",
@@ -120,17 +109,6 @@
             "image": "bridge-comp-thumb.jpg",
             "size": "map",
             "new": false
-        },
-        {
-            "title": "Bison Return",
-            "page": "bison-return",
-            "section":"3",
-            "type":["text", "audio", "video"],
-            "lat": "40.787398",
-            "long":"-98.463314",
-            "image": "bison_thumb.jpg",
-            "size": "full",
-            "new": true
         },
         {
             "title": "Ancient Travelers",

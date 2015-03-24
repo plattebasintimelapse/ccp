@@ -27,7 +27,7 @@ var ccpOwners = [
         'color': 'rgb(199,234,229)',
         'filter': true
     }, {
-        'name': 'Platte River Recovery Implemenation Program',
+        'name': 'Platte River Recovery Implementation Program',
         'ownership': 'PRRIP',
         'color': 'rgb(128,205,193)',
         'filter': true
@@ -68,10 +68,10 @@ function bindLabel(feature, layer) {
     }
 
     var build_popup_content = '<p>Name: <b>' + feature.properties.NAME + '</b></p>' +
-                              '<p>Owner: <b>' + owner_nice_name + '</b></p>';
+                              '<p>' + feature.properties.STATUS + ': <b>' + owner_nice_name + '</b></p>';
 
     if ( feature.properties.PRRIPTract ) {
-        build_popup_content += '<p>Purchased: <b>' + feature.properties.PRRIPTract + '</b></p>';
+        // build_popup_content += '<p>Purchased: <b>' + feature.properties.PRRIPTract + '</b></p>';
     }
 
     if ( feature.properties.Acres ) {
@@ -122,7 +122,7 @@ function mapLandData() {
             style: function(feature){
 
                 var styles = {
-                    fillOpacity: .9,
+                    fillOpacity: .8,
                     weight: 1,
                     color: 'black'
                 }
