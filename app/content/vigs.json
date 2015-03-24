@@ -67,17 +67,6 @@
             "new": false
         },
         {
-            "title": "Planting Prairie",
-            "page": "planting-prairie",
-            "section":"3",
-            "type":["map", "photo"],
-            "lat": "40.739531",
-            "long":"-98.573713",
-            "image": "thumbnail.jpg",
-            "size": "full",
-            "new": false
-        },
-        {
             "title": "Bridging the Platte",
             "page": "bridging-the-platte",
             "section":"1",
@@ -140,8 +129,8 @@
             "lat": "40.787398",
             "long":"-98.463314",
             "image": "bison_thumb.jpg",
-            "size": "map",
-            "new": false
+            "size": "full",
+            "new": true
         },
         {
             "title": "Ancient Travelers",
@@ -152,7 +141,7 @@
             "long":"-99.264565",
             "image": "sandhill_thumb.jpg",
             "size": "full",
-            "new": false
+            "new": true
         }
     ]
 }

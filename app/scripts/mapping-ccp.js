@@ -144,7 +144,7 @@ function mapLandData() {
             onEachFeature: function(feature, layer) {
                 bindLabel(feature, layer);
                 bindLayerEvents(layer);
-                buildSelectOptions(feature);
+                // buildSelectOptions(feature);
             },
             filter: filter
 
