@@ -60,7 +60,29 @@ var filter = function(feature) {
 };
 
 function bindLabel(feature, layer) {
-    layer.bindPopup('<div class="dark-font">Name: <b>' + feature.properties.NAME + '</b><br/>Owner: <b>' + feature.properties.OWNERSHIP + '</b><br/>Purchased: <b>' + feature.properties.PRRIPTract) + '</div>';
+
+    for (var i=0; i<ccpLength; i++){
+        if (ccpOwners[i].ownership == feature.properties.OWNERSHIP) {
+            var owner_nice_name = ccpOwners[i].name;
+        }
+    }
+
+    var build_popup_content = '<p>Name: <b>' + feature.properties.NAME + '</b></p>' +
+                              '<p>Owner: <b>' + owner_nice_name + '</b></p>';
+
+    if ( feature.properties.PRRIPTract ) {
+        build_popup_content += '<p>Purchased: <b>' + feature.properties.PRRIPTract + '</b></p>';
+    }
+
+    if ( feature.properties.Acres ) {
+        var num = feature.properties.Acres;
+        var n = num.toFixed(1);
+        build_popup_content += '<p>Area: <b>' + n + ' acres</p>';
+    }
+
+    var popup_content = '<div class="ccp-popup dark-font">' + build_popup_content + '</div>';
+
+    layer.bindPopup( popup_content );
 }
 
 function bindLayerEvents(layer) {
@@ -129,19 +151,24 @@ function mapLandData() {
         }).addTo(map);
 
     });
+}
 
+function mapAreaData() {
     $.getJSON('../data/ccpArea.json', function(data) {
         ccpAreaGeoJSON = L.geoJson(data, {
             style: function(feature) {
 
                 var styles = {
-                    fillOpacity: 0,
+                    fillOpacity: .1,
                     color: "#8A3324",
                     weight: 2,
                     opacity: .8
                 }
 
                 return styles;
+            },
+            onEachFeature: function(feature, layer) {
+                // layer.bindPopup( '<div class="ccp-popup dark-font"><p>This land is under PRRIPs associated habitat and considered area for habitat concern.</p></div>' );
             }
         }).addTo(map).bringToBack();
     });
