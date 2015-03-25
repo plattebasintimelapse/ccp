@@ -39,13 +39,13 @@ function initPage() {
         // listenForAudioCntl();
     } else if ( $body.hasClass('one') ) {
         makeMap(1);
-        // $('#helper-modal').modal('show');
         $main_menu.find( 'li:nth-child(1) a').addClass('active');
     } else if ( $body.hasClass('two') ) {
         makeMap(2);
         $main_menu.find( 'li:nth-child(2) a').addClass('active');
     } else if ( $body.hasClass('three') ) {
         makeMap(3);
+        $('#coming-soon-modal').modal('show');
         $main_menu.find( 'li:nth-child(3) a').addClass('active');
     }
 

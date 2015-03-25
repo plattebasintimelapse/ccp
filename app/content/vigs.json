@@ -126,23 +126,13 @@
             "page": "white-cranes-in-spring",
             "section":"3",
             "type":["text", "audio"],
-            "lat": "40.668660",
-            "long":"-99.170494",
+            "lat": "40.658113",
+            "long":"-99.091251",
             "image": "sixcranes_thumb.jpg",
             "size": "full",
             "new": true
-        },
-        {
-            "title": "Bison Return",
-            "page": "bison-return",
-            "section":"3",
-            "type":["text", "audio", "video"],
-            "lat": "40.787398",
-            "long":"-98.463314",
-            "image": "bison_thumb.jpg",
-            "size": "full",
-            "new": true
         }
+
     ]
 }
 
