@@ -105,6 +105,8 @@ nav.navbar-default .main-menu {
 
 .panel.toggle .toggle-btn h4 { margin: 5px 10px; }
 
+.panel.toggle .toggle-btn:hover { color: $blue; }
+
 .modal p { font-size: 1em; }
 
 .vig-modal p { font-size: 1.4em; @include breakpoint(mama-bear) { font-size: 1.2em; } @include breakpoint(baby-bear) { font-size: 1.1em; } }
