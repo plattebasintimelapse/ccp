@@ -120,17 +120,6 @@
             "image": "sandhill_thumb.jpg",
             "size": "full",
             "new": true
-        },
-        {
-            "title": "White Cranes in Spring",
-            "page": "white-cranes-in-spring",
-            "section":"3",
-            "type":["text", "audio"],
-            "lat": "40.658113",
-            "long":"-99.091251",
-            "image": "sixcranes_thumb.jpg",
-            "size": "full",
-            "new": true
         }
 
     ]
