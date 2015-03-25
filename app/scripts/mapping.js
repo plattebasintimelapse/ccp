@@ -45,7 +45,7 @@ function makeMap(n) {
         map.addLayer(googleLayer);
 
         mapLandData();
-        mapAreaData();
+        // mapAreaData();
 
         for (var i=0; i<ccpLength; i++) {
             $('#ccp-land').find('.panel-wrapper').append('<span id="' + ccpOwners[i].name + '" class="owner-toggle" style="background-color:' + ccpOwners[i].color + '"><p> ' + ccpOwners[i].name + '</p></span');

@@ -140,7 +140,7 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 	position: absolute;
 	background-color: rgba(28, 16, 6, 0.9);
     color: #f8f8f8;
-	right: -240px;
+	right: 20px;
 	top: 20%;
 	@extend .above-map;
 	@include breakpoint(mama-bear) { top: 15%; }

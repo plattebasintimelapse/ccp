@@ -27,12 +27,12 @@ var ccpToggle = function() {
 			$ccp_land.animate({
 				right: '-240px'
 			}, 300, 'linear' );
-			$ccp_land.find('.toggle-btn i').addClass('fa-caret-up').removeClass('fa-caret-down');
+			$ccp_land.find('.toggle-btn i').addClass('fa-caret-up').removeClass('fa-close');
 		} else {
 			$ccp_land.animate({
 				right: '20px'
 			}, 300, 'linear' );
-			$ccp_land.find('.toggle-btn i').removeClass('fa-caret-up').addClass('fa-caret-down');
+			$ccp_land.find('.toggle-btn i').removeClass('fa-caret-up').addClass('fa-close');
 		}
 
 		$ccp_land.toggleClass('open');
