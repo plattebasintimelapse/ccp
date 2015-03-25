@@ -21,9 +21,5 @@ var Vignette = L.Popup.extend({
 
 		this._source = source;
 		this._animated = L.Browser.any3d && this.options.zoomAnimation;
-	},
-
-	getSource: function() {
-		return this._new;
 	}
 });
