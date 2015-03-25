@@ -166,15 +166,15 @@
 
 	"hope": {
 		"hed": "Return to the River",
-		"subhed": "A Complex Web of Groups Work to Conserve The Modern Platte",
+		"subhed": "A Complex Coalition Works to Conserve The Modern Platte",
 		"meta": "March 15, 2015",
 				"content": [
 			{ "graf":
 				"Each spring, the skies above central Nebraska fill with millions of birds. Nearly 80 percent of the mid-continental population of sandhill cranes migrates through the Platte River Valley, along with a few wild whooping cranes and millions of other waterfowl."
 			},{ "image":
 				{
-					"src": "main/section-three/craneflockriver.jpg",
-				  	"caption": "A caption",
+					"src": "main/section-three/sunriseriver.jpg",
+				  	"caption": "Sandhill cranes crowd sandbars on the Platte River. <em>(Michael Forsberg)</em>",
 				  	"align": "right",
 				  	"extend": "extend",
 				  	"size": "medium"
@@ -187,12 +187,12 @@
 			},{ "graf":
 				"As human impacts began to change the character of the river, suitable habitat along its length began to disappear. But the conversion of wetland habitat to irrigated agriculture along the river floodplain had an unexpected benefit for some birds: waste corn left over from the previous fall’s harvest. For decades this rich food source in fields near the river has helped cranes build fat reserves for the journey to the frigid high north to breed, but in recent years, more efficient harvesting practices have diminished this alternate food source as well."
 			},{ "graf":
-				"Like many rivers, the Platte has a complicated past. One of the outcomes of the Platte’s recent litigious history is today’s high concentration of federal, state, and private entities working toward conservation in a 100-mile stretch of the central Platte, often referred to as the “Big Bend” region, largely driven by habitat requirements mandated under the Endangered Species Act."
+				"Like many rivers, the Platte has a complicated past. One of the outcomes of the Platte’s recent litigious history is today’s high concentration of federal, state, and private entities working toward conservation in a 100-mile stretch of the central Platte, often referred to as the “Big Bend” region, driven in part by habitat requirements mandated under the Endangered Species Act."
 			},{ "image":
 				{
-					"src": "main/section-three/sunriseriver.jpg",
-				  	"caption": "A caption",
-				  	"align": "right",
+					"src": "main/section-three/fireTNC.jpg",
+				  	"caption": "A prescribed fire on The Nature Conservancy's property. <em>(Ariana Brocious)</em>",
+				  	"align": "left",
 				  	"extend": "extend",
 				  	"size": "medium"
 				}
@@ -200,15 +200,34 @@
 			},{ "graf":
 				"While groups like the National Audubon Society and the Crane Trust have owned conservation lands for nearly 40 years, since 2007, the Platte River Recovery Implementation Program (PRRIP) has led some coordinated restoration efforts among partners on the Big Bend stretch of the river. They are the most recent member of a loose collective of federal, state and private organizations and people who have spent decades working on these issues along the Platte. While many groups work together on specific projects, each group has distinct priorities and goals."
 			},{ "graf":
-				"This patchwork of restoration efforts results in a rich tapestry of experimentation and learning on the central Platte. Most of the groups active in the river valley agree their habitat work is made better by their diverse opinions and approaches, which foster ongoing conversation about best practices for modern river management."
+				"This patchwork of restoration efforts results in a rich tapestry of experimentation and learning. Most of the groups active in the river valley agree their habitat work is made better by their diverse opinions and approaches, which foster ongoing conversation about best practices for modern river management."
 			},{ "graf":
 				"This complex collection of federal, state, and private groups use most of the same tools and techniques to achieve wildlife and habitat restoration in the region. Those include finding ways to return more water back to the river, removing vegetation from the river channel and recreating sandbars, side channels and shallows that provide critical roosts for cranes and nesting habitat for terns and plovers. It also means employing modern techniques to mimic the historical disturbances on the river valley, like managing nearby wetlands and grasslands with fire and cattle."
+
+				},{ "image":
+				{
+					"src": "main/section-three/cranecanal.jpg",
+				  	"caption": "Removing trees from an irrigation canal near Cozad. <em>(Peter Stegen)</em>",
+				  	"align": "right",
+				  	"extend": "extend",
+				  	"size": "medium"
+				}
+
 			},{ "graf":
 				"The goal of these groups is not to restore the Platte to a certain time in the past, a time when the river may have been considered more “pristine.” Rivers are ever changing; they continue to evolve in response to complex conditions and environmental factors. Rather, the groups try to work within the complicated set of modern demands on the river to maximize benefits for the species they’re targeting. That means cooperation between what some might consider unusual wildlife partners, like power companies and irrigation districts."
 			},{ "graf":
 				"Private landowners also play a large role, working with groups to allow conservation work on their properties. That’s important because nearly the entire state of Nebraska, including most of the lands along the Platte, is privately owned, and much of it is devoted to agriculture. Still, sentiment in the central Platte isn’t uniformly in support of restoration—some multigenerational farmers criticize the land acquisition by conservation groups and feel they’re being pushed out of the river valley, or question the value and need of the habitat work itself."
+				},{ "image":
+				{
+					"src": "main/section-three/RoweTower_summer.jpg",
+				  	"caption": "The Platte River in mid-summer at Audubon's Rowe Sanctuary. <em>(Michael Forsberg)</em>",
+				  	"align": "left",
+				  	"extend": "extend",
+				  	"size": "medium"
+				}
 			},{ "graf":
 				"Biologists believe today’s concentrated migration of sandhill cranes through central Nebraska—a point of pride for many in the state—is much greater than it was in centuries past as a result of human impacts reducing habitat on the river. Yet without the year-round efforts of these various groups and landowners to maintain the remaining habitat, it’s unlikely we’d see anything like the crane migration spectacle each spring, or the diversity of other species that inhabit the central Platte region."
+
 			}
 		]
 	}
