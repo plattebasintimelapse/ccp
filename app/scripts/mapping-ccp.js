@@ -117,7 +117,7 @@ function zoomToFeature(e) { map.fitBounds(e.target.getBounds()); }
 
 function mapLandData() {
 
-    $.getJSON('../data/ccpLand.json', function(data) {
+    $.getJSON('../data/ccp.json', function(data) {
         ccpLandGeoJSON = L.geoJson(data, {
             style: function(feature){
 
