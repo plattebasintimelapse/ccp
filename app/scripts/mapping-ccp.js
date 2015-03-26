@@ -7,7 +7,7 @@ var ccpOwners = [
         'color': 'rgb(84,48,5)',
         'filter': true
     }, {
-        'name': 'Central Nebraska Public Power & Irriation District',
+        'name': 'Central Nebraska Public Power & Irrigation District',
         'ownership': 'CNPPID',
         'color': 'rgb(140,81,10)',
         'filter': true
