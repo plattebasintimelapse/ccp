@@ -111,7 +111,7 @@ function highlightFeature(e) {
     if (!L.Browser.ie && !L.Browser.opera) { layer.bringToFront(); }
 }
 
-function resetHighlight(e) { ccpLandGeoJSON.resetStyle(e.target); }
+function resetHighlight(e) { ccpLandGeoJSON.resetStyle(e.target);}
 
 function zoomToFeature(e) { map.fitBounds(e.target.getBounds()); }
 
