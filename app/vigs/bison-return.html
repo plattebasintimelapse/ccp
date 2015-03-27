@@ -84,7 +84,7 @@
 
                             <aside class="inline-media inline-media-large inline-media-right inline-media-extend">
                                 <div class="inline-media-wrapper">
-                                    <a class="fancybox" rel="bison-group" title="A Caption" href="../images/main/bison/bisonstare.jpg">
+                                    <a class="fancybox" rel="bison-group" title="This herd of 42 female and juvenile bison were joined by two bulls later in the week. The Crane Trust hopes to grow the herd to about 200 bison." href="../images/main/bison/bisonstare.jpg">
                                         <img src="../images/main/bison/bisonstare.jpg" alt="Bison stare" title="" >
                                     </a>
                                     <span class="image-caption image-caption-right">This herd of 42 female and juvenile bison were joined by two bulls later in the week. The Crane Trust hopes to grow the herd to about 200 bison. <em>(Jackie Sojico, NET Radio)</em></span>
@@ -96,7 +96,7 @@
 
                             <aside class="inline-media inline-media-large inline-media-right inline-media-extend">
                                 <div class="inline-media-wrapper">
-                                    <a class="fancybox" rel="bison-group" title="A Caption" href="../images/main/bison/bisoncorral.jpg">
+                                    <a class="fancybox" rel="bison-group" title="The herd of plains bison were kept in a corral for a few weeks before being moved to larger enclosures to acclimate them to their new home." href="../images/main/bison/bisoncorral.jpg">
                                         <img src="../images/main/bison/bisoncorral.jpg" alt="Bison Corral" title="" >
                                     </a>
                                     <span class="image-caption image-caption-right">The herd of plains bison were kept in a corral for a few weeks before being moved to larger enclosures to acclimate them to their new home. <em>(Jackie Sojico, NET Radio)</em></span>
@@ -107,10 +107,10 @@
                             <p>LaRose steps up next to his friend and addresses the crowd before turning to the corral. “I talked to the buffalo and told them they were home, and not be afraid. This is a new environment. Now I’m gonna pray with them. This time I’m not talking to the buffalo, I’m talking to the Creator.”</p>
                             <p>The two men worked together when Dougherty was with the National Wildlife Federation and LaRose was the president of the <a href="http://bisoncentre.com/index.php/producers-2/resource-library/ibc2000-proceedings/primary-sessions/bison-restoration-developments-among-inter-tribal-bison-cooperative-members">Inter Tribal Bison Cooperative</a>. While president, LaRose saw bison introduced to tribal reservations, including the Winnebago reservation in northeast Nebraska. LaRose is always excited to see bison return to a place they used to be.</p>
 
-                             <aside class="inline-media inline-media-right inline-media-large inline-media-extend inline-video" id="CHANGE-video">
+                            <aside class="inline-media inline-media-right inline-media-large inline-media-extend inline-video" id="bison-video">
                                 <div class="inline-media-wrapper">
                                     <div class="video-wrapper-16-9 vid-wrap">
-                                        <iframe src="https://player.vimeo.com/video/123237457?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        <iframe id="bison" src="//player.vimeo.com/video/123237457?title=0&amp;byline=0&amp;portrait=0&amp;loop=0&amp;player_id=bison&amp;api=1" frameborder="0"></iframe>
                                     </div>
                                     <span class="image-caption image-caption-right">The new herd of bison enter the pasture at the Crane Trust. <em>(Peter Stegen)</em></span>
                                 </div>
@@ -125,7 +125,7 @@
                             
                              <aside class="inline-media inline-media-large inline-media-right inline-media-extend">
                                 <div class="inline-media-wrapper">
-                                    <a class="fancybox" rel="bison-group" title="A Caption" href="../images/main/bison/bisonwatchers.jpg">
+                                    <a class="fancybox" rel="bison-group" title="About 60 people came to see the bison arrive at the Crane Trust at Grand Island, despite the gusty day and chilly evening." href="../images/main/bison/bisonwatchers.jpg">
                                         <img src="../images/main/bison/bisonwatchers.jpg" alt="Watching Bison" title="" >
                                     </a>
                                     <span class="image-caption image-caption-right">About 60 people came to see the bison arrive at the Crane Trust at Grand Island, despite the gusty day and chilly evening. <em>(Jackie Sojico, NET Radio)</em></span>
@@ -140,16 +140,15 @@
                 </div>
             </section>
 
-            
 </div><button class="btn btn-defalt vig-close" data-dismiss="modal" aria-label="Close">Return to Map</button></div></div>
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $("#jquery_jplayer_1").jPlayer({                // The #jquery_jplayer_1 should match the ID agove of the jp_player div
+        $("#jquery_jplayer_1").jPlayer({
             ready: function () {
                 $(this).jPlayer("setMedia", {
-                    title: "Bison Return",     // CHANGE THIS
-                    m4a: "../media/audio/BisonCraneTrust_jackiesojico.mp3"            // AND THIS, MAKE SURE THE .MP3 AUDIO IS IN THE MEDIA FOLDER
+                    title: "Bison Return",
+                    m4a: "../media/audio/BisonCraneTrust_jackiesojico.mp3"
                 });
             },
             cssSelectorAncestor: "#jp_container_1",
@@ -162,10 +161,13 @@
             remainingDuration: true,
             toggleDuration: true
         });
+
+        listenVideo('bison');
+
+        $('.modal').on('hide.bs.modal', function (e) {
+            $("#jquery_jplayer_1").jPlayer("stop");
+        });
     });
 
-    $('.modal').on('hide.bs.modal', function (e) {
-        $("#jquery_jplayer_1").jPlayer("stop");
-    });
 </script>
 
