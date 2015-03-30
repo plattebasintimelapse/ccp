@@ -119,7 +119,7 @@
             "long":"-99.264565",
             "image": "sandhill_thumb.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "Bison Return",
@@ -130,7 +130,7 @@
             "long":"-98.463314",
             "image": "bison_thumb.jpg",
             "size": "full",
-            "new": true
+            "new": false
         },
         {
             "title": "White Cranes in Spring",
@@ -141,6 +141,17 @@
             "long":"-99.091251",
             "image": "sixcranes_thumb.jpg",
             "size": "audio",
+            "new": false
+        },
+        {
+            "title": "Planting Prairie",
+            "page": "planting-prairie",
+            "section":"3",
+            "type":["text", "audio"],
+            "lat": "40.741665",
+            "long":"-98.572469",
+            "image": "sixcranes_thumb.jpg",
+            "size": "full",
             "new": true
         }
 
