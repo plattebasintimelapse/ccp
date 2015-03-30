@@ -147,10 +147,10 @@
             "title": "Planting Prairie",
             "page": "planting-prairie",
             "section":"3",
-            "type":["text", "audio"],
+            "type":["audio", "map"],
             "lat": "40.741665",
             "long":"-98.572469",
-            "image": "sixcranes_thumb.jpg",
+            "image": "",
             "size": "full",
             "new": true
         }

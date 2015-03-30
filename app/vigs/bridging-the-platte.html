@@ -194,13 +194,14 @@ d<div class="modal-dialog"><div class="modal-content"><div class="modal-heder"><
         });
 
         setTimeout(function() {
-            console.log('hello');
-            $("#slider-1").twentytwenty(); // CHANGE THIS WITH THE #
+            $("#slider-1").twentytwenty();
             $('.twentytwenty-overlay').remove();
         }, 1000);
+
+        $('.modal').on('hide.bs.modal', function (e) {
+            $("#jquery_jplayer_1").jPlayer("stop");
+        });
     });
 
-    $('.modal').on('hide.bs.modal', function (e) {
-        $("#jquery_jplayer_1").jPlayer("stop");
-    });
+    
 </script>
