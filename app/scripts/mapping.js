@@ -156,6 +156,8 @@ function openModal(modal, f) {
     $.get(url, function(data) {
         modal.html(data);
         modal.modal('show');
+    }).done(function() {
+        modal.modal('handleUpdate');
     });
 
     // send google analytics event
