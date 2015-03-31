@@ -153,6 +153,17 @@
             "image": "prairieseed.jpg",
             "size": "full",
             "new": true
+        },
+        {
+            "title": "Near Elm Creek Complex",
+            "page": "near-elm-creek",
+            "section":"3",
+            "type":["map"],
+            "lat": "40.683990",
+            "long":"-99.360673",
+            "image": "prairieseed.jpg",
+            "size": "map",
+            "new": true
         }
 
     ]

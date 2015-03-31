@@ -64,7 +64,7 @@ color: $base-font-color;
 
 .new-ribbon:before, .new-ribbon:after {
 content: "";
-border-top:   3px solid #6e8900;   
+border-top:   3px solid #6e8900;
 border-left:  3px solid transparent;
  border-right: 3px solid transparent;
 position:absolute;
@@ -92,3 +92,50 @@ right: 0;
 	h2 { margin-top: 0; }
 	.modal-dialog { width: 450px; }
 }
+
+.bx-wrapper {
+	box-shadow: none;
+	background: transparent;
+	li .row {
+		// margin-left: 0;
+		// margin-right: 0;
+	}
+}
+
+#elm-creek-maps.interactive .bxslider .row { background-color: #eee; }
+
+#elm-creek-maps.interactive .bxslider h1 { border-bottom: 1px solid gray; }
+
+// // .bx-wrapper .bx-prev, .bx-wrapper .bx-next { background: none; color: red; }
+
+// .bx-wrapper .bx-prev:before { content: \f054; color: red; }
+// .bx-wrapper::after { content: '\f054'; color: red; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
