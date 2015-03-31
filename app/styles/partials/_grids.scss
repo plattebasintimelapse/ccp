@@ -288,7 +288,7 @@ img { width: 100%; height: auto; }
     &.playing-inline-video {
     	width: 130%;
 
-    	@include breakpoint(mama-bear) {
+    	@include breakpoint(papa-bear) {
 			width: 100%;
 		}
     	.inline-media-wrapper {
