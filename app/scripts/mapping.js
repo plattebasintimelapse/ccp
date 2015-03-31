@@ -40,8 +40,11 @@ function makeMap(n) {
         });
 
         basemap.addTo(map);
+
     } else if (n==3) { // PAGE THREE
-        var googleLayer = new L.Google('SATELLITE');
+        var googleLayer = new L.Google('SATELLITE', {
+            minZoom: 4
+        });
         map.addLayer(googleLayer);
 
         mapLandData();
