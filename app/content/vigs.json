@@ -147,10 +147,10 @@
             "title": "Planting Prairie",
             "page": "planting-prairie",
             "section":"3",
-            "type":["audio", "map"],
+            "type":["audio", "map", "video"],
             "lat": "40.741665",
             "long":"-98.572469",
-            "image": "",
+            "image": "prairieseed.jpg",
             "size": "full",
             "new": true
         }
