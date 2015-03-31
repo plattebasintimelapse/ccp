@@ -49,6 +49,13 @@ section.title.image-featured {
 
 section.copy { width:100%; max-width: $vig-container-width; &.narrow { max-width: $vig-container-width / 2; } }
 
+section.correction {
+	font-size: .8em;
+	font-style: italic;
+	border-top: 1px solid gray;
+	max-width: $vig-container-width;
+}
+
 section.audio { height: 150px; }
 
 section.image-featured, section.full-width {
