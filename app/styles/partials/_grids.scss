@@ -151,7 +151,7 @@ header .main-scroller-prompt { margin-top: 25px; @include breakpoint(mama-bear) 
 		color: $base-font-color;
 		@extend .above-map;
 		position: absolute;
-		left: -136px;
+		left: -135px;
 		top: 145px;
 		padding: 2px;
 		-ms-transform: rotate(270deg); /* IE 9 */

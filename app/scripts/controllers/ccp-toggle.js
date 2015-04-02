@@ -5,7 +5,7 @@ var $ccp_toggle = $('.toggle-btn');
 
 	
 $ccp_land.hover(function() {
-	if ( !$ccp_land.hasClass('open') ) {
+	if ( !$ccp_land.hasClass('is-open') ) {
 		$ccp_land.animate({
 			right: '-230px'
 		}, 300, 'linear' );
@@ -23,7 +23,7 @@ $ccp_land.hover(function() {
 var ccpToggle = function() {
 	$ccp_toggle.click(function() {
 
-		if ( $ccp_land.hasClass('open') ) {
+		if ( $ccp_land.hasClass('is-open') ) {
 			$ccp_land.animate({
 				right: '-240px'
 			}, 300, 'linear' );
@@ -35,7 +35,7 @@ var ccpToggle = function() {
 			$ccp_land.find('.toggle-btn i').removeClass('fa-caret-up').addClass('fa-close');
 		}
 
-		$ccp_land.toggleClass('open');
+		$ccp_land.toggleClass('is-open');
 	});
 }
 
