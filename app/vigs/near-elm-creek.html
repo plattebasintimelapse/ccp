@@ -37,14 +37,20 @@
                         </div>
 
                         <ul class="bxslider hidden">
-                            <li>
+                            <li class="bxslide">
                                 <div class="row">
                                     <div class="col-sm-7">
                                         <img src="../images/featured/planting-prairie/derr-after.jpg" alt="">
+                                        <div class="img-link" id="link-1">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-viewport=".bxslide" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></div>
+                                        </div>
+                                        <div class="img-link" id="link-2">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-viewport=".bxslide" data-trigger="hover" title="Popover" data-content="Here's another popover thingy."></div>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-5 slide-notes">
                                         <h1>Some Stuff</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deleniti aperiam vel animi nostrum, facere eos repudiandae recusandae? Sed et veniam doloremque animi molestias sit minima nulla, reprehenderit non quibusdam!</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deleniti aperiam vel animi nostrum, facere eos <span class="link-text" id="link-1">reprehenderit</span> repudiandae recusandae? Sed et veniam <span class="link-text" id="link-2">preder</span> animi molestias sit minima nulla, reprehenderit non quibusdam!</p>
                                         <h4>Something</h4>
                                         <h4>Something</h4>
                                         <h4>Something</h4>
@@ -52,12 +58,12 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <li class="bxslide">
                                 <div class="row">
                                     <div class="col-sm-7">
                                         <img src="../images/main/prairie/bagseed.jpg" alt="">
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-5 slide-notes">
                                         <h1>Some Stuff</h1>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deleniti aperiam vel animi nostrum</p>
                                         <h4>Something</h4>
@@ -67,14 +73,14 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <li class="bxslide">
                                 <div class="row">
                                     <div class="col-sm-7">
                                         <img src="../images/featured/planting-prairie/derr-before-trees.jpg" alt="">
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-5 slide-notes">
                                         <h1>Some Stuff</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deleniti aperiam vel animi nostrum, facere eos repudiandae recusandae? Sed et veniam doloremque animi molestias sit minima nulla, reprehenderit non quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias nisi quasi earum itaque cumque sit quam quos, nesciunt. Voluptate debitis laboriosam labore veniam at quia, libero praesentium explicabo possimus?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deleniti aperiam vel animi nostrum, facere eos repudiandae recusandae? Sed et veniam doloremque animi molestias sit minima nulla, non quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias nisi quasi earum itaque cumque sit quam quos, nesciunt. Voluptate debitis laboriosam labore veniam at quia, libero praesentium explicabo possimus?</p>
                                     </div>
                                 </div>
                             </li>
@@ -86,15 +92,12 @@
         </section>
 
 
-
-
-
-
 </div><button class="btn btn-defalt vig-close" data-dismiss="modal" aria-label="Close">Return to Map</button></div></div>
 
 <script type="text/javascript">
     $(document).ready(function(){
         setTimeout(function() {
+            var $modal = $('.vig-modal');
             $('.interactive .bxslider').removeClass('hidden');
             $('.interactive .loading').addClass('hidden');
             $('.bxslider').bxSlider({
@@ -104,12 +107,26 @@
                 adaptiveHeight: true,
                 nextText: 'HI',
                 onSliderLoad: function() {
-                    $('.vig-modal').modal('handleUpdate');
+                    $modal.modal('handleUpdate');
                 },
                 onSlideAfter: function() {
-                    $('.vig-modal').modal('handleUpdate');
+                    $modal.modal('handleUpdate');
                 }
             });
         }, 2000);
+
+        $('[data-toggle="popover"]').popover();
+
+        var $dot;
+
+        $('.link-text').on('mouseover', function() {
+            var id = $(this).attr('id');
+            $dot = $('#' + id).find('.dot');
+            $dot.addClass('on-hover');
+            $dot.popover('show');
+        }).on('mouseout', function() {
+            $dot.popover('hide');
+            $dot.removeClass('on-hover');
+        });
     });
 </script>

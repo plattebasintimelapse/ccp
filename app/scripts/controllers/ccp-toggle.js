@@ -11,7 +11,7 @@ $ccp_land.hover(function() {
 		}, 300, 'linear' );
 	}
 },function() {
-	if ( !$ccp_land.hasClass('open') ) {
+	if ( !$ccp_land.hasClass('is-open') ) {
 		setTimeout(function() {
 			$ccp_land.animate({
 				right: '-240px'

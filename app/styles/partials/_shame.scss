@@ -106,10 +106,59 @@ right: 0;
 
 #elm-creek-maps.interactive .bxslider h1 { border-bottom: 1px solid gray; }
 
-// // .bx-wrapper .bx-prev, .bx-wrapper .bx-next { background: none; color: red; }
+#elm-creek-maps #link-1 {
+	top: 20%;
+	left: 10%;
+}
 
-// .bx-wrapper .bx-prev:before { content: \f054; color: red; }
-// .bx-wrapper::after { content: '\f054'; color: red; }
+#elm-creek-maps #link-2 {
+	bottom: 20%;
+	right: 18%;
+}
+
+.img-link {
+	position: absolute;
+}
+
+.link-text {
+	color: $blue;
+	cursor: pointer;
+}
+
+.dot {
+    border: 5px solid white;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    backgrounc-color: transparent;
+    height: 26px;
+    width: 26px;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.3;
+
+	cursor: pointer;
+
+	&.on-hover, &:hover { border-color: $blue; }
+}
+
+.popover {
+	width: 200px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.6, 0.6); opacity: 0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0;}
+}
+
+@keyframes pulsate {
+    0% {transform: scale(0.1, 0.1); opacity: 0;}
+    50% {opacity: 1.0;}
+    100% {transform: scale(1.2, 1.2); opacity: 0;}
+}
 
 
 
