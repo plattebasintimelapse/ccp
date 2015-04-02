@@ -122,6 +122,17 @@
             "new": false
         },
         {
+            "title": "Canal Rehab",
+            "page": "canal-rehab",
+            "section":"3",
+            "type":["text", "video"],
+            "lat": "40.6500",
+            "long":"-99.0000",
+            "image": "ftkearny_camp.jpg",
+            "size": "full",
+            "new": true
+        },
+        {
             "title": "Bison Return",
             "page": "bison-return",
             "section":"3",

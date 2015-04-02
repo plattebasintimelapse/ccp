@@ -1,0 +1,71 @@
+<div class="modal-dialog"><div class="modal-content"><div class="modal-heder"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="vig-meta clearfix">
+
+                <h5 class="byline">By Kat Shiffler</h5>
+                <h5>April 3, 2015</h5>
+                
+</div></div><div class="modal-body">
+
+            <section class="title image-featured">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h1>Inside Wet Meadows</h1>
+                        <img src="../images/featured/wet-meadows/wetmeadows.jpg" alt="Wet Meadows">
+                        <span class="image-caption image-caption-right"> Mid-summer at Mormon Island, one of the last wet meadows along the Platte. <em>(Michael Forsberg)</em></span>
+                    </div>
+                </div>
+            </section>
+
+            
+           <section class="copy">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>During their spring stopover on the Platte, cranes spend much of their time in wet meadows, where they rest, bathe, forage and court potential mates. Wet meadows are groundwater-fed wetlands within larger grassland environments. Along the Platte, these subtle wet patches of prairie exist at low points in the river floodplain where water seeps up from the ground in seasonal pulses – usually in the spring just in time to welcome the cranes and other migratory birds traveling north.</p>
+                            <p>Sandhill cranes and the endangered whooping crane are dependent on this ecological niche for an important part of their diet while in Nebraska, before they head to breeding grounds in the north. While the birds rely on waste corn in nearby fields to build fat stores for their journey, the wet meadows provide the omnivorous birds with plants and insects that contain important proteins, calcium and other nutrients crucial for reproduction.</p>
+                            <p>Today wet meadows are scarce. Roughly 75 percent have disappeared since European settlement. The majority of these fertile ribbons of land have been drained to grow crops. The expansion of row-crop farming in central Nebraska has also indirectly drained wet meadows by drawing down groundwater levels, disconnecting the wetland from its key water source. Some of the only intact examples in the central Platte exist at Mormon and Shoemaker islands. Here at the river’s edge, an incredible diversity of creatures, including small mammals, aquatic invertebrates, fish and insect species still thrive.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section class="video-featured" style="padding-bottom:100px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="video-wrapper-16-9 vid-wrap">
+                                <div class="video-wrapper-16-9 vid-wrap">
+                                    <iframe src="https://player.vimeo.com/video/122363013?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                                <!-- <span class="image-caption image-caption-right">Wet meadow habitat in the central Platte. <em>(Peter Stegen)</em></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="copy">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Wet meadows can be thought of as “edge” habitats – where two or more different habitats come together. In a wet meadow, upland grasslands meet lowland grasses and the aquifer reaches up to meet the earth’s surface, interacting with surface water. This fact, combined with the seasonal freeze/thaw and wet/dry cycles, makes for an ecosystem inhabited by a combination of uniquely adapted aquatic and terrestrial life. Examples include mammals such as voles, moles, shrews and river otters, fish species like topminnows, sticklebacks and brassy minnows, and insects including caddis flies and dragonflies. The smooth green snake, the northern leopard frog, and chorus frogs are among the reptiles and amphibians that thrive in wet meadow habitats.</p>
+                            <p>Then of course, there are the cranes – the major species driving wet meadow conservation efforts today. Organizations are working to restore the natural hydrology of wet meadows along the Platte River by connecting backwater habitats to the river and through the use of ecologically-sensitive grazing along with prescribed fire and rest.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-featured">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="video-wrapper-3-2 vid-wrap">
+                                <iframe src="https://player.vimeo.com/video/80311018?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <span class="image-caption image-caption-right">Three years at the wet meadow habitat on Mormon Island. <em>(Michael Forsberg, timelapse by PBT Team)</em></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+</div><button class="btn btn-defalt vig-close" data-dismiss="modal" aria-label="Close">Return to Map</button></div></div>
+
