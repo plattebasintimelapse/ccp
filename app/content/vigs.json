@@ -122,13 +122,13 @@
             "new": false
         },
         {
-            "title": "Canal Rehab",
-            "page": "canal-rehab",
+            "title": "Returning Flows",
+            "page": "returning-flows",
             "section":"3",
             "type":["text", "video"],
-            "lat": "40.6500",
-            "long":"-99.0000",
-            "image": "ftkearny_camp.jpg",
+            "lat": "40.823293",
+            "long":"-100.007601",
+            "image": "canal_thumb.jpg",
             "size": "full",
             "new": true
         },
