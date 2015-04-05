@@ -14,7 +14,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         config: config,
-        aws: grunt.file.readJSON("secrets.json"),
+        secrets: grunt.file.readJSON("secrets.json"),
         app: grunt.file.readJSON("app_config.json"),
 
         watch: {
@@ -111,6 +111,42 @@ module.exports = function (grunt) {
                 }]
             },
             server: '.tmp'
+        },
+
+        gss_to_json: {
+            dist: {
+                options: {
+                    // edit-google-spreadsheet options go here 
+                    debug: true,
+                    spreadsheetName: 'CCP Practice',
+                    worksheetName: 'Sheet1',
+                    // for better performance, use spreadsheetId and 
+                    // worksheetId instead of name. 
+                    spreadsheetId: '',
+                    worksheetId: '',
+                    // Choose from 1 of the 3 authentication methods: 
+                    //    1. Username and Password 
+                    username: '<%= secrets.gssEmail %>',
+                    password: '<%= secrets.gssPassword %>',
+
+                    // Specific grunt-gss-to-json options 
+                    prettify: true,
+                    includeInfo: false,
+                    headerIsFirstRow: true,
+                    transformRow: function(row, header) {
+                        var rowdata = { };
+
+                        Object.keys(row).forEach(function(col) {
+                            var key = header[col] ? header[col].toLowerCase().replace(/[^a-z]/g, "") : col;
+                            rowdata[key] = row[col];
+                        });
+
+                        return rowdata;
+                    }
+                },
+
+                dest: 'app/content/test.json'
+            }
         },
 
         bake: {
@@ -328,9 +364,9 @@ module.exports = function (grunt) {
 
         aws_s3: {
             options: {
-                accessKeyId: '<%= aws.accessKeyId %>',
-                secretAccessKey: '<%= aws.secretAccessKey %>',
-                region: '<%= aws.region %>',
+                accessKeyId: '<%= secrets.accessKeyId %>',
+                secretAccessKey: '<%= secrets.secretAccessKey %>',
+                region: '<%= secrets.region %>',
                 uploadConcurrency: 5
             },
             production: {

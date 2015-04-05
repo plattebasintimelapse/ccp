@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Station on the Plains",
+    "page": "station-on-the-plains",
+    "section": 1,
+    "type": "video",
+    "lat": 40.65,
+    "long": -99,
+    "image": "ftkearny_camp.jpg",
+    "size": "full",
+    "new": false
+  },
+  {
+    "title": "Irrigation at Rain's Edge",
+    "page": "irrigation-at-rains-edge",
+    "section": 1,
+    "type": "photo",
+    "lat": 40.773782,
+    "long": -99.849243,
+    "image": "bicyclethumbnail.jpg",
+    "size": "full",
+    "new": false
+  },
+  {
+    "title": "Tapping Groundwater",
+    "page": "tapping-groundwater",
+    "section": 2,
+    "type": "text",
+    "lat": 40.613562,
+    "long": -98.727522,
+    "image": "centerpivots_thumb.jpg",
+    "size": "full",
+    "new": false
+  },
+  {
+    "title": "The River",
+    "page": "the-river",
+    "section": 1,
+    "type": "audio",
+    "lat": 40.746038,
+    "long": -98.519193,
+    "image": "donwelch1_thumb.jpg",
+    "size": "audio",
+    "new": false
+  },
+  {
+    "title": "The Tale of Water",
+    "page": "the-tale-of-water",
+    "section": 2,
+    "type": "audio",
+    "lat": 40.677253,
+    "long": -98.861675,
+    "image": "don2_thumbnail.jpg",
+    "size": "audio",
+    "new": false
+  }
+]

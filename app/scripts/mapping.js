@@ -62,6 +62,8 @@ function getVigs(n) {
     var vigs = [];
     $.getJSON( "../content/vigs.json", function( data ) {
 
+        // Only load the vigs in the current section = n
+
         for (var i=0; i < data.all.length; i++) {
             if (data.all[i].section == n ) {
                 vigs.push(data.all[i])
