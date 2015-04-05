@@ -60,13 +60,12 @@ function makeMap(n) {
 
 function getVigs(n) {
     var vigs = [];
-    $.getJSON( "../content/vigs.json", function( data ) {
+    $.getJSON( "../content/test.json", function( data ) {
 
-        // Only load the vigs in the current section = n
-
-        for (var i=0; i < data.all.length; i++) {
-            if (data.all[i].section == n ) {
-                vigs.push(data.all[i])
+        for (var i=0; i < data.length; i++) {
+            // Only load the vigs in the current section = n
+            if (data[i].section == n ) {
+                vigs.push(data[i])
             }
         }
 
@@ -85,9 +84,15 @@ function mapVigs(vigs) {
         var types_classes = '';
         var vig_content;
 
+        var result = vigs[i].type.split(',');
+
+        for (var k=0; k<result.length; k++) {
+            result[k] = result[k].replace(/\s+/g, '');
+        }
+
         for (var j=0; j < 5; j++) {
-            if (typeof vigs[i].type[j] !== 'undefined') {
-                switch ( vigs[i].type[j] ) {
+            if (typeof result[j] !== 'undefined') {
+                switch ( result[j] ) {
                     case "audio":
                         types.push('volume-up');
                         break;
