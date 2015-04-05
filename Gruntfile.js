@@ -116,21 +116,16 @@ module.exports = function (grunt) {
         gss_to_json: {
             dist: {
                 options: {
-                    // edit-google-spreadsheet options go here 
                     debug: true,
-                    spreadsheetName: 'CCP Practice',
-                    worksheetName: 'Sheet1',
-                    // for better performance, use spreadsheetId and 
-                    // worksheetId instead of name. 
-                    spreadsheetId: '',
-                    worksheetId: '',
+                    spreadsheetId: '1UUfKTMcAeKvuZS7sk3seVsnxxc0neiJUDUZ4fQqslPk',
+                    worksheetId: 'od6',
                     // Choose from 1 of the 3 authentication methods: 
                     //    1. Username and Password 
                     username: '<%= secrets.gssEmail %>',
                     password: '<%= secrets.gssPassword %>',
 
                     // Specific grunt-gss-to-json options 
-                    prettify: true,
+                    prettify: false,
                     includeInfo: false,
                     headerIsFirstRow: true,
                     transformRow: function(row, header) {
@@ -434,6 +429,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'gss_to_json',
         'bake',
         'useminPrepare',
         'concurrent:dist',
