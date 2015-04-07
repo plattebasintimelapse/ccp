@@ -117,15 +117,23 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     debug: true,
-                    spreadsheetId: '1UUfKTMcAeKvuZS7sk3seVsnxxc0neiJUDUZ4fQqslPk',
-                    worksheetId: 'od6',
+                    spreadsheetName: 'CCP Practice',
+                    worksheetName: 'Sheet1',
+                    // spreadsheetId: '1UUfKTMcAeKvuZS7sk3seVsnxxc0neiJUDUZ4fQqslPk',
+                    // worksheetId: 'od6',
                     // Choose from 1 of the 3 authentication methods: 
                     //    1. Username and Password 
                     username: '<%= secrets.gssEmail %>',
                     password: '<%= secrets.gssPassword %>',
 
+                    // oauth : {
+                    //     email: '912560793240-rp6uk5e005sgsqccglee1hj3eo4h27nr@developer.gserviceaccount.com',
+                    //     keyFile: 'HMsAHrxor5fjRGUkl4fRjqNB'
+                    // },
+
+
                     // Specific grunt-gss-to-json options 
-                    prettify: false,
+                    prettify: true,
                     includeInfo: false,
                     headerIsFirstRow: true,
                     transformRow: function(row, header) {
@@ -391,6 +399,7 @@ module.exports = function (grunt) {
         grunt.log.writeln( '** Ysha rules! **');
         grunt.log.writeln( '*****************');
         grunt.log.writeln( '*****************');
+        grunt.log.writeln(  );
     });
 
     grunt.registerTask('serve', function (target) {
