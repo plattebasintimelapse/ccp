@@ -119,20 +119,12 @@ module.exports = function (grunt) {
                     debug: true,
                     spreadsheetName: 'CCP Practice',
                     worksheetName: 'Sheet1',
-                    // spreadsheetId: '1UUfKTMcAeKvuZS7sk3seVsnxxc0neiJUDUZ4fQqslPk',
-                    // worksheetId: 'od6',
-                    // Choose from 1 of the 3 authentication methods: 
-                    //    1. Username and Password 
+                    // Choose from 1 of the 3 authentication methods:
+                    //    1. Username and Password
                     username: '<%= secrets.gssEmail %>',
                     password: '<%= secrets.gssPassword %>',
 
-                    // oauth : {
-                    //     email: '912560793240-rp6uk5e005sgsqccglee1hj3eo4h27nr@developer.gserviceaccount.com',
-                    //     keyFile: 'HMsAHrxor5fjRGUkl4fRjqNB'
-                    // },
-
-
-                    // Specific grunt-gss-to-json options 
+                    // Specific grunt-gss-to-json options
                     prettify: true,
                     includeInfo: false,
                     headerIsFirstRow: true,
@@ -438,7 +430,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'gss_to_json',
+        // 'gss_to_json',
         'bake',
         'useminPrepare',
         'concurrent:dist',
