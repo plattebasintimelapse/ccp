@@ -23,6 +23,17 @@
             "new": false
         },
         {
+            "title": "Craniac Migration",
+            "page": "craniac-migration",
+            "section":"3",
+            "type":["text", "photo", "video"],
+            "lat": "40.670186",
+            "long":"-98.883840",
+            "image": "craniac.jpg",
+            "size": "full",
+            "new": true
+        },
+        {
             "title": "Tapping Groundwater",
             "page": "tapping-groundwater",
             "section":"2",
