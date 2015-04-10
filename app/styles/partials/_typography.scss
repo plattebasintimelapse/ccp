@@ -9,7 +9,7 @@ h3 {
 
 a, a.visited {
 	color: $base-font-color;
-	&:hover {
+	&:hover, &:focus {
 		color: $blue;
 		text-decoration: none;
 	}
