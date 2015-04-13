@@ -1,0 +1,120 @@
+<div class="modal-dialog"><div class="modal-content"><div class="modal-heder"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="vig-meta clearfix">
+
+                <h5 class="byline">A Poem by Don Welch</h5>
+                <h5>April 17, 2015</h5>
+
+</div></div><div class="modal-body tight-copy">
+
+            <section class="full-width">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="video-wrapper-3-2 vid-wrap">
+                            <iframe id="donwelch" src="//player.vimeo.com/video/122465320?title=0&amp;byline=0&amp;portrait=0&amp;loop=0&amp;player_id=donwelch&amp;api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                        <span class="image-caption image-caption-right" style="margin-top: 22px; padding-right: 10px;">Powerful underground springs of groundwater push up through thick layers of ice. <em>(Michael Forsberg)</em></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="title">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h1>Now, At the Edge of This River</h1>
+                        <h3>By Don Welch, Nebraska poet</h3>
+                        </div>
+                </div>
+            </section>
+
+
+ <section class="copy narrow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Wade in. The river which grips</p>
+                            <p>your ankles is the smoothest chain.</p>
+                            <p>Even, still, it has you.</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="copy narrow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>What it asks is the initiation</p>
+                            <p>of your skin, your feet</p>
+                            <p>given over to drift sand.</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="copy narrow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Look: ahead a long sandbar</p>
+                            <p>has risen like an ancient whale,</p>
+                            <p>head down, its flukes thrust into the land.</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="copy narrow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>If you want to know its graver self,</p>
+                            <p>walk carefully its taut arch,</p>
+                            <p>then take its lead.</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="copy narrow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Step off again.</p>
+                            <p>In the shallows you'll find grains</p>
+                            <p>of sand which flake like gold.</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="copy narrow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Be glad for motes. But go on,</p>
+                            <p>go much deeper, dive in.</p>
+                            <p>The water wants only to involve you.</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+</div><button class="btn btn-defalt vig-close" data-dismiss="modal" aria-label="Close">Return to Map</button></div></div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var $iframe = $('#donwelch')[0];
+        var player = $f($iframe);
+
+        setTimeout(function(){
+            player.api('play');
+        },500);
+
+        $('.modal').on('hide.bs.modal', function (e) {
+            setTimeout(function(){
+                player.api('pause');
+                player.api('unload');
+            },500);
+        });
+    });
+</script>

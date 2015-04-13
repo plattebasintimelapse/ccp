@@ -71,8 +71,8 @@
             "page": "now-at-the-edge-of-this-river",
             "section":"3",
             "type":["video"],
-            "lat": "40.665470",
-            "long":"-99.172082",
+            "lat": "40.660783",
+            "long":"-99.228644",
             "image": "don2_thumbnail.jpg",
             "size": "audio",
             "new": true
@@ -185,7 +185,7 @@
             "long":"-98.572469",
             "image": "prairieseed.jpg",
             "size": "full",
-            "new": true
+            "new": false
         }
 
     ]
