@@ -67,14 +67,14 @@
             "new": false
         },
         {
-            "title": "Now At the Edge of This River",
+            "title": "Epilogue",
             "page": "now-at-the-edge-of-this-river",
             "section":"3",
-            "type":["video"],
+            "type":["video", "text"],
             "lat": "40.660783",
             "long":"-99.228644",
             "image": "don2_thumbnail.jpg",
-            "size": "audio",
+            "size": "full",
             "new": true
         },
         {
