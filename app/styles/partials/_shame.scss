@@ -116,21 +116,33 @@ right: 0;
 }
 
 .dot {
-    border: 5px solid white;
+    border: 4px solid white;
     -webkit-border-radius: 30px;
     border-radius: 30px;
-    backgrounc-color: transparent;
-    height: 26px;
-    width: 26px;
+    background-color: rgba(0,0,0,.1);
+    height: 22px;
+    width: 22px;
     -webkit-animation: pulsate 1s ease-out;
     -webkit-animation-iteration-count: infinite;
     animation: pulsate 1s ease-out;
     animation-iteration-count: infinite;
     opacity: 0.3;
-
 	cursor: pointer;
 
-	&.on-hover, &:hover { border-color: $blue; }
+	&:before {
+		content: " ";
+		position: absolute;
+		z-index: -1;
+		top: -13px;
+		left: -13px;
+		height: 40px;
+		width: 40px;
+		border: 4px solid white;
+		-webkit-border-radius: 30px;
+    	border-radius: 30px;
+	}
+
+	&.on-hover, &:hover, &.on-hover:before, &:hover:before { border-color: $blue; }
 }
 
 .popover {
