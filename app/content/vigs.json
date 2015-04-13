@@ -67,6 +67,17 @@
             "new": false
         },
         {
+            "title": "Now At the Edge of This River",
+            "page": "now-at-the-edge-of-this-river",
+            "section":"3",
+            "type":["video"],
+            "lat": "40.665470",
+            "long":"-99.172082",
+            "image": "don2_thumbnail.jpg",
+            "size": "audio",
+            "new": true
+        },
+        {
             "title": "Bridging the Platte",
             "page": "bridging-the-platte",
             "section":"1",
