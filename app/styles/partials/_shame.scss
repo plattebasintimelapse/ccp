@@ -200,6 +200,14 @@ right: 0;
 	&:hover, &.active { background: $blue; color: white; }
 }
 
+.interactive-credit {
+	position: relative;
+	top: 16px;
+	font-size: 10px;
+	font-style: italic;
+	text-align: right;
+}
+
 
 
 
