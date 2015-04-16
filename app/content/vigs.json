@@ -186,6 +186,17 @@
             "image": "prairieseed.jpg",
             "size": "full",
             "new": false
+        },
+        {
+            "title": "Elm Creek Complex",
+            "page": "elm-creek-complex",
+            "section":"3",
+            "type":["map", "text"],
+            "lat": "40.686756",
+            "long":"-99.342456",
+            "image": "elm-creek-thumbnail.jpg",
+            "size": "full",
+            "new": true
         }
 
     ]
