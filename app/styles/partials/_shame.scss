@@ -102,9 +102,9 @@ right: 0;
 	}
 }
 
-#elm-creek-maps.interactive .bxslider .row { background-color: #eee; }
+.compare-maps.interactive .bxslider .row { background-color: #eee; }
 
-#elm-creek-maps.interactive .bxslider h1 { border-bottom: 1px solid gray; }
+.compare-maps.interactive .bxslider h1 { border-bottom: 1px solid gray; }
 
 .img-link {
 	position: absolute;
@@ -188,6 +188,15 @@ right: 0;
 	text-align: center;
 }
 
+#elm-creek-maps .bx-wrapper .bx-pager  {
+	width: 20%;
+	display: none;
+}
+
+#elm-creek-maps .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	bottom: -40px;
+}
+
 .bx-wrapper .bx-pager.bx-custom-pager a {
 	background: transparent;
 	display: block;
@@ -207,6 +216,43 @@ right: 0;
 	font-style: italic;
 	text-align: right;
 }
+
+#elm-creek-maps .interactive-credit {
+  top: -60px;
+}
+
+#elm-creek-maps .slide-notes {
+  text-align:center;
+}
+
+#elm-creek-maps.compare-maps.interactive .bxslider h1 { border-bottom: none; }
+
+#elm-creek-maps .bx-controls-direction { display: none; }
+
+#elm-creek-maps.compare-maps.interactive .bxslider .row { background-color: transparent; }
+
+#elm-creek-maps .img-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  	height: 100%;
+  	padding: 0 15px;
+}
+
+.ui-slider-horizontal {
+  height: 1.2em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.4em;
+}
+
+.ui-slider .ui-slider-handle {
+  width: 1.8em;
+  height: 1.8em;
+}
+
 
 
 

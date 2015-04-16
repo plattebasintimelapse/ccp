@@ -20,15 +20,45 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum deleniti quae asperiores officia vero sit, ipsa impedit, saepe amet fuga quo iusto fugit laborum voluptatibus ullam! Ab, quia suscipit laboriosam?</p>
-                        <p>Ratione id harum facere repellat veritatis officia labore reprehenderit praesentium, non blanditiis doloremque sapiente quaerat excepturi quia nesciunt obcaecati iusto perferendis corporis assumenda quas molestiae eaque fugiat, debitis cum. Dolores!</p>
+                        <p>About 15 miles west of Kearney is the Elm Creek Complex, southeast of Elm Creek. The complex encompasses the Kearney Canal Diversion, a focused chokepoint on the river, just below the Elm Creek bridge.</p>
+                        <p>Due to the nature of the diversion, the river is consolidated into a single flow, necessitating management for wider channels, approximating the width of the river prior to 1930.</p>
+                        <p>Beginning with Nebraska Public Power District, habitat conservation efforts have spanned decades and organizations.</p>
+                        <p>In the 1980s, the Crane Trust and The Nature Conservancy worked in conjunction with the US Fish and Wildlife Service in conservation efforts like clearing trees and controlling invasive species. In 2010, sloughs were dug in the cleared area.</p>
+                        <p>Ownership and management activities have since been passed to the Platte River Recovery Implementation Program. They work today to spray invasive vegetation like phragmites in the channel and other riparian areas, remove brush and invasive woody vegetation from islands and grassland areas, clear trees back from the channel banks to improve open sight distance and encourage channel widening, and construct and manage in-channel nesting islands.</p>
+                        <p>The Elm Creek Complex has change dramatically over the last 80 years.</p>
+                        <h2 class="text-center" style="margin-top: 100px; font-weight: 700;">Explore Aerial Imagery Below</h2>
+                        <p class="text-center" style="font-size: 1em;"><em>The white line is the 1938 extent of the river.</em>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="interactive" id="elm-creek-maps">
+        <section class="loading">
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-center">
+                            <i class="fa fa-spinner fa-spin fa-5x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive compare-maps hidden" id="elm-creek-maps" style="padding-top: 0;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+                        <div class="text-center" style="margin-bottom: 20px;">
+                            <button  class="btn btn-default btn-lg" id="btn-toggle-dots" data-text-swap="Show Descriptions">Hide Descriptions</button>
+                        </div>
+                        <div id="slider-range"></div>
+                        <p class="text-center" style="font-size: 1em; margin-top: 5px;"><i class="fa fa-hand-o-up fa-lg"></i> <em>Use the slider to scroll through time.</em></p>
+
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-xs-12">
 
@@ -36,110 +66,548 @@
                             <i class="fa fa-spinner fa-spin fa-5x"></i>
                         </div>
 
-                        <ul class="bxslider hidden">
+                        <ul class="bxslider">
+
                             <li class="bxslide">
                                 <div class="row">
-                                    <div class="col-sm-8">
-                                        <img src="../images/main/near-elm-creek/elm-creek-macro-1938.jpg" alt="">
-
-                                        <div class="img-link" id="link-1" style="top: 20%; left: 10%;">
-                                            <div class="dot" data-toggle="popover" data-placement="right" data-viewport=".bxslide" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></div>
-                                        </div>
-                                        <div class="img-link" id="link-2" style="bottom: 20%; right: 18%;">
-                                            <div class="dot" data-toggle="popover" data-placement="left" data-viewport=".bxslide" data-trigger="hover" title="Popover" data-content="Here's another popover thingy."></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-4 slide-notes">
+                                    <div class="col-sm-12 slide-notes">
                                         <h1>1938</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deleniti aperiam vel animi nostrum, facere eos <span class="link-text" id="link-1">reprehenderit</span> repudiandae recusandae? Sed et veniam <span class="link-text" id="link-2">preder</span> animi molestias sit minima nulla, reprehenderit non quibusdam!</p>
-                                        <h4>Something</h4>
-                                        <h4>Something</h4>
-                                        <h4>Something</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/1938.jpg" alt="">
+
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
 
                             <li class="bxslide">
                                 <div class="row">
-                                    <div class="col-sm-8">
-                                        <img src="../images/main/near-elm-creek/elm-creek-macro-2003.jpg" alt="">
-                                        <div class="img-link" id="link-1">
-                                            <div class="dot" data-toggle="popover" data-placement="right" data-viewport=".bxslide" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></div>
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>1957</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/1957.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
                                         </div>
-                                        <div class="img-link" id="link-2">
-                                            <div class="dot" data-toggle="popover" data-placement="left" data-viewport=".bxslide" data-trigger="hover" title="Popover" data-content="Here's another popover thingy."></div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4 slide-notes">
+                                </div>
+                            </li>
+
+                            <li class="bxslide">
+                                <div class="row">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>1969</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/1969.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="bxslide">
+                                <div class="row">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>1978</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/1978.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="bxslide">
+                                <div class="row">
+                                    <div class="col-sm-12 slide-notes">
                                         <h1>2003</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deleniti aperiam vel animi nostrum</p>
-                                        <h4>Something</h4>
-                                        <h4>Something</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deleniti aperiam vel animi nostrum</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2003.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
 
                             <li class="bxslide">
                                 <div class="row">
-                                    <div class="col-sm-8">
-                                        <img src="../images/main/near-elm-creek/elm-creek-macro-2014.jpg" alt="">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>2004</h1>
+                                    </div>
+                                </div>
 
-                                        <div class="img-link" id="link-4" style="top: 36%; left: 53%;">
-                                            <div class="dot" data-toggle="popover" data-placement="left" data-viewport=".bxslide" data-trigger="hover" title="Clearing Trees" data-content="They cleared trees along the river, widening the bank."></div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2004.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
                                         </div>
 
-                                    </div>
-                                    <div class="col-sm-4 slide-notes">
-                                        <h1>2014</h1>
-                                        <p>Cutting back trees along river corridor. Speicies distnace to trees. Visibility.</p>
-                                        <p>ng elit. Iste deleniti aperiam vel animi nostrum, facere eos repudiandae recusandae? Sed et veniam <span class="link-text" id="link-4">reprehenderit</span> animi molestias sit minima nulla, non quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias nisi quasi earum itaque cumque sit quam quos, nesciunt. Voluptate debitis laboriosam labore veniam at quia, libero praesentium explicabo possimus?</p>
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
 
                             <li class="bxslide">
                                 <div class="row">
-                                    <div class="col-sm-8">
-                                        <img src="../images/main/near-elm-creek/elm-creek-macro-2014.jpg" alt="">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>2005</h1>
+                                    </div>
+                                </div>
 
-                                        <div class="img-link" id="link-4" style="top: 36%; left: 53%;">
-                                            <div class="dot" data-toggle="popover" data-placement="left" data-viewport=".bxslide" data-trigger="hover" title="Clearing Trees" data-content="They cleared trees along the river, widening the bank."></div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2005.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
                                         </div>
 
-                                    </div>
-                                    <div class="col-sm-4 slide-notes">
-                                        <h1>2014</h1>
-                                        <p>Cutting back trees along river corridor. Speicies distnace to trees. Visibility.</p>
-                                        <p>ng elit. Iste deleniti aperiam vel animi nostrum, facere eos repudiandae recusandae? Sed et veniam <span class="link-text" id="link-4">reprehenderit</span> animi molestias sit minima nulla, non quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias nisi quasi earum itaque cumque sit quam quos, nesciunt. Voluptate debitis laboriosam labore veniam at quia, libero praesentium explicabo possimus?</p>
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
-
-                           
 
                             <li class="bxslide">
                                 <div class="row">
-                                    <div class="col-sm-8">
-                                        <img src="../images/main/near-elm-creek/elm-creek-macro-2014.jpg" alt="">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>2007</h1>
+                                    </div>
+                                </div>
 
-                                        <div class="img-link" id="link-4" style="top: 36%; left: 53%;">
-                                            <div class="dot" data-toggle="popover" data-placement="left" data-viewport=".bxslide" data-trigger="hover" title="Clearing Trees" data-content="They cleared trees along the river, widening the bank."></div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2007.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
                                         </div>
 
-                                    </div>
-                                    <div class="col-sm-4 slide-notes">
-                                        <h1>2014</h1>
-                                        <p>Cutting back trees along river corridor. Speicies distnace to trees. Visibility.</p>
-                                        <p>ng elit. Iste deleniti aperiam vel animi nostrum, facere eos repudiandae recusandae? Sed et veniam <span class="link-text" id="link-4">reprehenderit</span> animi molestias sit minima nulla, non quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias nisi quasi earum itaque cumque sit quam quos, nesciunt. Voluptate debitis laboriosam labore veniam at quia, libero praesentium explicabo possimus?</p>
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
 
+                            <li class="bxslide">
+                                <div class="row">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>2009</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2009.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="bxslide">
+                                <div class="row">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>2010</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2010.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="bxslide">
+                                <div class="row">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>2012</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2012-summer.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="bxslide">
+                                <div class="row">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>2013</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2013.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="bxslide">
+                                <div class="row">
+                                    <div class="col-sm-12 slide-notes">
+                                        <h1>2014</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="../images/main/near-elm-creek/2014.jpg" alt="">
+                                        <img class="img-overlay" src="../images/main/near-elm-creek/river-extent.png" alt="">
+
+                                        <div class="img-link" id="link-1" style="top: 23%; left: 16%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="NPPD's off-channel sandpit operation is also a tern and plover nesting site."></div>
+                                        </div>
+                                        <div class="img-link" id="link-2" style="top: 44%; right: 21%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In the 1980s, the Crane Trust cleared the Johns Tract of trees."></div>
+                                        </div>
+                                        <div class="img-link" id="link-3" style="top: 50%; right: 15%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="In 2010, wet meadow sloughs were constructed. Their proxmity to historical channels is indicative of a prairie river."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-4" style="top: 30%; left: 42%;">
+                                            <div class="dot" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="PRRIP cleared trees along the banks to improve open sight distance and encourage channel widening."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-5" style="top: 23%; right: 32%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="PRRIP constructed in-channel sandbars for tern and plover habitat. The proxmity to off-channel habitat allows for some interesting site-choice experiments."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-6" style="top: 45%; left: 18%;">
+                                            <div class="dot" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="This is the location of the early 20th century weir passing water into the river below the Kearney Diversion. It has since been removed, moving that water up north to the downstream weir and gates."></div>
+                                        </div>
+
+                                        <div class="img-link" id="link-7" style="top: 21%; left: 49%;">
+                                            <div class="dot" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The Kearney Diversion moves water into the Kearney Canal."></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 
                         </ul>
 
+                    </div>
+                </div>
+                <div class="row interactive-credit">
+                    <div class="col-xs-12">
+                        <p>Interactive by Steven Speicher - Imagery from USGS</p>
                     </div>
                 </div>
             </div>
@@ -152,31 +620,17 @@
     $(document).ready(function(){
         setTimeout(function() {
             var $modal = $('.vig-modal');
-            $('.interactive .bxslider').removeClass('hidden');
-            $('.interactive .loading').addClass('hidden');
-            $('.bxslider').bxSlider({
+            $('.interactive').removeClass('hidden');
+            $('.loading').addClass('hidden');
+
+            $slider = $('.bxslider').bxSlider({
                 mode: 'fade',
-                startSlide: 0,
+                speed: 200,
+                startSlide: 12,
                 infiniteLoop: false,
                 hideControlOnEnd: true,
                 adaptiveHeight: true,
                 pagerType: 'full',
-                buildPager: function(slideIndex){
-                    switch(slideIndex){
-                        case 0:
-                            return '1930';
-                        case 1:
-                            return '1950';
-                        case 2:
-                            return '1970';
-                        case 3:
-                            return '1980';
-                        case 4:
-                            return '1990';
-                        case 5:
-                            return '2014';
-                    }
-                },
                 onSliderLoad: function() {
                     $modal.modal('handleUpdate');
                 },
@@ -198,6 +652,30 @@
         }).on('mouseout', function() {
             $dot.popover('hide');
             $dot.removeClass('on-hover');
+        });
+
+        $( "#slider-range" ).slider({
+            min: 0,
+            max: 12,
+            value: 12,
+            slide: function( event, ui ) {
+                $slider.goToSlide(ui.value);
+            }
+        });
+
+        $('#btn-toggle-dots').click(function() {
+
+            var el = $(this);
+            if (el.text() == el.data("text-swap")) {
+                el.text(el.data("text-original"));
+            } else {
+                el.data("text-original", el.text());
+                el.text(el.data("text-swap"));
+            }
+            $('.img-link').toggleClass('hidden');
+            $('.img-overlay').toggleClass('hidden');
+
+            el.toggleClass('active');
         });
     });
 </script>
