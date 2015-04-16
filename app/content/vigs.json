@@ -122,6 +122,17 @@
             "new": false
         },
         {
+            "title": "Cottonwood Ranch Restoration",
+            "page": "cottonwood-ranch",
+            "section":"3",
+            "type":["map", "text"],
+            "lat": "40.683502",
+            "long":"-99.489484",
+            "image": "cottonwood_thumb.jpg",
+            "size": "full",
+            "new": true
+        },
+        {
             "title": "Ancient Travelers",
             "page": "ancient-travelers",
             "section":"2",
