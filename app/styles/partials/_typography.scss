@@ -232,6 +232,11 @@ section.title.image-featured h1 {
 	@include breakpoint(baby-bear) { font-size: 1.2em; }
 }
 
+.slide .credit {
+	font-size: 1em;
+	margin: 0;
+}
+
 .byline { font-weight: bold; font-size: 1.3em; }
 
 .location { font-style: italic; }

@@ -197,6 +197,17 @@
             "image": "elm-creek-thumbnail.jpg",
             "size": "map",
             "new": true
+        },
+        {
+            "title": "Epilogue: Now, at the Edge of this River",
+            "page": "now-at-the-edge-of-this-river",
+            "section":"3",
+            "type":[],
+            "lat": "40.787180",
+            "long":"-99.088440",
+            "image": "joy-crane-thumbnail.jpg",
+            "size": "full",
+            "new": true
         }
 
     ]
